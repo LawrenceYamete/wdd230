@@ -5,18 +5,22 @@ body {
     margin: 0 auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 header {
-    justify-content: space-around;
-    align-items: center;
     background-color: #D3DEDC;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #888888;
+    align-items: center;
 }
 
 h1 {
     font-size: 1rem;
     margin: 0.15rem;
     text-align: center;
+    padding: 1em;
 }
 
 
@@ -28,12 +32,12 @@ header, nav, main, footer {
     padding: 0.75em;
 }
 
-img {
+header img {
     box-shadow: 5px 5px 5px #888888;
     border-radius: 10px;
     width: 200px;
     height: auto;
-    align-items: center;
+    align-self: auto;
 }
 
 ul, li {
