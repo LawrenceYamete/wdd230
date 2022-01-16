@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 70em) {
 
     main {
         grid-template-columns: 1fr 1fr;
@@ -20,11 +20,25 @@
         font-size: 1.2em;
       }
 
-      header p {
+    header p {
         font-size: 1.5em;
         }
 
+        section {
+            margin: 20px;
+                  
+        }   
+
+    main {
+            margin: 0 auto;
+        }
+    
     head, footer {
-        max-width: 100%;
+        -webkit-text-size-adjust: 100%;
     }
+
+    img {
+        margin: 0 auto;
+    }
+    
 }

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 100em) {
 
 
     main {
@@ -9,8 +9,24 @@
         grid-column: span 1;
     }
 
-    head, footer {
+    /* head, footer {
         -webkit-text-size-adjust: 100%;
+    } */
+
+    /* main {
+        margin: 0 auto;
+    } */
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    img {
+        margin: 0 auto;
     }
 
 }

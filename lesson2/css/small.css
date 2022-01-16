@@ -3,8 +3,7 @@ main {
     grid-template-columns: 1fr;
     padding: 40px;
     border-radius: 10px;
-    max-width: 80%;
-    margin: 50px;
+    margin: 0 auto;
 }
 
 body {
@@ -14,10 +13,9 @@ body {
 }
 
 header, section {
-padding: 30px;
-margin: 20px;
+padding: 20px;
 border-radius: 10px;
-
+margin: 0 auto;
 }
 
 header, footer {
@@ -62,8 +60,8 @@ font-size: 1em;
 img {
 display: table-cell;
 text-align: center;
+min-width: 10px;
 margin: 0 auto;
-width: auto;
 }
 
 h2 {
@@ -84,5 +82,6 @@ font-family: 'Quicksand', sans-serif;
 section {
 background-color: #FFF8F3;
 box-shadow: 5px 5px 5px #d1d0d0;
+margin-top: 20px;
 }
 
