@@ -4,11 +4,27 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    section:nth-child(1) {
+    /* section:nth-child(1) {
         grid-column: 1;
-    }
+    } */
 
     section:nth-child(3) {
         grid-column: span 2;
+      }
+    
+    h2 {
+          font-size: 1.5em;
+      }
+      
+    section p {
+        font-size: 1.2em;
+      }
+
+      header p {
+        font-size: 1.5em;
+        }
+
+    head, footer {
+        max-width: 100%;
     }
 }
