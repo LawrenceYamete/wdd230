@@ -4,11 +4,13 @@
         border-radius: 10px;
         display: flex;
         justify-content: space-around;
+        text-align: center;
     }
 
     h1 {
         font-size: 2rem;
         justify-content: space-around;
+        text-align: center;
     }
 
     h2 {
