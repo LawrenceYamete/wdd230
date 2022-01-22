@@ -19,13 +19,14 @@ margin: 0 auto;
 
 header, footer {
 display: block;
-background-color: #D3DEDC;
+background-color: 	#FEF1E6;
 text-align: center;
 border-radius: 10px;
 box-shadow: 10px 5px 5px 5px #d1d0d0;
 min-width: 600px;
 margin: 20rem;
-margin-top: 2rem;
+padding-bottom: 10px;
+margin-top: 1rem;
 margin-bottom: 0;
 }
 
@@ -68,6 +69,7 @@ th, td {
 	background-color: #FDF6F0;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 24px;
+	color: #E5B299;
 }
 .head1 {
 	background-color: white;
@@ -106,7 +108,7 @@ nav > ul {
 	display: flex;
 	margin-right: 40px;
 	justify-content: space-around;
-	
+	margin-bottom: 0;
 }
 
 nav a {
@@ -122,10 +124,17 @@ nav a:visited {
 nav a:hover {
 	background-color: #FDF6F0;
 	border-radius: 2px;
+	color: #E5B299;
+	
   }
 
 .colored {
 	background-color: white ;
+}
+
+.audience {
+	list-style-type: none;
+	text-indent: 20%;
 }
 
 #lastmod {
