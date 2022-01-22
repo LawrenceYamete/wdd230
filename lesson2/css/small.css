@@ -1,85 +1,70 @@
 main {
-    display: grid;
-    grid-template-columns: 1fr;
     padding: 40px;
     border-radius: 10px;
     margin: 0 auto;
 }
-
 body {
     margin: 0 auto;
     padding: 10px;
 }
-
 header, section {
-padding: 20px;
-border-radius: 10px;
-margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
 }
-
 header, footer {
-display: block;
-background-color: #D3DEDC;
-text-align: center;
-margin-top: 20px;
-border-radius: 10px;
-box-shadow: 10px 5px 5px 5px #d1d0d0;
-min-width: 400px;
+    display: block;
+    background-color: #D3DEDC;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px 5px #d1d0d0;
+    min-width: 400px;
 }
-
 footer {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-
 #lastmod {
-margin-left: 10px;
+    margin-left: 10px;
 }
-
-
+.hicks, .fitts, .visual {
+    display: block;
+}
 section p {
-text-indent: 2em;
+    text-indent: 2em;
 }
-
 header p {
-font-size: 1.5em;
+    font-size: 1.5em;
 }
-
-
 h1 {
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-
 h3 {
-font-family: 'Quicksand', sans-serif;
-font-size: 1em;
-
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
 }
-
 img {
-display: block;
-min-width: 10px;
-margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
-
 h2 {
-text-align: center;
-font-size: 2rem;
-font-family: 'Quicksand', sans-serif;
-background-color: #92A9BD;
-padding: 1em;
-border-radius: 10px;
-margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #92A9BD;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 0;
 }
-
 p, a {
-line-height: 1.5;
-font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
 }
-
 section {
-background-color: #FFF8F3;
-box-shadow: 5px 5px 5px #d1d0d0;
-margin-top: 20px;
+    background-color: #FFF8F3;
+    box-shadow: 5px 5px 5px #d1d0d0;
+    margin-top: 20px;
+    min-width: 300px;
 }
-
