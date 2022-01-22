@@ -1,7 +1,8 @@
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 32.5em) {
 
     main {
         grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
     }
 
     /* section:nth-child(1) {
@@ -10,7 +11,16 @@
 
     section:nth-child(3) {
         grid-column: span 2;
+        margin: 20px;
       }
+
+    section:nth-child(1) {
+        margin: 20px;
+    }
+
+    section:nth-child(2) {
+        margin: 20px;
+    }
     
     h2 {
           font-size: 1.5em;
@@ -20,21 +30,17 @@
         font-size: 1.2em;
       }
 
+    
+    main, section {
+        margin: 0 auto;
+    }
+
     header p {
         font-size: 1.5em;
-        }
-
-        section {
-            margin: 20px;
-                  
-        }   
-
-    main {
-            margin: 0 auto;
-        }
-    
+    }
+        
     head, footer {
-        -webkit-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 150%;
     }
 
     img {
