@@ -31,7 +31,11 @@
         </div>
         
         <nav>
-            <ul>
+            <button id="togglemenu">
+                <span>&#9776;</span>
+                <span>&#10006;</span>
+            </button>
+            <ul id="primarynav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discovery</a></li>
                 <li><a href="#">Directory</a></li>
@@ -41,13 +45,13 @@
         </nav>
         
         <div class="icons">
-            <img src="images/Facebook Icon.png" alt="Facebook Icon" >
-            <img src="images/Instagram Icon.png" alt="Instagram Icon"  >
-            <img src="images/Pinterest Icon.png" alt="Pinterest Icon"  >
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook Icon.png" alt="Facebook Icon" ></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram Icon.png" alt="Instagram Icon"  ></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/Pinterest Icon.png" alt="Pinterest Icon"  ></a>
             <br>
-            <img src="images/Tiktok Icon.png" alt="Tiktok Icon"  >
-            <img src="images/LinkedIn Icon.png" alt="LinkedIn Icon"  >
-            <img src="images/Youtube Icon.png" alt="Youtube Icon"  >
+            <a href="https://www.tiktok.com/" target="_blank"><img src="images/Tiktok Icon.png" alt="Tiktok Icon"  ></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn Icon.png" alt="LinkedIn Icon"  ></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/Youtube Icon.png" alt="Youtube Icon"  ></a>
         </div>
 
         <div class="date">
@@ -72,8 +76,8 @@
             <p>Join</p>
         </section>
         <section class="spotlight">
-            <p>Spotlight 1</p>
-            <p>Spotlight 2</p>
+            <p class="spotlight1">Spotlight 1</p>
+            <p class="spotlight2">Spotlight 2</p>
             <p class="spotlight3">Spotlight 3</p>
         </section>
    </main>
@@ -108,5 +112,6 @@
         </div>
     </footer>
     <script defer src="js/dates.js"></script>
+    <script defer src="js/menu.js"></script>
 </body>
 </html>
