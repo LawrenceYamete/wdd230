@@ -12,11 +12,11 @@ const item_list = document.createElement('li');
 const text_list = document.createElement('span');
 const button = document.createElement('button');
 
-item_list.appendChild(text_list);
+item_list.append(text_list);
 text_list.textContent = item;
-item_list.appendChild(button);
+item_list.append(button);
 button.textContent = '❌';
-list.appendChild(item_list);
+list.append(item_list);
 
 button.addEventListener('click', function() {
   list.removeChild(item_list);
