@@ -3,6 +3,7 @@ const list = document.querySelector('ul');
 const input = document.querySelector('input');
 
 const button = document.querySelector('button');
+
 button.addEventListener('click', function(){
     let item = input.value;
     input.value = '';
@@ -20,5 +21,4 @@ list.appendChild(item_list);
 button.addEventListener('click', function() {
   list.removeChild(item_list);
 });
-input.focus('');
 });
