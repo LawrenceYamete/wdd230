@@ -197,6 +197,17 @@ div > .heroimg {
     margin: 10px;
 }
 
+.weather {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    line-height: 2px;
+}
+
+.weather h3{
+    text-align: center;
+}
+
 .heroimg > img {
     width: 400px;
     border-radius: 10px;
