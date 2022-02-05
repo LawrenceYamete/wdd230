@@ -9,6 +9,7 @@ header{
     justify-content: space-around;
     margin-bottom: .5rem;
     grid-gap: 5px;
+
 }
 
 .heading {
@@ -39,6 +40,10 @@ header{
     border: 0;
     padding: none;
     margin: 0;
+}
+
+.hero {
+    
 }
 
 nav {
@@ -77,8 +82,6 @@ nav a:hover {
     width: 25px;
     margin: 1px;
 }
-
-
 
 #togglemenu {
     margin: 5px;
@@ -134,13 +137,93 @@ h3 {
     
 }
 
-main > section {
+main > div {
     margin: auto 1rem;
     background-color: #FEF1E6;
     display: block;
+    max-width: auto;
 }
 
-p, li, .date{
+div > .heroimg {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    border-radius: 10px;
+}
+
+.herocontent {
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    
+}
+
+.herocontent > h3 {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin-right: 200px;
+    margin-top: -90px;
+    background-color: #FDF6F0;
+    border-radius: 5px;
+}
+
+.herocontent > a {
+    display: inline;
+    position: absolute;
+    background-color: #FDF6F0;
+    border-radius: 5px;
+    margin-left: 280px;
+    margin-top: 100px;
+}
+
+.join {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.join > button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: .9em;
+    position: absolute;
+    left: 50%;
+    margin: 10px;
+}
+
+.heroimg > img {
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.event {
+    padding: 10px;
+    text-align: center;
+}
+
+.news {
+    padding: 10px;
+    text-align: center;
+}
+
+.spotlight {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section > div {
+    width: auto;
+}
+
+p, a, li, .date{
     font-family: 'Quicksand', sans-serif;
     padding: 10px;
     font-size: .9em;
