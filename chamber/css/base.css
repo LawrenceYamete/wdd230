@@ -2,7 +2,7 @@
 /* ========================== header ===============================*/
 header{
     display: grid;
-    grid: 1fr  / 2.5fr 1fr;
+    grid: 1fr / 2.5fr 1fr;
     background-color: #FEF1E6;
     text-align: center;
     align-items: center;

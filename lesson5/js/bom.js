@@ -4,6 +4,10 @@ const input = document.querySelector('input');
 
 const button = document.querySelector('button');
 
+focusMethod = function getFocus() {
+  document.getElementById("favchap").focus();
+}
+
 button.addEventListener('click', function(){
     let item = input.value;
     input.value = '';
