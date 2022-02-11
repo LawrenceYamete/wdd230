@@ -42,9 +42,13 @@ header{
     margin: 0;
 }
 
-.hero {
-    
+@media only screen and (max-width: 520px) { 
+    nav a:hover {
+        padding-inline: 40%;
+      }
 }
+
+
 
 nav {
     background-color: #E5B299;
@@ -59,6 +63,7 @@ nav > ul {
 	display: flex;
 	justify-content: space-around;
     padding: 0;
+
 }
 
 nav a {
@@ -74,8 +79,6 @@ nav a:hover {
 	border-radius: 5px;
 	color: #E5B299;
     transition: 0.3s;
-    padding-inline: 60px;
-    padding-block: 8px;
   }
 
 .icons a > img {
@@ -118,6 +121,8 @@ nav ul.open {
 /* ========================== Main and Text ===============================*/
 .grid {
     /* grid: repeat(5, 1fr)/ 1fr; */
+    display: grid;
+    grid-column-gap: 10px;
     font-size: .7em;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -139,42 +144,43 @@ main > div {
     display: block;
 }
 
-div > .heroimg {
+.hero {
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.hero {
+.heroimg {
+    width: 80%;
+}
+
+
+.heroimg img{
+    width: 100%;
     border-radius: 10px;
 }
 
+
 .herocontent {
-    display: inline-block;
     position: absolute;
     border-radius: 5px;
-    
-}
-
-.herocontent > h3 {
-    display: block;
-    position: relative;
-    padding: 10px;
-    margin-right: 200px;
-    margin-top: -90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: -30% 0 0 -30%;
     background-color: #FDF6F0;
     border-radius: 5px;
+    border: 1px solid #333;
 }
 
-.herocontent > a {
-    display: inline;
+.herobutton {
     position: absolute;
     background-color: #FDF6F0;
     border-radius: 5px;
-    margin-left: 280px;
-    margin-top: 100px;
+    padding: 5px;
+    margin: 30% 0 0 50%;
 }
 
 .join {
@@ -203,11 +209,6 @@ div > .heroimg {
     text-align: center;
 }
 
-.heroimg > img {
-    width: 400px;
-    border-radius: 10px;
-    
-}
 
 .event {
     padding: 10px;

@@ -17,11 +17,8 @@
 
     nav {
         grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    nav > li.open {
-        display: block;
+        grid-row: 1/3;
+        
     }
     
     .date {
@@ -119,6 +116,10 @@
     .upperfooter > .info {
         margin-left: 0;
         text-align: left;
+    }
+    .heroimg img{
+        width: 100%;
+        border-radius: 10px;
     }
 
 

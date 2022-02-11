@@ -62,13 +62,20 @@
        
    <main class="grid">
         <div class="hero">
-            <div class="heroimg">
-                <img src="images/34621638685_21f556b086_h.png" alt="Manila Hero Picture">
-                <div class="herocontent">
-                    <h3>Welcome to Manila Lights</h3>
-                    <a class="herobtn" href="#">Learn More</a>
-                </div>
-            </div>
+            <picture class="heroimg">
+                <source media="(min-width: 1100px)" srcset="images/imagelarge.png">
+                <source media="(min-width: 600px)" srcset="images/imagemedium.png">
+                <source media="(min-width: 500px)" srcset="images/imagesmall.png">
+	            
+                <img src="images/wdd230-org.png" alt="Manila Hero Picture">
+            </picture>
+            <section class="herocontent">
+                <h3>Welcome to Manila Lights</h3>
+            </section>
+            <section class="herobutton">
+                <a class="herobtn" href="#">Learn More</a>
+            </section>
+            
             
         </div>
        
@@ -79,10 +86,9 @@
         <div class="weather">
             <h3>Weather</h3>
             <p>Currently: Cloudy</p>
-            <p>Temperature: 26°C</p>
-            <p>Humidity: 72%</p>
-            <p>Wind: 11 km/h</p>
-            <p>Precipitation: 2%</p>
+            <p>Temperature: <span id="temperature">30</span>°F</p>
+            <p>Wind: <span id="speed">10</span> mph</p>
+            <p>WindChill: <span id="wind"></span></p>
         </div>
         <div class="news">
             <h3>News Release</h3>
@@ -146,5 +152,6 @@
     </footer>
     <script defer src="js/dates.js"></script>
     <script defer src="js/menu.js"></script>
+    <script defer src="js/windchill.js"></script>
 </body>
 </html>
