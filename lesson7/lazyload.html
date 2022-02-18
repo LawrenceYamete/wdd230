@@ -7,35 +7,41 @@
     <meta name="description" content="This is assignment activity 7 of Job Lawrence Navarro's weekly work and projects for WDD230">
     <meta name="author" content="Job Lawrence Navarro">
     <link rel="stylesheet" href="css/small.css">
+    <script defer src="js/imagehandling.js"></script>
     <title>Progressive Loading of Images</title>
 </head>
-<header>
-    <h1>
-        Progressing Loading (Images)
-    </h1>
-</header>
+
 <body>
-    <main>
-        <div>
-        <picture>
-            <img src="https://www.fillmurray.com/300/400" alt="placeimage">
-        </picture>
-        <picture><img src="https://loremflickr.com/300/400" alt="placeimage"></picture>
-        <picture><img src="https://placekitten.com/300/400" alt="placeimage"></picture>
-        <picture><img src="https://baconmockup.com/300/400" alt="placeimage"></picture>
-        <picture><img src="https://placebeard.it/300/400" alt="placeimage"></picture>
-        <picture><img src="https://www.placecage.com/300/400" alt="placeimage"></picture>
-        <picture><img src="http://placeimg.com/300/400" alt="placeimage"></picture>
-        <picture><img src="https://www.stevensegallery.com/300/400" alt="placeimage"></picture>
-        <picture><img src="https://picsum.photos/300/400" alt="placeimage"></picture>
-        </div> 
-    </main>
+    <header>
+        <h1>
+            Progressing Loading (Images)
+        </h1>
+    </header>
+    <body>
+        <main>
+            <div>
+            <picture>
+                <img src="https://www.fillmurray.com/300/400" data-src="https://www.fillmurray.com/300/400" alt="placeimage" loading="imagehandling">
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/300/400" data-src="https://loremflickr.com/300/400" alt="placeimage" loading="imagehandling">
+            </picture>
+            <picture><img src="https://placekitten.com/300/400" data-src="https://placekitten.com/300/400" alt="kat" loading="imagehandling"></picture>
+            <picture><img src="https://baconmockup.com/300/400" data-src="https://baconmockup.com/300/400" alt="placeimage" loading="imagehandling"></picture>
+            <picture><img src="https://placebeard.it/300/400" data-src="https://placebeard.it/300/400" alt="placeimage" loading="imagehandling"></picture>
+            <picture><img src="https://www.placecage.com/300/400" data-src="https://www.placecage.com/300/400" alt="placeimage" loading="imagehandling"></picture>
+            <picture><img src="http://placeimg.com/300/400" data-src="http://placeimg.com/300/400" alt="placeimage" loading="imagehandling"></picture>
+            <picture><img src="https://www.stevensegallery.com/300/400" data-src="https://www.stevensegallery.com/300/400" alt="placeimage" loading="imagehandling"></picture>
+            <picture><img src="https://picsum.photos/300/400" data-src="https://picsum.photos/300/400" alt="placeimage" loading="imagehandling"></picture>
+            </div> 
+        </main>
+    </body>
+    <footer>
+        <p> ©
+            <span id="year">2022</span>
+            . : | : . Job Lawrence Navarro . : | : . Utah
+        </p>
+    </footer>
 </body>
-<footer>
-    <p> ©
-        <span id="year">2022</span>
-         . : | : . Job Lawrence Navarro . : | : . Utah
-      </p>
-</footer>
-<script defer src="js/imagehandling.js"></script>
+
 </html>
