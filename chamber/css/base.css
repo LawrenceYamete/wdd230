@@ -93,6 +93,7 @@ nav a:hover {
     border-radius: 5px;
     padding: 10px;
 } 
+
 #togglemenu span:nth-child(1) { 
     display: block;
 }
@@ -115,6 +116,7 @@ nav ul {
 
 nav ul.open {
     display: block;
+    
 }
 
 
@@ -248,9 +250,43 @@ p {
     display: none;
 }
 
-/* .spotlight3 {
-    display: none;
-} */
+/* ============= Discover HTML =======================*/
+
+.discovergrid, picture {
+    display: grid;
+    padding: 10px;
+}
+
+.maingrid, picture {
+    grid: 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.discovergrid > div {
+    padding: 20px;
+}
+
+.thirdhead {
+    text-align: center;
+}
+
+.images > img {
+    max-width: 100%;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.8s;
+}
+
+picture img {
+    border-radius: 5px;
+}
 
 /* ========================== Footer ===============================*/
 
@@ -260,6 +296,7 @@ p {
     justify-content: space-around;
     font-size: .6em;
     margin: 0 auto;
+    
 }
 
 .upperfooter > .info {
