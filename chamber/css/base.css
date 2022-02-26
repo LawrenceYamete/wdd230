@@ -232,7 +232,7 @@ section > div {
     width: auto;
 }
 
-p, a, li, .date{
+p, a, li, .date, label{
     font-family: 'Quicksand', sans-serif;
     padding: 10px;
     font-size: .9em;
@@ -287,6 +287,94 @@ picture img {
 picture img {
     border-radius: 5px;
 }
+
+/* =========================== Join HTML ========================== */
+
+.form {
+    padding: 0 5% 10%;
+}
+
+form fieldset {
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 1.5em;
+    border: solid 1px #E5B299;
+    max-width: 100%;
+}
+
+form legend {
+    padding: 1rem;
+}
+
+form label.infor, form label.pandr {
+    display: block;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+form label.package {
+    display: block;
+    padding: 0.50em 0;
+
+}
+
+form label.infor input, form label.pandr input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #AAAAAA;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 90%;
+}  
+
+form label.pandr select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #AAAAAA;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 97%;
+}
+
+form label.package input {
+    padding: 1rem;
+}
+
+form label.infor input:not(:placeholder-shown), form label.pandr input:required {
+    border-left: solid 5px #F05454;
+}
+
+form label.infor input:required:valid, form label.pandr input:required:valid {
+    border: solid 1px #95CD41;
+}
+
+form input.submitbtn {
+    margin: 20px;
+    width: 100%;
+    padding: .75rem;
+    max-width: 90%;
+    border: none;
+    background-color: #E5B299;
+    color: black;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+legend, .submitbtn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF1E6;
+    border-radius: 5px;
+}
+
+form .price {
+    background-color: #E5B299;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
 
 /* ========================== Footer ===============================*/
 
