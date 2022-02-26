@@ -220,6 +220,16 @@ picture img {
     max-width: 100%;
 }
 
+/* =========== thanks ============= */
+
+.thankyoupage {
+    display: flex;
+}
+
+.thanks {
+    margin-left: -170px;
+}
+
 
 
 }

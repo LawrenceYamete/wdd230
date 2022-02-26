@@ -342,7 +342,7 @@ form label.package input {
     padding: 1rem;
 }
 
-form label.infor input:not(:placeholder-shown), form label.pandr input:required {
+form label.infor input:required, form label.pandr input:required {
     border-left: solid 5px #F05454;
 }
 
@@ -375,6 +375,83 @@ form .price {
     margin-left: 10px;
 }
 
+.intro {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: small;
+}
+
+/* ========================== Thank you Page ===============================*/
+
+.thankyoupage {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.thanksimg img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.thanks {
+    max-width: 300px;
+    position: relative;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 100%;
+}
+
+.homepage {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    width: 150px;
+    height: 25px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: #FEF1E6;
+    border: 1px solid #E5B299;
+    position: relative;
+    z-index: 1;
+    }
+
+.homepage:hover {
+    color: black;
+    cursor: pointer;
+
+    }
+
+.homepage:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #E5B299;
+    border-radius: 5px;
+    }
+
+.homepage:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    }
 
 /* ========================== Footer ===============================*/
 

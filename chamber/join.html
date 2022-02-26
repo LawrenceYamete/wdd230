@@ -61,10 +61,12 @@
     </header>
        
    <main class="form">
-        <h1>hello everybody</h1>
-
-            <form method="get" action="thanks.html">
-                <fieldset>
+        <div class="intro">
+            <h1>Join the membership in Manila Lights Corp.</h1>
+            <h2>To get discounts and opportunities!</h2>
+        </div>
+            <form method="get" action="thankyoupage.html">
+                <fieldset class="fieldset1">
                     <legend>Information</legend>
                     <label class="infor">First Name*<input type="text" type="fname" required></label>
                     <label class="infor">Middle Name<input type="text" type="mname"></label>
@@ -72,7 +74,7 @@
                     <label class="infor">Phone Number<input type="tel" type="pnumber" required></label>
                     <label class="infor">Email<input type="email" type="email" placeholder="email@gmail.com" required></label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset2">
                     <legend>Position and Residence</legend>
                     <label class="pandr">Business Position<input type="text" type="bposition" required></label>
                     <label class="pandr">Country Residence 
@@ -321,16 +323,28 @@
                         </select> 
                     </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset3">
                     <legend>Membership Package</legend>
                     <label class="package"><input type="radio" name="package" value="yes"> Non-profit
                     <span class="price">Free</span></label>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
+                    </div>
                     <label class="package"><input type="radio" name="package" value="yes"> Bronze
                     <span class="price">$1,000</span></label>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
+                    </div>
                     <label class="package"><input type="radio" name="package" value="yes"> Silver
                     <span class="price">$3,000</span></label>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
+                    </div>
                     <label class="package"><input type="radio" name="package" value="yes"> Gold
                     <span class="price">$6,000</span></label>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
+                    </div>
                 </fieldset>
 
                 <input type="submit" name="submit info" id="submit" value="Join" class="submitbtn">
