@@ -14,18 +14,18 @@ fetch(requestURL)
         let h2 = document.createElement('h2');
         let p = document.createElement('p');
         let p2 = document.createElement('p');
-        let pimg = document.createElement('img');
+        let pic = document.createElement('img');
 
         h2.textContent = `${prophet.name} ${prophet.lastname}`;
         p.textContent = `Date of Birth: ${prophet.birthdate}`;
         p2.textContent = `Place of Birth: ${prophet.birthplace}`;
-        pimg.setAttribute('src', prophet.imageurl);
-        pimg.setAttribute('alt', `Date of Birth: ${prophet.birthdate}`);
-        pimg.setAttribute('loading','lazy');
+        pic.setAttribute('src', prophet.imageurl);
+        pic.setAttribute('alt', `Date of Birth: ${prophet.birthdate}`);
+        pic.setAttribute('loading','lazy');
         card.append(h2);
         card.append(p);
         card.append(p2);
-        card.append(pimg);
+        card.append(pic);
         cards.append(card);
     });
   });
