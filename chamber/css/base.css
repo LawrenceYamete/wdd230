@@ -469,6 +469,7 @@ form .price {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 section img {
@@ -485,7 +486,9 @@ section img {
   padding: 1rem;
   margin-top: 1em;
   display: grid;
+  background-color: white;
   grid-gap: 1rem;
+  margin-bottom: 2em;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 

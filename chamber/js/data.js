@@ -1,5 +1,21 @@
 const requestURL = "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
 
+function gridView() {
+    document.getElementById("div.btn").classList.toggle("show");
+    console.log("This is working");
+  }
+  
+function listView() {
+    document.getElementById("div.btn").classList.toggle("show");
+  }
+  
+const listViewButton = document.getElementById("listBtn");
+listViewButton.onclick = listView;
+  
+const gridViewButton = document.getElementById("gridBtn");
+gridViewButton.onclick = gridView;
+
+// =======================================================================
 
 fetch(requestURL)
   .then(function (response) {
@@ -85,3 +101,5 @@ image.setAttribute("loading", "lazyload");
 
   document.querySelector("div.cards").appendChild(card);
 }
+
+
