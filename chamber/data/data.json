@@ -5,14 +5,14 @@
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.facebook.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Facebook-New-Logo.png"
       },
       {
         "name": "Instagram",
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.instagram.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/59-590993_follow-us-on-instagram-logo-png-clipart.png"
       },
       {
         "name": "Youtube",
@@ -26,14 +26,14 @@
         "address": "1355 Market Street Suite 900 San Francisco, CA 94103",
         "contactNumber": "(415) 222-9670",
         "website": "https://www.twitter.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/twitter_PNG31.png"
       },
       {
         "name": "Tiktok",
         "address": "Culver City, CA",
         "contactNumber": null,
         "website": "https://www.tiktok.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/1631457787tiktok-logo-png_2.png"
       },
       {
         "name": "Pinterest",
@@ -47,14 +47,14 @@
         "address": "Sunnyvale, California, United States",
         "contactNumber": null,
         "website": "https://www.linkedin.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Linkedin-Logo.png"
       },
       {
         "name": "9GAG",
         "address": "Tsuen Wan, Hong Kong",
         "contactNumber": null,
         "website": "https://9gag.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/9gag-logo.png"
       },
       {
         "name": "Netflix",
@@ -75,7 +75,7 @@
         "address": "San Francisco, CA",
         "contactNumber": "888-594-0085",
         "website": "https://discord.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Discord_Logo-1.png"
       },
       {
         "name": "DMCI",
