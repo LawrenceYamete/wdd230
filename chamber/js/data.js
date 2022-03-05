@@ -1,20 +1,32 @@
 const requestURL = "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
 
-function gridView() {
-    document.getElementById("div.btn").classList.toggle("show");
-    console.log("This is working");
-  }
-  
-function listView() {
-    document.getElementById("div.btn").classList.toggle("show");
-  }
-  
-const listViewButton = document.getElementById("listBtn");
-listViewButton.onclick = listView;
-  
-const gridViewButton = document.getElementById("gridBtn");
-gridViewButton.onclick = gridView;
+const li_links = document.querySelectorAll(".links ul li");
+const view_wraps = document.querySelectorAll(".view_wrap");
+const list_view = document.querySelector(".list-view");
+const grid_view = document.querySelector(".grid-view");
 
+li_links.forEach(function(link){
+	link.addEventListener("click", function(){
+		li_links.forEach(function(link){
+			link.classList.remove("active");
+		})
+
+		link.classList.add("active");
+
+		const li_view = link.getAttribute("data-view");
+
+		view_wraps.forEach(function(view){
+			view.style.display = "none";
+		})
+
+		if(li_view == "list-view"){
+			list_view.style.display = "block";
+		}
+		else{
+			grid_view.style.display = "block";
+		}
+	})
+})
 // =======================================================================
 
 fetch(requestURL)

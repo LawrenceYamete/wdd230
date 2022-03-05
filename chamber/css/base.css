@@ -502,6 +502,10 @@ img {
     transition: filter 0.8s;
     border-radius: 5px;
   }
+
+.btn {
+    display: grid;
+}
   
 
 /* ========================== Footer ===============================*/
