@@ -198,6 +198,9 @@
         margin-left: -170px;
     }
     
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
 
 
 }

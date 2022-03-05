@@ -231,5 +231,11 @@ picture img {
 }
 
 
+/* ======== Directory Page ============= */
+
+.cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 }

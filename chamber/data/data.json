@@ -5,84 +5,91 @@
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.facebook.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Facebook-New-Logo.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Facebook-New-Logo.png"
       },
       {
         "name": "Instagram",
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.instagram.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Instagram-Logo-1f59e501.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Instagram-Logo-1f59e501.png"
       },
       {
         "name": "Youtube",
         "address": "901 Cherry Avenue San Bruno, California, United States",
         "contactNumber": "+1 650-253-0001",
         "website": "https://www.youtube.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/YouTube-Logo.wine.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/YouTube-Logo.wine.png"
       },
       {
         "name": "Twitter",
         "address": "1355 Market Street Suite 900 San Francisco, CA 94103",
         "contactNumber": "(415) 222-9670",
         "website": "https://www.twitter.com/",
-        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/62bec1621df6c98cc3fcd0924677ac1d18fe8fda/chamber/images/dataImages/twitter_PNG31.png"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/twitter_PNG31.png"
       },
       {
         "name": "Tiktok",
         "address": "Culver City, CA",
         "contactNumber": null,
         "website": "https://www.tiktok.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/1631457787tiktok-logo-png_2.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/1631457787tiktok-logo-png_2.png"
       },
       {
         "name": "Pinterest",
         "address": "San Francisco, California, United States",
         "contactNumber": "1-415-762-7100",
         "website": "https://www.pinterest.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Pinterest-Logo.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Pinterest-Logo.png"
       },
       {
         "name": "LinkedIn",
         "address": "Sunnyvale, California, United States",
         "contactNumber": null,
         "website": "https://www.linkedin.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Linkedin-Logo.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Linkedin-Logo.png"
       },
       {
         "name": "9GAG",
         "address": "Tsuen Wan, Hong Kong",
         "contactNumber": null,
         "website": "https://9gag.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/9gag-logo.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/9gag-logo.png"
       },
       {
         "name": "Netflix",
         "address": "Los Gatos, California, United States",
         "contactNumber": "1-408-540-3700",
         "website": "https://www.netflix.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/netflix-logo-png-transparent.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/netflix-logo-png-transparent.png"
       },
       {
         "name": "Google",
         "address": "Mountain View, California, United States",
         "contactNumber": "+1-650-206-5555",
         "website": "https://www.google.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Google_2015_logo.svg.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Google_2015_logo.svg.png"
       },
       {
         "name": "Discord",
         "address": "San Francisco, CA",
         "contactNumber": "888-594-0085",
         "website": "https://discord.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Discord_Logo-1.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/Discord_Logo-1.png"
       },
       {
         "name": "DMCI",
         "address": "1321 Apolinario St. Bangkal, Makati City, Philippines",
         "contactNumber": "(632) 8555 7777",
         "website": "https://www.dmcihomes.com/",
-        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/479-4791855_thumb-image-dmci-homes-logo-hd-png-download.png?raw=true"
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/479-4791855_thumb-image-dmci-homes-logo-hd-png-download.png"
+      },
+      {
+        "name": "DMCI",
+        "address": "1321 Apolinario St. Bangkal, Makati City, Philippines",
+        "contactNumber": "(632) 8555 7777",
+        "website": "https://www.dmcihomes.com/",
+        "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/dataImages/479-4791855_thumb-image-dmci-homes-logo-hd-png-download.png"
       }
     ]
   }

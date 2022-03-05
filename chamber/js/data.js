@@ -45,19 +45,19 @@ if ('IntersectionObserver' in window) {
   });
 } 
 
+image.setAttribute("src", "image/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.jpg");
+image.setAttribute("data-src", partners.imageurl);
+image.setAttribute(
+  "alt",
+  `${partners.name} Partner of Manila Lights`
+);
+image.setAttribute("loading", "lazyload");
 
   h2.textContent = `${partners.name}`;
   p.innerHTML = `<strong>Address:</strong> ${partners.address} <br/>  
   <strong>Contact Number:</strong> ${partners.contactNumber} <br/>
-  <strong>Website:</strong> ${partners.website}`;
+  <strong>Website:</strong><a href="${partners.website}" target="_blank" >${partners.website}</a> `;
 
-  image.setAttribute("src", "image/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.jpg");
-  image.setAttribute("data-src", partners.imageurl);
-  image.setAttribute(
-    "alt",
-    `${partners.name} Partner of Manila Lights`
-  );
-  image.setAttribute("loading", "lazyload");
 
   if (partners.order == 1) {
     image.setAttribute(
@@ -78,9 +78,10 @@ if ('IntersectionObserver' in window) {
       `${partners.name}. The ${partners.order}th partner of Manila Lights`    );
   }
 
+  card.appendChild(image);
   card.appendChild(h2);
   card.appendChild(p);
-  card.appendChild(image);
+
 
   document.querySelector("div.cards").appendChild(card);
 }
