@@ -90,6 +90,17 @@ footer {
   max-width: 900px;
 }
 
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  max-width: 100%;
+  filter: blur(0em);
+  transition: filter 0.8s;
+  border-radius: 5px;
+}
+
 /* medium viewports */
 @media (min-width: 520px) {
   .cards {

@@ -1,4 +1,5 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json";
+
 
 fetch(requestURL)
   .then(function (response) {
@@ -6,26 +7,78 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
-    const prophets = jsonObject['prophets'];
-    const cards = document.querySelector('.cards');
+    const prophets = jsonObject["prophets"];
+    prophets.forEach(displayProphets);
+  });
 
-    prophets.forEach(prophet => {
-        let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let p = document.createElement('p');
-        let p2 = document.createElement('p');
-        let pic = document.createElement('img');
+function displayProphets(prophet) {
+  let card = document.createElement("section");
+  let h2 = document.createElement("h2");
+  let p = document.createElement("p");
+  let portrait = document.createElement("img");
 
-        h2.textContent = `${prophet.name} ${prophet.lastname}`;
-        p.textContent = `Date of Birth: ${prophet.birthdate}`;
-        p2.textContent = `Place of Birth: ${prophet.birthplace}`;
-        pic.setAttribute('src', prophet.imageurl);
-        pic.setAttribute('alt', `Date of Birth: ${prophet.birthdate}`);
-        pic.setAttribute('loading','lazy');
-        card.append(h2);
-        card.append(p);
-        card.append(p2);
-        card.append(pic);
-        cards.append(card);
+  const imagesToLoad = document.querySelectorAll('img[data-src]');
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => { image.removeAttribute('data-src');
+  };
+};
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) { loadImages(item.target);
+        observer.unobserve(item.target);
+      }
     });
   });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
+
+
+  h2.textContent = `${prophet.name} ${prophet.lastname}`;
+  p.innerHTML = `<strong>Birth Date:</strong> ${prophet.birthdate} <br/>  
+  <strong>Birth Place:</strong> ${prophet.birthplace}`;
+
+  portrait.setAttribute("src", "image/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.jpg");
+  portrait.setAttribute("data-src", prophet.imageurl);
+  portrait.setAttribute(
+    "alt",
+    `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}`
+  );
+  portrait.setAttribute("loading", "lazyload");
+
+  if (prophet.order == 1) {
+    portrait.setAttribute(
+      "alt",
+      `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}st Latter-day President`
+    );
+  } else if (prophet.order == 2) {
+    portrait.setAttribute(
+      "alt",
+      `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}nd Latter-day President`
+    );
+  } else if (prophet.order == 3) {
+    portrait.setAttribute(
+      "alt",
+      `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}rd Latter-day President`
+    );
+  } else {
+    portrait.setAttribute(
+      "alt",
+      `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}th Latter-day President`
+    );
+  }
+
+  card.appendChild(h2);
+  card.appendChild(p);
+  card.appendChild(portrait);
+
+  document.querySelector("div.cards").appendChild(card);
+}
