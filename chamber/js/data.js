@@ -1,4 +1,4 @@
-const requestURL = "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-partnerss.json";
+const requestURL = "https://github.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
 
 
 fetch(requestURL)
@@ -11,7 +11,7 @@ fetch(requestURL)
     partners.forEach(displayPartners);
   });
 
-function displaypartners(partners) {
+function displayPartners(partners) {
   let card = document.createElement("section");
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
