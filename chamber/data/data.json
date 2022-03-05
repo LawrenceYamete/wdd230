@@ -19,7 +19,7 @@
         "address": "901 Cherry Avenue San Bruno, California, United States",
         "contactNumber": "+1 650-253-0001",
         "website": "https://www.youtube.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/YouTube-Logo.wine.png"
       },
       {
         "name": "Twitter",
@@ -40,7 +40,7 @@
         "address": "San Francisco, California, United States",
         "contactNumber": "1-415-762-7100",
         "website": "https://www.pinterest.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Pinterest-Logo.png"
       },
       {
         "name": "LinkedIn",
@@ -61,14 +61,14 @@
         "address": "Los Gatos, California, United States",
         "contactNumber": "1-408-540-3700",
         "website": "https://www.netflix.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/netflix-logo-png-transparent.png"
       },
       {
         "name": "Google",
         "address": "Mountain View, California, United States",
         "contactNumber": "+1-650-206-5555",
         "website": "https://www.google.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/Google_2015_logo.svg.png"
       },
       {
         "name": "Discord",
@@ -82,7 +82,7 @@
         "address": "1321 Apolinario St. Bangkal, Makati City, Philippines",
         "contactNumber": "(632) 8555 7777",
         "website": "https://www.dmcihomes.com/",
-        "imageurl": ""
+        "imageurl": "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/images/dataImages/479-4791855_thumb-image-dmci-homes-logo-hd-png-download.png"
       }
     ]
   }
