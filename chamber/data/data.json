@@ -1,0 +1,88 @@
+{
+    "partners": [
+      {
+        "name": "Facebook",
+        "address": "1 Hacker Way, Menlo Park, CA",
+        "contactNumber": "(650) 543-4800",
+        "website": "https://www.facebook.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Instagram",
+        "address": "1 Hacker Way, Menlo Park, CA",
+        "contactNumber": "(650) 543-4800",
+        "website": "https://www.instagram.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Youtube",
+        "address": "901 Cherry Avenue San Bruno, California, United States",
+        "contactNumber": "+1 650-253-0001",
+        "website": "https://www.youtube.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Twitter",
+        "address": "1355 Market Street Suite 900 San Francisco, CA 94103",
+        "contactNumber": "(415) 222-9670",
+        "website": "https://www.twitter.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Tiktok",
+        "address": "Culver City, CA",
+        "contactNumber": null,
+        "website": "https://www.tiktok.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Pinterest",
+        "address": "San Francisco, California, United States",
+        "contactNumber": "1-415-762-7100",
+        "website": "https://www.pinterest.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "LinkedIn",
+        "address": "Sunnyvale, California, United States",
+        "contactNumber": null,
+        "website": "https://www.linkedin.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "9GAG",
+        "address": "Tsuen Wan, Hong Kong",
+        "contactNumber": null,
+        "website": "https://9gag.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Netflix",
+        "address": "Los Gatos, California, United States",
+        "contactNumber": "1-408-540-3700",
+        "website": "https://www.netflix.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Google",
+        "address": "Mountain View, California, United States",
+        "contactNumber": "+1-650-206-5555",
+        "website": "https://www.google.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Discord",
+        "address": "San Francisco, CA",
+        "contactNumber": "888-594-0085",
+        "website": "https://discord.com/",
+        "imageurl": ""
+      },
+      {
+        "name": "Dota",
+        "address": "London, United Kingdom",
+        "contactNumber": null,
+        "website": "https://www.dota2.com/",
+        "imageurl": ""
+      }
+    ]
+  }
