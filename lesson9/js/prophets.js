@@ -17,8 +17,8 @@ function displayProphets(prophet) {
   let p = document.createElement("p");
   let portrait = document.createElement("img");
 
-  const imagesToLoad = document.querySelectorAll('img[data-src]');
-  const imgOptions = {
+const imagesToLoad = document.querySelectorAll('img[data-src]');
+const imgOptions = {
     threshold: 0, 
     rootMargin: "0px 0px 100px 0px"};
 
