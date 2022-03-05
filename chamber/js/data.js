@@ -1,4 +1,4 @@
-const requestURL = "https://github.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
+const requestURL = "https://github.com/LawrenceYamete/wdd230/blob/main/chamber/data/data.json";
 
 
 fetch(requestURL)
