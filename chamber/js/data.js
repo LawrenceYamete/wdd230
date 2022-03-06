@@ -23,7 +23,7 @@ li_links.forEach(function(link){
 			list_view.style.display = "block";
 		}
 		else{
-			grid_view.style.display = "block";
+			grid_view.style.display = "grid";
 		}
 	})
 })
