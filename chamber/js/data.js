@@ -1,7 +1,7 @@
 const requestURL = "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
 
 const li_links = document.querySelectorAll(".links ul li");
-const view_wraps = document.querySelectorAll(".view_wrap");
+const view_wraps = document.querySelectorAll(".cards");
 const list_view = document.querySelector(".list-view");
 const grid_view = document.querySelector(".grid-view");
 

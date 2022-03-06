@@ -506,7 +506,30 @@ img {
 .btn {
     display: grid;
 }
-  
+
+.links{
+	background: white;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.links ul{
+	display: flex;
+	justify-content: center;
+}
+
+.links ul li{
+	margin: 0 15px;
+	letter-spacing: 3px;
+	font-size: 20px;
+	cursor: pointer;
+    
+}
+
+.links ul li:hover,
+.links ul li.active{
+	color: #E5B299;
+}
 
 /* ========================== Footer ===============================*/
 
