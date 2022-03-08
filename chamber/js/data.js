@@ -46,9 +46,9 @@ function displayPartners(partners) {
   let image = document.createElement("img");
 
 const imagesToLoad = document.querySelectorAll('img[data-src]');
-const imgOptions = {
-    threshold: 0, 
-    rootMargin: "0px 0px 100px 0px"};
+// const imgOptions = {
+//     threshold: 0, 
+//     rootMargin: "0px 0px 100px 0px"};
 
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -63,7 +63,7 @@ if ('IntersectionObserver' in window) {
          observer.unobserve(item.target);
       }
     });
-  }, imgOptions);
+  });
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });

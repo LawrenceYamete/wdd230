@@ -17,10 +17,10 @@ function displayProphets(prophet) {
   let p = document.createElement("p");
   let portrait = document.createElement("img");
 
-const imagesToLoad = document.querySelectorAll('img[data-src]');
-const imgOptions = {
-    threshold: 0, 
-    rootMargin: "0px 0px 100px 0px"};
+  const imagesToLoad = document.querySelectorAll('img[data-src]');
+// const imgOptions = {
+//     threshold: 0, 
+//     rootMargin: "0px 0px 800px 0px"};
 
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -35,7 +35,7 @@ if ('IntersectionObserver' in window) {
          observer.unobserve(item.target);
       }
     });
-  }, imgOptions);
+  });
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
@@ -44,6 +44,7 @@ if ('IntersectionObserver' in window) {
     loadImages(img);
   });
 } 
+
 
   h2.textContent = `${prophet.name} ${prophet.lastname}`;
   p.innerHTML = `<strong>Birth Date:</strong> ${prophet.birthdate} <br/>  
@@ -85,3 +86,4 @@ if ('IntersectionObserver' in window) {
 
   document.querySelector("div.cards").appendChild(card);
 }
+
