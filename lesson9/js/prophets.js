@@ -16,42 +16,14 @@ function displayProphets(prophet) {
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
   let portrait = document.createElement("img");
-
-  const imagesToLoad = document.querySelectorAll('img[data-src]');
-// const imgOptions = {
-//     threshold: 0, 
-//     rootMargin: "0px 0px 800px 0px"};
-
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => { image.removeAttribute('data-src');
-  };
-};
-
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) { loadImages(item.target);
-         observer.unobserve(item.target);
-      }
-    });
-  });
-  imagesToLoad.forEach((img) => {
-    observer.observe(img);
-  });
-} else {
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
-} 
+  let pic = document.createElement("picture");
 
 
   h2.textContent = `${prophet.name} ${prophet.lastname}`;
   p.innerHTML = `<strong>Birth Date:</strong> ${prophet.birthdate} <br/>  
   <strong>Birth Place:</strong> ${prophet.birthplace}`;
 
-  portrait.setAttribute("src", "image/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.jpg");
-  portrait.setAttribute("data-src", prophet.imageurl);
+  portrait.setAttribute("src", prophet.imageurl);
   portrait.setAttribute(
     "alt",
     `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}`
@@ -82,7 +54,8 @@ if ('IntersectionObserver' in window) {
 
   card.appendChild(h2);
   card.appendChild(p);
-  card.appendChild(portrait);
+  card.appendChild(pic);
+  pic.appendChild(portrait);
 
   document.querySelector("div.cards").appendChild(card);
 }
