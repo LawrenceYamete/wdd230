@@ -1,12 +1,17 @@
-const gridButton = document.querySelector("#gridBtn");
-const listButton = document.querySelector("#listBtn");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 
 gridButton.addEventListener("click", function() {
     document.querySelector(".cards").style.display = "grid";
-    document.querySelector(".btable").style.display = "none";
+    document.querySelector(".tableCards").style.display = "none";
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
 })
 
 listButton.addEventListener("click", function() {
+    document.querySelector(".tableCards").style.display = "block";
     document.querySelector(".cards").style.display = "none";
-    document.querySelector(".btable").style.display = "block";
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
+
 })

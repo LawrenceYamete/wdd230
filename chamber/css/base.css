@@ -1,6 +1,6 @@
-
 /* ========================== header ===============================*/
-header{
+
+header {
     display: grid;
     grid: 1fr / 2.5fr 1fr;
     background-color: #FEF1E6;
@@ -9,7 +9,6 @@ header{
     justify-content: space-around;
     margin-bottom: .5rem;
     grid-gap: 5px;
-
 }
 
 .heading {
@@ -21,7 +20,6 @@ header{
 
 .headlogo {
     width: 100px;
-
 }
 
 .brandname {
@@ -42,46 +40,45 @@ header{
     margin: 0;
 }
 
-@media only screen and (max-width: 520px) { 
+@media only screen and (max-width: 520px) {
     nav a:hover {
         padding-inline: 40%;
-      }
+    }
 }
-
-
 
 nav {
     background-color: #E5B299;
     font-size: .9em;
-	border-radius: 5px;
+    border-radius: 5px;
     grid-column: 1/3;
     grid-row: 3/4;
 }
 
-nav > ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-around;
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     padding: 0;
-
 }
 
 nav a {
     text-decoration: none;
 }
 
-nav a:link, nav a:visited {
-  color: black;
+nav a:link,
+nav a:visited {
+    color: black;
+    transition: 0.3s;
 }
 
 nav a:hover {
-	background-color: #FDF6F0;
-	border-radius: 5px;
-	color: #E5B299;
+    background-color: #FDF6F0;
+    border-radius: 5px;
+    color: #E5B299;
     transition: 0.3s;
-  }
+}
 
-.icons a > img {
+.icons a>img {
     width: 25px;
     margin: 1px;
 }
@@ -92,9 +89,9 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     padding: 10px;
-} 
+}
 
-#togglemenu span:nth-child(1) { 
+#togglemenu span:nth-child(1) {
     display: block;
 }
 
@@ -116,13 +113,11 @@ nav ul {
 
 nav ul.open {
     display: block;
-    
 }
 
 
 /* ========================== Main and Text ===============================*/
 
-  
 .grid {
     /* grid: repeat(5, 1fr)/ 1fr; */
     display: grid;
@@ -130,19 +125,21 @@ nav ul.open {
     font-size: .7em;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin:auto 1rem;
+    margin: auto 1rem;
     padding: 0.5em;
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3, h4 {
-	font-family: 'Quicksand', sans-serif;
+h2,
+h3,
+h4 {
+    font-family: 'Quicksand', sans-serif;
 }
 
-main > div {
+main>div {
     margin: auto 1rem;
     background-color: #FEF1E6;
     display: block;
@@ -161,12 +158,10 @@ main > div {
     width: 80%;
 }
 
-
-.heroimg img{
+.heroimg img {
     width: 100%;
     border-radius: 10px;
 }
-
 
 .herocontent {
     position: absolute;
@@ -193,7 +188,7 @@ main > div {
     text-align: center;
 }
 
-.join > button {
+.join>button {
     font-family: 'Quicksand', sans-serif;
     padding: 10px;
     font-size: .9em;
@@ -209,10 +204,9 @@ main > div {
     line-height: 2px;
 }
 
-.weather h3{
+.weather h3 {
     text-align: center;
 }
-
 
 .event {
     padding: 10px;
@@ -230,15 +224,19 @@ main > div {
     border-radius: 5px;
 }
 
-section > div {
+section>div {
     width: auto;
 }
 
-p, a, li, .date, label{
+p,
+a,
+li,
+.date,
+label {
     font-family: 'Quicksand', sans-serif;
     padding: 10px;
     font-size: .9em;
-    }
+}
 
 p {
     margin-block-start: 1em;
@@ -247,25 +245,27 @@ p {
     margin-inline-end: 0px;
 }
 
-
 .spotlight3 {
     display: none;
 }
 
+
 /* ============= Discover HTML =======================*/
 
-.discovergrid, picture {
+.discovergrid,
+picture {
     display: grid;
     padding: 10px;
 }
 
-.maingrid, picture {
+.maingrid,
+picture {
     grid: 1fr;
     align-items: center;
     justify-content: space-around;
 }
 
-.discovergrid > div {
+.discovergrid>div {
     padding: 20px;
 }
 
@@ -273,14 +273,14 @@ p {
     text-align: center;
 }
 
-.images > img {
+.images>img {
     max-width: 100%;
 }
 
 picture img[data-src] {
     filter: blur(0.2em);
-  }
-  
+}
+
 picture img {
     filter: blur(0em);
     transition: filter 0.8s;
@@ -289,6 +289,7 @@ picture img {
 picture img {
     border-radius: 5px;
 }
+
 
 /* =========================== Join HTML ========================== */
 
@@ -308,7 +309,8 @@ form legend {
     padding: 1rem;
 }
 
-form label.infor, form label.pandr {
+form label.infor,
+form label.pandr {
     display: block;
     padding: 1rem;
     font-size: .8rem;
@@ -317,10 +319,10 @@ form label.infor, form label.pandr {
 form label.package {
     display: block;
     padding: 0.50em 0;
-
 }
 
-form label.infor input, form label.pandr input {
+form label.infor input,
+form label.pandr input {
     display: block;
     font-size: 1rem;
     border: solid 1px #AAAAAA;
@@ -328,7 +330,7 @@ form label.infor input, form label.pandr input {
     padding: .75rem;
     width: 100%;
     max-width: 90%;
-}  
+}
 
 form label.pandr select {
     display: block;
@@ -344,11 +346,13 @@ form label.package input {
     padding: 1rem;
 }
 
-form label.infor input:required, form label.pandr input:required {
+form label.infor input:required,
+form label.pandr input:required {
     border-left: solid 5px #F05454;
 }
 
-form label.infor input:required:valid, form label.pandr input:required:valid {
+form label.infor input:required:valid,
+form label.pandr input:required:valid {
     border: solid 1px #95CD41;
 }
 
@@ -364,7 +368,8 @@ form input.submitbtn {
     font-size: 1rem;
 }
 
-legend, .submitbtn {
+legend,
+.submitbtn {
     font-family: 'Montserrat', sans-serif;
     background-color: #FEF1E6;
     border-radius: 5px;
@@ -385,6 +390,7 @@ form .price {
     margin: 0 auto;
     font-size: small;
 }
+
 
 /* ========================== Thank you Page ===============================*/
 
@@ -426,13 +432,12 @@ form .price {
     border: 1px solid #E5B299;
     position: relative;
     z-index: 1;
-    }
+}
 
 .homepage:hover {
     color: black;
     cursor: pointer;
-
-    }
+}
 
 .homepage:before {
     transition: 0.5s all ease;
@@ -445,7 +450,7 @@ form .price {
     content: "";
     background-color: #E5B299;
     border-radius: 5px;
-    }
+}
 
 .homepage:hover:before {
     transition: 0.5s all ease;
@@ -453,83 +458,131 @@ form .price {
     right: 0;
     opacity: 1;
     z-index: -1;
-    }
+}
+
 
 /* ========================== Directory Page ======================= */
 
 * {
     box-sizing: border-box;
-  }
+}
 
 .cards section {
-  border-radius: 5px;
-  padding: 0.5rem;
-  background-color: #FEF1E6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #FEF1E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 section img {
-  width: 300px;
-  height: auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  margin-top: 0.75em;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 0.75em;
 }
 
 .cards {
-  border-radius: 5px;
-  padding: 1rem;
-  margin-top: 1em;
-  display: grid;
-  background-color: white;
-  grid-gap: 1rem;
-  margin-bottom: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1em;
+    display: grid;
+    background-color: white;
+    grid-gap: 1rem;
+    margin-bottom: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 img[data-src] {
     filter: blur(0.2em);
-  }
-  
+}
+
 img {
     max-width: 100%;
     filter: blur(0em);
     transition: filter 0.8s;
     border-radius: 5px;
-  }
-
-.btn {
-    display: grid;
 }
 
-.links{
-	background: white;
-	padding: 15px;
-	border-radius: 3px;
+.buttons {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 3px;
 }
 
-.links ul{
-	display: flex;
-	justify-content: center;
+.buttons button {
+    margin: 0 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #E5B299;
+    color: black;
+    transition: 0.3s;
 }
 
-.links ul li{
-	margin: 0 15px;
-	letter-spacing: 3px;
-	font-size: 20px;
-	cursor: pointer;
-    
+button span {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.links ul li:hover,
-.links ul li.active{
-	color: #E5B299;
+button:hover,
+button.active {
+    color: white;
+    background-color: #E5B299;
+    transition: 0.3s;
 }
+
+main .tableCards {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 10px #e2e1df;
+    max-width: 80em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+th,
+tr,
+td {
+    border-radius: 5px;
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+    padding: 18px;
+    text-align: center;
+}
+
+th {
+    color: black;
+    background-color: #E5B299;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FEF1E6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FDF6F0;
+}
+
+tbody tr:hover {
+    background-color: #fddac7;
+    transition: 0.3s;
+}
+
 
 /* ========================== Footer ===============================*/
 
@@ -539,10 +592,9 @@ img {
     justify-content: space-around;
     font-size: .6em;
     margin: 0 auto;
-    
 }
 
-.upperfooter > .info {
+.upperfooter>.info {
     margin-left: 0;
 }
 
@@ -563,6 +615,7 @@ footer a:hover {
     transition: 0.3s;
     padding: 5px;
 }
+
 hr {
     color: black
 }
@@ -572,7 +625,7 @@ hr {
     text-align: center;
 }
 
-.name > p {
+.name>p {
     font-size: .7em;
     margin: 0;
 }
@@ -596,4 +649,3 @@ footer {
     width: 80px;
     margin: 0 auto;
 }
-
