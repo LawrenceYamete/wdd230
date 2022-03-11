@@ -18,8 +18,6 @@ function displayProphets(prophet) {
   let portrait = document.createElement("img");
   let pic = document.createElement("picture");
 
-
-
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     p.innerHTML = `<strong>Birth Date:</strong> ${prophet.birthdate} <br/>  
   <strong>Birth Place:</strong> ${prophet.birthplace}`;
