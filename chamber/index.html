@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +15,24 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    
+
     <title>Lawrence Navarro's Home WDD 230</title>
-    
-    
+
+
 </head>
+
 <body>
-   <header>
-        
+    <header>
+
         <div class="heading">
             <img class="headlogo" src="images/logo.webp" alt="Logo">
             <section class="brandname">
                 <h1>Manila Lights</h1>
                 <h2 class="brh2">Chamber of Commerce</h2>
             </section>
-            
+
         </div>
-        
+
         <nav>
             <button id="togglemenu">
                 <span>&#9776;</span>
@@ -44,29 +46,29 @@
                 <li><a href="index.html">Contact</a></li>
             </ul>
         </nav>
-        
+
         <div class="icons">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook_Icon.png" alt="Facebook_Icon" ></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram_Icon.png" alt="Instagram_Icon"  ></a>
-            <a href="https://www.pinterest.com/" target="_blank"><img src="images/Pinterest_Icon.png" alt="Pinterest_Icon"  ></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook_Icon.png" alt="Facebook_Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram_Icon.png" alt="Instagram_Icon"></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/Pinterest_Icon.png" alt="Pinterest_Icon"></a>
             <br>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="images/Tiktok_Icon.png" alt="Tiktok_Icon"  ></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn_Icon.png" alt="LinkedIn_Icon"  ></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images/Youtube_Icon.png" alt="Youtube_Icon"  ></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="images/Tiktok_Icon.png" alt="Tiktok_Icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn_Icon.png" alt="LinkedIn_Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/Youtube_Icon.png" alt="Youtube_Icon"></a>
         </div>
 
         <div class="date">
             <date></date>
         </div>
     </header>
-       
-   <main class="grid">
+
+    <main class="grid">
         <div class="hero">
             <picture class="heroimg">
                 <source media="(min-width: 965px)" srcset="images/imagelarge.png">
                 <source media="(min-width: 600px)" srcset="images/imagemedium.png">
                 <source media="(min-width: 100px)" srcset="images/imagesmall.png">
-	            
+
                 <img src="images/wdd230-org.png" alt="Manila Hero Picture">
             </picture>
             <section class="herocontent">
@@ -75,24 +77,27 @@
             <section class="herobutton">
                 <a class="herobtn" href="#">Learn More</a>
             </section>
-            
-            
+
+
         </div>
-       
+
         <div class="event">
             <h3>Experience luxurious urban living with Manila Lights</h3>
             <p>As the fastest growing real estate developer in the Philippines, we make sure we build our properties within commercial retail environments and provide you with quality amenities and top-notch services.</p>
         </div>
-        <div class="weather">
-            <h3>Weather</h3>
-            <p>Temperature: <span id="temperature">30</span>°F</p>
-            <p>Wind: <span id="speed">10</span> mph</p>
-            <p>WindChill: <span id="wind"></span></p>
+        <div class="weatherapi">
+            <h2>Weather in <span id="name"></span></h1>
+
+                <img src="" alt="" id="weathericon" />
+                <figcaption></figcaption>
+                <p>Current temperature: <span id="current-temp"></span> &deg;F</p>
+                <p>Current speed: <span id="current-speed"></span> mph</p>
+                <p>Wind Chill: <span id="chill"></span> Index</p>
         </div>
         <div class="news">
             <h3>News Release</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ab nam sit rerum molestiae nobis velit dolorem repudiandae minima adipisci voluptatum minus natus excepturi saepe, perspiciatis laboriosam deleniti earum vero.
-            Vero aliquid culpa nihil quia, aspernatur rem minima? Laborum dolore, praesentium, debitis tempora deleniti necessitatibus ad sapiente minus obcaecati quas temporibus sit ipsum unde laudantium iure quaerat! Ullam, nostrum inventore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ab nam sit rerum molestiae nobis velit dolorem repudiandae minima adipisci voluptatum minus natus excepturi saepe, perspiciatis laboriosam deleniti earum vero. Vero aliquid
+                culpa nihil quia, aspernatur rem minima? Laborum dolore, praesentium, debitis tempora deleniti necessitatibus ad sapiente minus obcaecati quas temporibus sit ipsum unde laudantium iure quaerat! Ullam, nostrum inventore?</p>
         </div>
         <div class="join">
             <button>Join Us!</button>
@@ -103,27 +108,30 @@
             <div class="spotlight1">
                 <h3>Greening your living space</h3>
                 <p>
-                    Manila Lights encourages sustainable living through home-cooked food, that is why a supermarket and a convenience store are located within the development. Those who live in Sea, Shell, Shore, Trees, Princeton and Breeze Residences can also get farm-fresh produce every Saturday and Sunday morning through The Good Guys Market, with fruits and vegetables sourced straight from farms in Pampanga and Benguet.
+                    Manila Lights encourages sustainable living through home-cooked food, that is why a supermarket and a convenience store are located within the development. Those who live in Sea, Shell, Shore, Trees, Princeton and Breeze Residences can also get farm-fresh
+                    produce every Saturday and Sunday morning through The Good Guys Market, with fruits and vegetables sourced straight from farms in Pampanga and Benguet.
                 </p>
             </div>
             <div class="spotlight2">
                 <h3>Manila Lights future-proofs its developments</h3>
                 <p>
-                    The pursuit of delivering architecture and design grounded on empathy underscores Manila Light’s unwavering commitment to creating innovative and sustainable developments that respond to the evolving needs of Filipinos. With a focus on community building, Manila Lights continues to create living spaces that provide the best value for money, making luxury living more affordable to more Filipinos.
+                    The pursuit of delivering architecture and design grounded on empathy underscores Manila Light’s unwavering commitment to creating innovative and sustainable developments that respond to the evolving needs of Filipinos. With a focus on community building,
+                    Manila Lights continues to create living spaces that provide the best value for money, making luxury living more affordable to more Filipinos.
                 </p>
             </div>
             <div class="spotlight3">
                 <h3>Good Times with Ben and Ben</h3>
-                <p>Good Times with Ben and Ben took off from a partnership with Wish Bus, which started on November 13 featuring December Avenue, followed by Ebe Dancel and Gloc-9 on November 20. With the success of the first two bus performances, Manila Lights decided to up the ante and set up a concert in its homes.</p>
+                <p>Good Times with Ben and Ben took off from a partnership with Wish Bus, which started on November 13 featuring December Avenue, followed by Ebe Dancel and Gloc-9 on November 20. With the success of the first two bus performances, Manila
+                    Lights decided to up the ante and set up a concert in its homes.</p>
             </div>
-            
-            
-            
+
+
+
         </div>
-   </main>
-    <footer> 
-        
-        <div class="upperfooter">  
+    </main>
+    <footer>
+
+        <div class="upperfooter">
             <img class="footerlogo" src="images/logo.png" alt="Logo">
             <section class="info">
                 <h2>Manila Lights Chamber of Commerce</h2>
@@ -137,20 +145,21 @@
                 </p>
             </section>
         </div>
-        
+
         <div class="name">
             <hr>
-        <p> ©
-            <span id="year">2022</span>
-             . : | : . Job Lawrence Navarro . : | : . Utah
-          </p>
-          
-        <p id="lastmod">
-        </p> 
+            <p> ©
+                <span id="year">2022</span> . : | : . Job Lawrence Navarro . : | : . Utah
+            </p>
+
+            <p id="lastmod">
+            </p>
         </div>
     </footer>
     <script defer src="js/dates.js"></script>
     <script defer src="js/menu.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <!-- <script defer src="js/windchill.js"></script> -->
+    <script defer src="js/weatherapi.js"></script>
 </body>
+
 </html>
