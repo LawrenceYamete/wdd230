@@ -26,6 +26,7 @@
     .join {
         grid-row: 3/4;
         grid-column: 1/2;
+        display: initial;
     }
     .hero {
         grid-row: 1/3;
@@ -97,7 +98,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    button {
+    #togglemenu {
         display: none;
     }
     nav {

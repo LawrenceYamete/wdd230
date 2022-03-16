@@ -207,4 +207,8 @@
     .cards {
         grid-template-columns: 1fr 1fr;
     }
+    /* ======== Join ============ */
+    form {
+        font-size: medium;
+    }
 }

@@ -13,8 +13,6 @@ fetch(apiURL)
         let desc = jsObject.weather[0].description;
         desc = desc.split(' ').map(capitalize).join(' ');
 
-
-        document.querySelector('#name').textContent = jsObject.name;
         document.querySelector('#weathericon').setAttribute('src', iconsrc);
         document.querySelector('#weathericon').setAttribute('alt', desc);
         document.querySelector('figcaption').textContent = desc;
