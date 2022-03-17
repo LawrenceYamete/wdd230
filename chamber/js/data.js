@@ -21,7 +21,7 @@ function displayPartners(partners) {
     let p = document.createElement("p");
     let image = document.createElement("img");
 
-    image.setAttribute("src", "images/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.jpg");
+    image.setAttribute("src", "images/small/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.webp");
     image.setAttribute("data-src", partners.imageurl);
     image.setAttribute(
         "alt",
