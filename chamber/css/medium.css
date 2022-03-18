@@ -113,7 +113,7 @@
     /* ============= Discover HTML =======================*/
     .discovergrid {
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 90%;
     }
     .maingrid,
     picture {
@@ -195,6 +195,7 @@
     }
     .images>img {
         max-width: 100%;
+        margin: 0 auto;
     }
     /* =========== thanks ============= */
     .thankyoupage {

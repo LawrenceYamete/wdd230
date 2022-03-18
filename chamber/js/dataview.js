@@ -13,5 +13,4 @@ listButton.addEventListener("click", function() {
     document.querySelector(".cards").style.display = "none";
     listButton.classList.add('active');
     gridButton.classList.remove('active');
-
 })

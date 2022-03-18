@@ -25,7 +25,8 @@
     <header>
 
         <div class="heading">
-            <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo"></a>
             <section class="brandname">
                 <h1>Manila Lights</h1>
                 <h2 class="brh2">Chamber of Commerce</h2>
@@ -42,7 +43,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discovery</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -69,6 +70,43 @@
         </div>
         <form method="get" action="thankyoupage.html">
             <fieldset class="fieldset1">
+                <legend>Membership Package</legend>
+                <label class="package"><input type="radio" name="package" value="yes"> Non-profit
+                    <span class="price">Free</span></label>
+                <div>
+                    <p>Free Membership Account</p>
+                </div>
+                <hr>
+                <label class="package"><input type="radio" name="package" value="yes"> Bronze
+                    <span class="price">$1,000</span></label>
+                    
+                <div>
+                    
+                    <p> <b>Benefits:</b> Access to a wide selection of top-notch local and international lot area.
+                        Up to ₱10.00 off per liter on gasoline at any Caltex stations
+                        Bronze Member discount at Capital Care Pharmacy
+                        Excellent food and drink choices from Landers Central, Doppio, Dough & Co. and etc.</p>
+                </div>
+                <hr>
+                <label class="package"><input type="radio" name="package" value="yes"> Silver
+                    <span class="price">$3,000</span></label>
+                    
+                <div>
+                    <p> <b>Benefits:</b> Access to a wide selection of top-notch local and international lot area.
+                        Participation in Super Crazy Sale, Super Fuel Sale and other promotional activities. 
+                        Up to ₱20.00 off per liter on gasoline at Caltex stations
+                        Member discount at Capital Care Pharmacy
+                        Excellent food and drink choices from Landers Central, Doppio, Dough & Co. and etc.
+                        Fast and easy shopping on our online store</p>
+                </div>
+                <hr>
+                <label class="package"><input type="radio" name="package" value="yes"> Gold
+                    <span class="price">$6,000</span></label>
+                <div>
+                    <p> <b>Benefits:</b> Gold Members of Manila Lights cooperating associations throughout the world can join Manila Lights and take advantage of the power of a million-plus member organization. In an industry where relationships are key to business success, this membership helps you stand out among other professionals.</p>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset2">
                 <legend>Information</legend>
                 <label class="infor">First Name*<input type="text" type="fname" required></label>
                 <label class="infor">Middle Name<input type="text" type="mname"></label>
@@ -76,7 +114,7 @@
                 <label class="infor">Phone Number<input type="tel" type="pnumber" required></label>
                 <label class="infor">Email<input type="email" type="email" placeholder="email@gmail.com" required></label>
             </fieldset>
-            <fieldset class="fieldset2">
+            <fieldset class="fieldset3">
                 <legend>Position and Residence</legend>
                 <label class="pandr">Business Position<input type="text" type="bposition" required></label>
                 <label class="pandr">Country Residence 
@@ -325,39 +363,18 @@
                         </select> 
                     </label>
             </fieldset>
-            <fieldset class="fieldset3">
-                <legend>Membership Package</legend>
-                <label class="package"><input type="radio" name="package" value="yes"> Non-profit
-                    <span class="price">Free</span></label>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
-                </div>
-                <label class="package"><input type="radio" name="package" value="yes"> Bronze
-                    <span class="price">$1,000</span></label>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
-                </div>
-                <label class="package"><input type="radio" name="package" value="yes"> Silver
-                    <span class="price">$3,000</span></label>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
-                </div>
-                <label class="package"><input type="radio" name="package" value="yes"> Gold
-                    <span class="price">$6,000</span></label>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, placeat doloribus quas, eum repellendus at cum dignissimos, tempore hic iusto nulla? Ea numquam neque laborum est labore. Nobis, dolorem quam.</p>
-                </div>
-            </fieldset>
+
 
             <input type="submit" name="submit info" id="submit" value="Join" class="submitbtn">
 
         </form>
     </main>
-    
+
     <footer>
 
         <div class="upperfooter">
-            <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo"></a>
             <section class="info">
                 <h2>Manila Lights Chamber of Commerce</h2>
                 <h3>525th PAVAHAI St, Makati City, Manila 1217</h3>
@@ -381,6 +398,7 @@
             </p>
         </div>
     </footer>
+
     <script defer src="js/lazyload.js"></script>
     <script defer src="js/dates.js"></script>
     <script defer src="js/menu.js"></script>

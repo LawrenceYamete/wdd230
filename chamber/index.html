@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber Home Page for Job Lawrence Navarro in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description"
+        content="Chamber Home Page for Job Lawrence Navarro in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <meta name="author" content="Job Lawrence Navarro">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -25,7 +27,9 @@
     <header>
 
         <div class="heading">
-            <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp"
+                    alt="Manila Lights Logo"></a>
             <section class="brandname">
                 <h1>Manila Lights</h1>
                 <h2 class="brh2">Chamber of Commerce</h2>
@@ -39,7 +43,7 @@
                 <span>&#10006;</span>
             </button>
             <ul id="primarynav">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="discover.html">Discovery</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -48,20 +52,26 @@
         </nav>
 
         <div class="icons">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/medium/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/medium/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href="https://www.pinterest.com/" target="_blank"><img src="images/medium/Pinterest_Icon.webp" alt="Pinterest_Icon"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/medium/Facebook_Icon.webp"
+                    alt="Facebook_Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/medium/Instagram_Icon.webp"
+                    alt="Instagram_Icon"></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/medium/Pinterest_Icon.webp"
+                    alt="Pinterest_Icon"></a>
             <br>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="images/medium/Tiktok_Icon.webp" alt="Tiktok_Icon"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/medium/LinkedIn_Icon.webp" alt="LinkedIn_Icon"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images/medium/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="images/medium/Tiktok_Icon.webp"
+                    alt="Tiktok_Icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/medium/LinkedIn_Icon.webp"
+                    alt="LinkedIn_Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/medium/Youtube_Icon.webp"
+                    alt="Youtube_Icon"></a>
         </div>
 
         <div class="date">
             <date></date>
         </div>
     </header>
-    
+
 
     <main class="grid">
         <div class="hero">
@@ -70,7 +80,8 @@
                 <source media="(min-width: 600px)" srcset="images/medium/Manilla-Philippines.webp">
                 <source media="(min-width: 100px)" srcset="images/small/Manilla-Philippines.webp">
 
-                <img src="images/small/Manilla-Philippines.webp" data-src="images/small/Manilla-Philippines.webp" alt="Manila Hero Picture">
+                <img src="images/small/Manilla-Philippines.webp" data-src="images/small/Manilla-Philippines.webp"
+                    alt="Manila Hero Picture">
             </picture>
             <section class="herocontent">
                 <h3>Welcome to Manila Lights</h3>
@@ -84,46 +95,62 @@
 
         <div class="event">
             <h3>Experience luxurious urban living with Manila Lights</h3>
-            <p>As the fastest growing real estate developer in the Philippines, we make sure we build our properties within commercial retail environments and provide you with quality amenities and top-notch services.</p>
+            <p>As the fastest-growing real estate developer in the Philippines, we make sure we build our properties
+                within commercial retail environments and provide you with quality amenities and top-notch services.</p>
         </div>
         <div class="weatherapi">
             <h2>Weather for Today</h1>
                 <img src="" alt="Weather" id="weathericon" />
                 <figcaption></figcaption>
                 <p>Current temperature: <span id="current-temp"></span> &deg;F <br>
-                Current speed: <span id="current-speed"></span> mph <br>
-                Wind Chill: <span id="chill"></span> Index</p>
+                    Current speed: <span id="current-speed"></span> mph <br>
+                    Wind Chill: <span id="chill"></span> Index</p>
         </div>
         <div class="news">
             <h3>News Release</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ab nam sit rerum molestiae nobis velit dolorem repudiandae minima adipisci voluptatum minus natus excepturi saepe, perspiciatis laboriosam deleniti earum vero. Vero aliquid
-                culpa nihil quia, aspernatur rem minima? Laborum dolore, praesentium, debitis tempora deleniti necessitatibus ad sapiente minus obcaecati quas temporibus sit ipsum unde laudantium iure quaerat! Ullam, nostrum inventore?</p>
+            <p>Location, culture, and characters may vary, but neighborhoods all around the globe share the same sense
+                of communal spirit. It’s a distinct energy characterized by strong connections and a warm fellowship;
+                belongingness that makes one feel right at home.
+                Elevating the unique essence of the Filipino community is leading real estate developer, Manila Lights
+                Corporation (MLC). The promise comes to life at Manila Light's Cheerful Homes, a nearly 43-hectare
+                master-planned house-and-lot neighborhood across two phases, located in the fast-developing city of
+                Mabalacat, Pampanga.</p>
         </div>
         <div class="join">
 
             <h3>Join our Campaigns</h3>
-            <p>Whether you want to join on behalf of an organization or as an individual, we invite you to become a member and expand the global network</p>
+            <p>Whether you want to join on behalf of an organization or as an individual, we invite you to become a
+                member and expand the global network</p>
             <a class="joinbtn" href="join.html"> Join Now!</a>
         </div>
         <div class="spotlight">
             <div class="spotlight1">
                 <h3>Greening your living space</h3>
+                <img class="imgspot" src="images/small/diet.webp" data-src="images/small/diet.webp" alt="Foods">
                 <p>
-                    Manila Lights encourages sustainable living through home-cooked food, that is why a supermarket and a convenience store are located within the development. Those who live in Sea, Shell, Shore, Trees, Princeton and Breeze Residences can also get farm-fresh
-                    produce every Saturday and Sunday morning through The Good Guys Market, with fruits and vegetables sourced straight from farms in Pampanga and Benguet.
+                    Manila Lights encourages sustainable living through home-cooked food, that is why a supermarket and
+                    a convenience store are located within the development. <br><br> <a href="">Click Here to Buy in HealthFood</a>
                 </p>
+                
             </div>
             <div class="spotlight2">
                 <h3>Manila Lights future-proofs its developments</h3>
+                <img class="imgspot" src="images/small/growth.webp" data-src="images/small/growth.webp" alt="Foods">
                 <p>
-                    The pursuit of delivering architecture and design grounded on empathy underscores Manila Light’s unwavering commitment to creating innovative and sustainable developments that respond to the evolving needs of Filipinos. With a focus on community building,
-                    Manila Lights continues to create living spaces that provide the best value for money, making luxury living more affordable to more Filipinos.
+                    The pursuit of delivering architecture and design grounded on empathy underscores Manila Light’s
+                    unwavering commitment to creating innovative and sustainable developments that respond to the
+                    evolving needs of Filipinos. <br><br><a href="">Click Here to know more!</a>
                 </p>
+                
             </div>
             <div class="spotlight3">
                 <h3>Good Times with Ben and Ben</h3>
-                <p>Good Times with Ben and Ben took off from a partnership with Wish Bus, which started on November 13 featuring December Avenue, followed by Ebe Dancel and Gloc-9 on November 20. With the success of the first two bus performances, Manila
-                    Lights decided to up the ante and set up a concert in its homes.</p>
+                <img class="imgspot" src="images/small/music-notes.webp" data-src="images/small/music-notes.webp"
+                    alt="Foods">
+                <p>
+                    Good Times with Ben and Ben took off from a partnership with Wish Bus, which started on November 13
+                    featuring December Avenue, followed by Ebe Dancel and Gloc-9 on November 20. <br><br> <a href="">Click Here to inquire an artist</a> </p>
+                
             </div>
 
 
@@ -133,7 +160,9 @@
     <footer>
 
         <div class="upperfooter">
-            <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp" alt="Manila Lights Logo">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp"
+                    alt="Manila Lights Logo"></a>
             <section class="info">
                 <h2>Manila Lights Chamber of Commerce</h2>
                 <h3>525th PAVAHAI St, Makati City, Manila 1217</h3>
@@ -142,7 +171,7 @@
             <section class="contact">
                 <p>manilalights.com</p>
                 <h4>(+63)905-166-2919</h4>
-                <p><a href="https://goo.gl/maps/aadDWZNS8bdEpot46" target="_blank">📍 Location Map</a>
+                <p><a class="map" href="https://goo.gl/maps/aadDWZNS8bdEpot46" target="_blank">📍 Location Map</a>
                 </p>
             </section>
         </div>

@@ -19,7 +19,10 @@ header {
 }
 
 .headlogo {
+    display: block;
+    margin: 0 auto;
     width: 100px;
+    cursor: pointer;
 }
 
 .brandname {
@@ -71,7 +74,8 @@ nav a:visited {
     transition: 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background-color: #FDF6F0;
     border-radius: 5px;
     color: #E5B299;
@@ -332,6 +336,10 @@ p {
     align-items: center;
 }
 
+.imgspot {
+    width: 22%;
+}
+
 
 /* ============= Discover HTML =======================*/
 
@@ -357,7 +365,8 @@ picture {
 }
 
 .images>img {
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 picture img[data-src] {
@@ -377,7 +386,7 @@ picture img {
 /* =========================== Join HTML ========================== */
 
 .form {
-    padding: 0 5% 10%;
+    padding: 0 0% 5%;
 }
 
 form fieldset {
@@ -752,7 +761,7 @@ footer a {
     color: black;
 }
 
-footer a:hover {
+footer .map:hover {
     background-color: #E5B299;
     color: #FDF6F0;
     border-radius: 5px;
