@@ -6,7 +6,7 @@ year.innerHTML = new Date().getFullYear();
 
 // document.querySelector('#dateaside').innerHTML = <em>${document.fulldateUK}</em>
 
-const datefieldUK = document.querySelector("date");
+const datefieldUK = document.querySelector(".date");
 
 const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
