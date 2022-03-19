@@ -57,9 +57,7 @@
             <a href="https://www.youtube.com/" target="_blank"><img src="images/medium/Youtube_Icon.webp" alt="Youtube_Icon"></a>
         </div>
 
-        <div class="date">
-            <date></date>
-        </div>
+        <p class="dateuk"><span class="date"></span></p>
     </header>
 
     <main class="form">
@@ -106,15 +104,15 @@
             </fieldset>
             <fieldset class="fieldset2">
                 <legend>Information</legend>
-                <label class="infor">First Name*<input type="text" type="fname" required></label>
-                <label class="infor">Middle Name<input type="text" type="mname"></label>
-                <label class="infor">Last Name*<input type="text" type="lname" required></label>
-                <label class="infor">Phone Number<input type="tel" type="pnumber" required></label>
-                <label class="infor">Email<input type="email" type="email" placeholder="email@gmail.com" required></label>
+                <label class="infor">First Name*<input type="text" name="fname" required></label>
+                <label class="infor">Middle Name<input type="text" name="mname"></label>
+                <label class="infor">Last Name*<input type="text" name="lname" required></label>
+                <label class="infor">Phone Number<input type="tel" name="pnumber" required></label>
+                <label class="infor">Email<input type="email" name="email" placeholder="email@gmail.com" required></label>
             </fieldset>
             <fieldset class="fieldset3">
                 <legend>Position and Residence</legend>
-                <label class="pandr">Business Position<input type="text" type="bposition" required></label>
+                <label class="pandr">Business Position<input type="text" name="bposition" required></label>
                 <label class="pandr">Country Residence 
                         <select name="country">
                             <option value="">Please Select</option>
@@ -363,7 +361,7 @@
             </fieldset>
 
 
-            <input type="submit" name="submit info" id="submit" value="Join" class="submitbtn">
+            <input type="submit" name="submitiInfo" id="submit" value="Join" class="submitbtn">
 
         </form>
     </main>
