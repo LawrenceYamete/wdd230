@@ -1,4 +1,4 @@
-const requestURL = "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/data/data.json";
+const requestURL = "https://lawrenceyamete.github.io/wdd230/chamber/data/data.json";
 
 
 // =======================================================================
