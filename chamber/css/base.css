@@ -164,7 +164,7 @@ main>div {
 .heroimg,
 .herocontent,
 .herobutton {
-    width: 0 auto;
+    width: auto;
 }
 
 .heroimg img {
@@ -354,7 +354,7 @@ picture {
 
 .maingrid,
 picture {
-    grid: 1fr;
+    grid: 1fr / 1fr;
     align-items: center;
     justify-content: space-around;
 }
@@ -587,7 +587,6 @@ section img {
     border-radius: 5px;
     padding: 1rem;
     margin-top: 1em;
-    display: grid;
     background-color: white;
     grid-gap: 1rem;
     margin-bottom: 2em;
