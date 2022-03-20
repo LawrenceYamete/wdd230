@@ -5,6 +5,7 @@
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.facebook.com/",
+        "memberLevel": "gold1",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Facebook-New-Logo.webp"
       },
       {
@@ -12,6 +13,7 @@
         "address": "1 Hacker Way, Menlo Park, CA",
         "contactNumber": "(650) 543-4800",
         "website": "https://www.instagram.com/",
+        "memberLevel": "gold2",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Instagram-Logo-1f59e501.webp"
       },
       {
@@ -19,6 +21,7 @@
         "address": "901 Cherry Avenue San Bruno, California, United States",
         "contactNumber": "+1 650-253-0001",
         "website": "https://www.youtube.com/",
+        "memberLevel": "gold3",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/YouTube-Logo.wine.webp"
       },
       {
@@ -26,6 +29,7 @@
         "address": "1355 Market Street Suite 900 San Francisco, CA 94103",
         "contactNumber": "(415) 222-9670",
         "website": "https://www.twitter.com/",
+        "memberLevel": "gold4",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/twitter_PNG31.webp"
       },
       {
@@ -33,6 +37,7 @@
         "address": "Culver City, CA",
         "contactNumber": null,
         "website": "https://www.tiktok.com/",
+        "memberLevel": "silver1",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/1631457787tiktok-logo-png_2.webp"
       },
       {
@@ -40,6 +45,7 @@
         "address": "San Francisco, California, United States",
         "contactNumber": "1-415-762-7100",
         "website": "https://www.pinterest.com/",
+        "memberLevel": "silver2",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Pinterest-Logo.webp"
       },
       {
@@ -47,6 +53,7 @@
         "address": "Sunnyvale, California, United States",
         "contactNumber": null,
         "website": "https://www.linkedin.com/",
+        "memberLevel": "silver3",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Linkedin-Logo.webp"
       },
       {
@@ -54,6 +61,7 @@
         "address": "Tsuen Wan, Hong Kong",
         "contactNumber": null,
         "website": "https://9gag.com/",
+        "memberLevel": "silver4",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/9gag-logo.webp"
       },
       {
@@ -61,6 +69,7 @@
         "address": "Los Gatos, California, United States",
         "contactNumber": "1-408-540-3700",
         "website": "https://www.netflix.com/",
+        "memberLevel": "bronze1",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/netflix-logo-png-transparent.webp"
       },
       {
@@ -68,6 +77,7 @@
         "address": "Mountain View, California, United States",
         "contactNumber": "+1-650-206-5555",
         "website": "https://www.google.com/",
+        "memberLevel": "bronze2",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Google_2015_logo.svg.webp"
       },
       {
@@ -75,6 +85,7 @@
         "address": "San Francisco, CA",
         "contactNumber": "888-594-0085",
         "website": "https://discord.com/",
+        "memberLevel": "bronze3",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Discord_Logo-1.webp"
       },
       {
@@ -82,6 +93,7 @@
         "address": "1321 Apolinario St. Bangkal, Makati City, Philippines",
         "contactNumber": "(632) 8555 7777",
         "website": "https://www.dmcihomes.com/",
+        "memberLevel": "bronze4",
         "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/479-4791855_thumb-image-dmci-homes-logo-hd-png-download.webp"
       }
     ]
