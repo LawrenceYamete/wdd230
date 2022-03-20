@@ -9,96 +9,18 @@ fetch(requestURL)
         console.table(jsonObject);
         const partners = jsonObject["partners"];
 
-        let goldSpot = document.querySelector('.spotlight1');
-        let silverSpot = document.querySelector('.spotlight2');
-        let bronzeSpot = document.querySelector('.spotlight3');
-        let dayOfWeek = new Date().getDay();
-        let array = [];
-
-
-        if (dayOfWeek == 0) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold1'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver1'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze1'
-            );
-        } else if (dayOfWeek == 1) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold2'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver2'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze2'
-            );
-        } else if (dayOfWeek == 2) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold3'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver3'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze3'
-            );
-        } else if (dayOfWeek == 3) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold4'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver4'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze4'
-            );
-        } else if (dayOfWeek == 4) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold1'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver4'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze5'
-            );
-        } else if (dayOfWeek == 5) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold2'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver3'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze1'
-            );
-        } else if (dayOfWeek == 6) {
-            goldSpot = partners.find(
-                (directory) => directory.memberLevel == 'gold3'
-            );
-            silverSpot = partners.find(
-                (directory) => directory.memberLevel == 'silver2'
-            );
-            bronzeSpot = partners.find(
-                (directory) => directory.memberLevel == 'bronze2'
-            );
+        let random1 = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
+        let random2 = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
+        let random3 = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
+        if (random1 !== random2 && random2 !== random3 && random1 !== random3) {
+            displayPartners(partners[random1]);
+            displayPartners(partners[random2]);
+            displayPartners(partners[random3]);
         } else {
-            newsheader = 'We apologize, there was an unknown error.'
+            displayPartners(partners[0]);
+            displayPartners(partners[1]);
+            displayPartners(partners[2]);
         }
-
-        array.push(goldSpot);
-        array.push(silverSpot);
-        array.push(bronzeSpot);
-
-        console.log(array);
-
-        // partners.forEach(displayPartners);
-        partners.forEach(displayTablePartners);
-
     });
 
 
@@ -140,7 +62,6 @@ function displayPartners(partners) {
             "alt",
             `${partners.name}. The ${partners.order}th partner of Manila Lights`);
     }
-
 
 
     spot.appendChild(image);
@@ -186,7 +107,7 @@ function displayTablePartners(partners) {
     let number = document.createElement("td");
     let website = document.createElement("td");
 
-    body.setAttribute("class", "body")
+    body.setAttribute("class", "section")
     name.innerHTML = `${partners.name}`;
     address.innerHTML = `${partners.address}`
     number.innerHTML = `${partners.contactNumber}`
@@ -198,6 +119,6 @@ function displayTablePartners(partners) {
     row.appendChild(number);
     row.appendChild(website);
 
-    document.querySelector("table.spotlight1").appendChild(body);
+    document.querySelector("div.spotlight").appendChild(body);
 }
 
