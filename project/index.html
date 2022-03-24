@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author" content="Job Lawrence Navarro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Lawrence Navarro's Home WDD 230</title>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="heading">
+            <a href="index.html">
+                <img class="headlogo" src="images/small/logo.webp" data-src="images/small/logo.webp" alt="Manila Lights Logo"></a>
+            <section class="brandname">
+                <h1>Manila Lights</h1>
+                <h2 class="brh2">Chamber of Commerce</h2>
+            </section>
+
+        </div>
+
+        <nav>
+            <button id="togglemenu">
+                <span>&#9776;</span>
+                <span>&#10006;</span>
+            </button>
+            <ul id="primarynav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="discover.html">Discovery</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/medium/Facebook_Icon.webp"
+                    alt="Facebook_Icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/medium/Instagram_Icon.webp"
+                    alt="Instagram_Icon"></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/medium/Pinterest_Icon.webp"
+                    alt="Pinterest_Icon"></a>
+            <br>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="images/medium/Tiktok_Icon.webp"
+                    alt="Tiktok_Icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/medium/LinkedIn_Icon.webp"
+                    alt="LinkedIn_Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/medium/Youtube_Icon.webp"
+                    alt="Youtube_Icon"></a>
+        </div>
+    
+        <p class="dateuk"><span class="date"></span></p>
+
+    </header>
+
+
+    <main class="grid">
+        <div class="hero">
+            <picture class="heroimg">
+                <source media="(min-width: 965px)" srcset="images/large/Manilla-Philippines.webp">
+                <source media="(min-width: 600px)" srcset="images/medium/Manilla-Philippines.webp">
+                <source media="(min-width: 100px)" srcset="images/small/Manilla-Philippines.webp">
+
+                <img src="images/small/Manilla-Philippines.webp" data-src="images/small/Manilla-Philippines.webp"
+                    alt="Manila Hero Picture">
+            </picture>
+            <section class="herocontent">
+                <h3>Welcome to Manila Lights</h3>
+            </section>
+            <span class="herobutton">
+                <a class="herobtn" href="discover.html"> Learn More</a>
+            </span>
+
+        </div>
+
+        <div class="event">
+            <h3>Experience luxurious urban living with Manila Lights</h3>
+            <p>As the fastest-growing real estate developer in the Philippines, we make sure we build our properties
+                within commercial retail environments and provide you with quality amenities and top-notch services.</p>
+        </div>
+        
+        <div class="weatherapi">
+            <h2>Weather for Today</h2>
+                <img src="images/small/gray-background-7131-96d780fd18d4eaf58a7331d45573204e@1x.webp" alt="Weather"
+                    id="weathericon" />
+                <figure><figcaption></figcaption></figure>
+                <p>Current temperature: <span id="current-temp"></span> &deg;F <br>
+                    Current speed: <span id="current-speed"></span> mph <br>
+                    Wind Chill: <span id="chill"></span> Index</p>
+        </div>
+        <div class="news">
+            <h3>News Release</h3>
+            <p>Location, culture, and characters may vary, but neighborhoods all around the globe share the same sense
+                of communal spirit. It’s a distinct energy characterized by strong connections and a warm fellowship;
+                belongingness that makes one feel right at home.
+                Elevating the unique essence of the Filipino community is leading real estate developer, Manila Lights
+                Corporation (MLC). The promise comes to life at Manila Light's Cheerful Homes, a nearly 43-hectare
+                master-planned house-and-lot neighborhood across two phases, located in the fast-developing city of
+                Mabalacat, Pampanga.</p>
+        </div>
+        <div class="join">
+
+            <h3>Join our Campaigns</h3>
+            <p>Whether you want to join on behalf of an organization or as an individual, we invite you to become a
+                member and expand the global network</p>
+            <a class="joinbtn" href="join.html"> Join Now!</a>
+        </div>
+        <div class="spotlight">
+
+
+        </div>
+    </main>
+    <footer>
+
+        <div class="upperfooter">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.webp" data-src="images/large/logo.webp"
+                    alt="Manila Lights Logo"></a>
+            <section class="info">
+                <h2>Manila Lights Chamber of Commerce</h2>
+                <h3>525th PAVAHAI St, Makati City, Manila 1217</h3>
+            </section>
+
+            <section class="contact">
+                <p>manilalights.com</p>
+                <h4>(+63)905-166-2919</h4>
+                <p><a class="map" href="https://goo.gl/maps/aadDWZNS8bdEpot46" target="_blank">📍 Location Map</a>
+                </p>
+            </section>
+        </div>
+
+        <div class="name">
+            <hr>
+            <p> ©
+                <span id="year">2022</span> . : | : . Job Lawrence Navarro . : | : . Utah
+            </p>
+
+            <p id="lastmod">
+            </p>
+        </div>
+    </footer>
+    <script defer src="js/spotlight.js"></script>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/lazy.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/weatherapi.js"></script>
+</body>
+
+</html>
