@@ -1,6 +1,9 @@
 /* ========================== header ===============================*/
 body {
     min-width: 540px;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
 }
 header {
     display: grid;
@@ -53,8 +56,8 @@ nav {
     background-color: #1572A1;
     font-size: .9em;
     border-radius: 5px;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 1/3;
+    grid-row: 2/3;
     padding-inline: 10px;
 }
 
@@ -84,9 +87,10 @@ nav li.active {
     transition: 0.3s;
 }
 
-.icons a>img {
-    width: 25px;
-    margin: 1px;
+.menu {
+    background-color: #1572A1;
+    border-radius: 5px;
+    margin: 20px;
 }
 
 #togglemenu {
@@ -95,6 +99,7 @@ nav li.active {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    padding-inline: 30px;
 }
 
 
@@ -121,6 +126,8 @@ nav ul {
 
 nav ul.open {
     display: block;
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 /* ========================== Main and Text ===============================*/
