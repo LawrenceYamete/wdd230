@@ -5,70 +5,77 @@
             "address": "10301 San Francisco Rd NE Albuquerque NM 87122-3437 United States",
             "contactNumber": "(1) 505-822-5110",
             "history": "Like a blossom in the desert, the beautiful Albuquerque New Mexico Temple adorns the arid landscape of northeastern Albuquerque in the residential neighborhood of North Albuquerque Acres. The temple grounds are a lush oasis of green grass and vibrantly colored flora including many native plant species. At the main entrance, a magnificent spraying water feature delights patrons as they enter and leave the sacred structure. The exterior is prominently ornamented with heavenly symbols including moons, stars, and suns.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Facebook-New-Logo.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/albuquerque_temple_lds.jpeg"
         },
         {
             "name": "Bountiful Utah Temple",
             "address": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
             "contactNumber": "(1) 801-296-2100",
             "history": "Sitting high above the city among the foothills of Bountiful's east bench, the Bountiful Utah Temple offers a captivating valley view extending to the Great Salt Lake. The temple features a breathtaking circular columned atrium that reaches from the lower parking level to the main parking level and an elegant portico at the entrance with graceful columns and arches. A cascading water feature flows on the east side of the temple underneath the Holiness to the Lord plaque.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Instagram-Logo-1f59e501.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/bountiful_temple_lds.jpeg"
         },
         {
             "name": "Fukuoka Japan Temple",
             "address": "9-15 Hirao Johsui Machi Chuo-ku Fukuoka-shi, Fukuoka, 810-0029, Japan",
             "contactNumber": "(81) 92-525-8255",
             "history": "Located on the southern island of Kyushu, the Fukuoka Japan Temple is built into a hillside where the nearby Fukuoka Municipal Zoo and Botanical Garden acts as a lush green backdrop. The temple proper—faced with white granite—occupies the upper story of the two-story building with its main entrance opening on the elevated side of the site. The lower story—faced with a darker grey granite—is accessed from the rear and houses a mission office, mission home, temple president apartment, and parking structure.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/YouTube-Logo.wine.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/fukuoka_japan_temple_lds.jpeg"
+
         },
         {
             "name": "Houston Texas Temple",
             "address": "15725 Champion Forest DrSpring TX 77379-7036 United States",
             "contactNumber": "(415) 222-9670",
             "history": "On October 25, 2017, the First Presidency announced a short-term closure of the Houston Texas Temple. The temple has not been in use since floodwaters from Hurricane Harvey breached the temple on August 26, damaging the basement, main floor, and temple annex. The temple is anticipated to be rededicated in the spring of 2018. The private service will not be accompanied by an open house or cultural celebration.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/twitter_PNG31.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/houston_texas_mormon_temple.jpeg"
+
         },
         {
             "name": "Logan Utah Temple",
             "address": "175 N 300 E Logan UT 84321-4720 United States",
             "contactNumber": "1-415-762-7100",
             "history": "The Logan Utah Temple stands prominently on an elevated terrace—visible for miles throughout northern Utah's Cache Valley. Occupying an entire city block, the site features charming gardens and an oval reflecting pool on the east side and a huge grassy hill on the west. Just two blocks from the temple is the historic Logan Tabernacle, located on highly traveled Highway 91.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Pinterest-Logo.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/logan_temple_lds.jpeg"
+
         },
         {
             "name": "Manila Philippines Temple",
             "address": "Sunnyvale, California, United States",
             "contactNumber": "(1) 435-752-3611",
             "history": "Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 25 August 1982, and Gordon B. Hinckley, then a member of the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Manila Philippines Temple 25 September 1984. Standing on a hilltop that overlooks the Marikina Valley, the Manila Philippines Temple anchors a complex of Church buildings including a temple annex, a patron housing facility, a missionary training center, and area offices. The beautiful grounds, open to the public, are filled with majestic palm trees and lush, colorful vegetation.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Linkedin-Logo.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/manila_philippines_temple.jpeg"
+
         },
         {
             "name": "Meridian Idaho Temple",
             "address": "7355 N Linder Rd Meridian ID 83646 United States Telephone",
             "contactNumber": "(1) 208-957-7300",
             "history": "Idaho's fifth temple was announced during the Saturday morning session of the 181st Annual General Conference for the city of Meridan, the third largest city in Idaho, located about 11 miles west of the capital city of Boise. The Church has been established since 1855 in Idaho where over 410,000 members of the Church reside. Meridian is the fastest-growing city in Idaho with a 115 percent increase in population from 2000 to 2010. During this time of rapid expansion, three additional stakes were organized in Meridian and four more in the surrounding communities of Nampa (the second largest city in the state), Kuna, and Middleton. The Meridian Idaho Temple will reduce demands on the nearby Boise Idaho Temple, where endowment rooms often fill near capacity during busy operating hours.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/9gag-logo.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/meridian_idaho_temple_front_view.jpeg"
+
         },
         {
             "name": "Mesa Arizona Temple",
             "address": "101 S LeSueur Mesa AZ 85204-1031 United States",
             "contactNumber": "(1) 480-833-1211",
             "history": "Located just east of the original Mesa Townsite—settled by pioneers of The Church of Jesus Christ of Latter-day Saints—the Mesa Arizona Temple anchors a historic district, which has predominantly retained its residential character. A public visitors' center shares the meticulously manicured grounds of the temple, which feature a cactus garden and large reflection pools. The Easter season brings thousands of guests to the temple grounds every year to watch Jesus the Christ, the largest annual outdoor Easter pageant in the world. At Christmas time, the grounds are converted to an exquisite Nativity display accented by hundreds of thousands of Christmas lights.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/netflix-logo-png-transparent.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/mesa_temple.jpeg"
+
         },
         {
             "name": "Cebu City Philippines Temple",
             "address": "The Church of Jesus Christ of Latter-day Saints Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
             "contactNumber": "(63) 32-230-1207",
             "history": "The Cebu City Philippines Temple was the second temple built in the Philippines, following the Manila Philippines Temple (1984). The Cebu City Philippines Temple was announced in a letter to Filipino priesthood leaders dated April 18, 2006. The gold-leafed statue of the angel Moroni was placed atop the Cebu City Philippines Temple on November 5, 2009. On October 15, 2013, the 2013 Bohol earthquake shook the Cebu City Philippines Temple, causing the angel Moroni to move from facing east to facing south. The angel was repositioned to point east again on January 22, 2014.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Google_2015_logo.svg.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/philippines_cebu_temple.jpeg"
+
         },
         {
             "name": "Seoul Korea Temple",
             "address": "Sinchon-ro 7 GIL 21 Seodaemun-gu, Seoul Seoul-teukbyeolsi 03783, South Korea",
             "contactNumber": "(82) 2-330-2700",
             "history": "The Seoul Korea Temple stands on a hill overlooking the prestigious Ewha Womans University, Yonsei University, and Sogang University to the south, east, and west. To the north is the expressway to the Gimpo International Airport, Korea's second largest airport. Traveling patrons may stay in the dorm space of an auxiliary building. Surrounding the temple are peaceful, handsome gardens that are open for the public to admire.",
-            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/chamber/images/small/Discord_Logo-1.webp"
+            "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/seoul_korea_temple_lds.jpeg"
         }
     ]
 }
