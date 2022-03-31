@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1200px) {
+
+
+    .manuNav li {
+        padding-inline: 50px;
+    }
+
+    .footlogo {
+        margin-right: 100px;
+    }
+
+    .footerNav {
+        max-width: 800px;
+    }
+    
+    .footAdd {
+        max-width: 400px;
+    }
+
+}
+@media only screen and (min-width: 1500px) { 
+    .hero .wel {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1500px) { 
+
+    .manuNav {
+        margin-inline: 100px;
+    }
+}
