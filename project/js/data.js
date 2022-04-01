@@ -10,12 +10,12 @@ fetch(requestURL)
     .then(function(jsonObject) {
         console.table(jsonObject);
         const temples = jsonObject["temples"];
-        temples.forEach(displayPartners);
-        temples.forEach(displayTablePartners);
+        temples.forEach(displayTemples);
+        temples.forEach(displayTableTemples);
     });
 
 
-function displayPartners(temples) {
+function displayTemples(temples) {
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
@@ -61,9 +61,6 @@ function displayPartners(temples) {
     document.querySelector("div.cards").appendChild(card);
 
     const imagesToLoad = document.querySelectorAll('img[data-src]');
-    // const imgOptions = {
-    //     threshold: 0, 
-    //     rootMargin: "0px 0px 100px 0px"};
 
     const loadImages = (image) => {
         image.setAttribute('src', image.getAttribute('data-src'));
@@ -91,7 +88,7 @@ function displayPartners(temples) {
     }
 }
 
-function displayTablePartners(temples) {
+function displayTableTemples(temples) {
 
     let body = document.querySelector("tbody")
     let row = document.createElement("tr");
