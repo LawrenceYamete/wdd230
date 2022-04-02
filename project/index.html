@@ -55,12 +55,13 @@
 
     <main class="main">
         <div class="hero">
-            <img class="mainImg" src="images/medium/boy_jesus_in_the_temple.jpeg" alt="Helping Hand">
-            <section>
-                <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
-            </section>
+            <img class="mainImg" src="images/large/bountiful_temple_lds.jpeg" alt="Helping Hand">
+            <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
         </div>
-        <div>
+
+        <div class="firstDiv">
+            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
+                alt="President Gordon b Hinckley">
             <section class="intro">
                 <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
                     peace, a
@@ -75,57 +76,155 @@
                     months and even years as you serve as a Temple Worker. We are conveniently located just outside
                     Temple grounds in select locations to make your commute as short as possible. Please visit our guest
                     portal to learn more about accomodations and services at a Temple Inn near you.</p>
+
+                <a class="mainBtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Book Now!</a>
+
             </section>
         </div>
-        <div  class="cards">
+        <div class="spotlight">
+
         </div>
         <div class="grid">
-            <section class="line">
-                <h1>Special Services</h1>
-                <ul class="list">
-                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far
-                        and need to change to and from church clothes
-                    </li>
-                    <li> A playroom and low-cost, short-term babysitting services for the children of patrons
-                    </li>
-                    <li> Long-term stay accommodations in kitchenette suites for full-time temple missionaries
-                    </li>
-                    <li> Temple history themed reception and sitting area
-                    </li>
-                    <li>
-                        A wedding reception hall that can be easily customized with a simple catering menu and kitchen
-                        access for food preparation and serving
+            <div class="slides">
+                <span class="prev" onclick="plusSlides(-1)">⏪</span>
+                <span class="next" onclick="plusSlides(1)">⏩</span>
 
-                    </li>
-                    <li>A family search center that supports family search and ordinance work</li>
-                </ul>
-                <p><a class="mainBtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Book Now!</a></p>
+                <div class="spotlight-head">
+                    <h1>Featured Services</h1>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/What-are-amenities-destacada.jpg" alt="hotel facilities">
+
+                    <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled
+                        far
+                        and need to change to and from church clothes</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/bolivia_families_playing_childhood_children.jpeg"
+                        alt="babysitting">
+                    <p>A playroom and low-cost, short-term babysitting services for the children of patrons</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/Provo-MTC-Missionaries.jpg" alt="missionaries">
+
+                    <p>Long-term stay accommodations in SERUNI suites for full-time temple missionaries</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/iStock-995624510-3000x1500.jpg" alt="reception">
+
+                    <p>Temple history themed reception and sitting area</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/Red-Rock-Wedding-Set-up.jpg" alt="wedding reception hall">
+
+                    <p>A wedding reception hall that can be easily customized with a simple catering menu and
+                        kitchen
+                        access for food preparation and serving</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+
+                <div class="mySlides transi">
+                    <img class="slidesImg" src="images/medium/family_portrait.jpeg" alt="family portrait">
+
+                    <p> A family search center that supports family search and ordinance work</p>
+                    <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
+                    </p>
+                </div>
+                <div class="dotbox">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+
+            <div class="weather">
+                <div class="spotlight-head">
+                    <h1>Weather for Today</h1>
+                </div>
+
+                <div class="weatherapi">
+                    <img src="images/medium/iStock-995624510-3000x1500.jpg" alt="Weather" id="weathericon" />
+                    <figure>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Current temperature: <span id="current-temp"></span> &deg;F <br>
+                        Current speed: <span id="current-speed"></span> mph <br>
+                        Wind Chill: <span id="chill"></span> Index <br>
+                        Current Humidity: <span id="current-humidity"></span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="news">
+                <div class="spotlight-head">
+                    <h1>News</h1>
+                </div>
+
+                <h3>The Latest on How the Church Is Helping Refugees in Europe</h3>
+                <p>The Church of Jesus Christ of Latter-day Saints is actively involved in relief effort for refugees in
+                    Europe. This page provides a summary of recent updates.
+
+                    Are you looking for a way to help? Through decades of experience in providing assistance during
+                    natural disasters, refugee crises and other humanitarian conditions, the Church has developed a
+                    tested and proven model for identifying needs and providing assistance. This model includes
+                    empowering local leaders to use the Church’s financial resources to purchase goods and services in
+                    the local economy to provide what is truly needed.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="reviews">
+            <div class="spotlight-head">
+                <h1>Reviews</h1>
+            </div>
+            <section class="rev">
+
+                <img class="revImg" src="images/medium/Family+Portrait+-+Newmarket+Studio.jpg" alt="family portrait">
+                <h3>Family Dizon</h3>
+                <p> Comfortable bed, decent aircon and able to sleep well after a long flight. Room is fairly
+                    big and everything was clean. The free one way shuttle was also really helpful. Wifi worked
+                    well.</p>
+
             </section>
-            <section class="line">
-                <h1>Reservation</h1>
-                <ul class="list">
-                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far
-                        and need to change to and from church clothes
-                    </li>
-                    <li> A playroom and low-cost, short-term babysitting services for the children of patrons
-                    </li>
-                    <li> Long-term stay accommodations in kitchenette suites for full-time temple missionaries
-                    </li>
-                    <li> Temple history themed reception and sitting area
-                    </li>
-                    <li>
-                        A wedding reception hall that can be easily customized with a simple catering menu and kitchen
-                        access for food preparation and serving
+            <section class="rev1">
 
-                    </li>
-                    <li>A family search center that supports family search and ordinance work</li>
-                </ul>
-                <p><a class="mainBtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reservation</a></p>
+                <img class="revImg" src="images/medium/SF-24.webp" alt="family portrait">
+                <h3>Family Garcia</h3>
+                <p> Excellent staff service. All of them are synchronized and always ready to assist. Hydro pool
+                    epxerience and free breakfast are worth the price.</p>
+
+            </section>
+            <section class="rev2">
+
+                <img class="revImg" src="images/medium/48e1decb94c09e45e76387b39715c2aa.jpg" alt="family portrait">
+                <h3>Family Ramos</h3>
+                <p>It was like home away from home. Cosy and secure place to stay. Everyone was nice, helpful
+                    and kind.</p>
+
             </section>
         </div>
-        <div>
 
         </div>
+
     </main>
     <footer>
         <p class="dateuk">
@@ -159,6 +258,9 @@
         <p id="lastmod"></p>
 
     </footer>
+    <script defer src="js/weatherapi.js"></script>
+    <script defer src="js/slides.js"></script>
+    <script defer src="js/featured.js"></script>
     <script defer src="js/toggle.js"></script>
     <script defer src="js/lazy.js"></script>
     <script defer src="js/lastmod.js"></script>

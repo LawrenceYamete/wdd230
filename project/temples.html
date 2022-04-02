@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project in WDD 230: Web Frontend Development">
+    <meta name="author" content="Job Lawrence Navarro">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/930c2b2397.js" crossorigin="anonymous"></script>
+
+
+    <title>Lawrence Navarro's Home WDD 230</title>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="heading">
+            <a href="index.html">
+                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+            <section class="brandname">
+                <h1 class="logoname">SERUNI</h1>
+                <p class="servicename">Temple Inn and Suites</p>
+            </section>
+        </div>
+
+        <span class="menu">
+            <button id="togglemenu">
+                <span>&#9776;</span>
+                <span>&#10006;</span>
+            </button>
+        </span>
+        <nav class="manuNav">
+            <ul id="primarynav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="templePage.html">Temples</a></li>
+                <li><a href="directory.html">Reservation</a></li>
+                <li><a href="join.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">About Us</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+
+    <main class="main">
+        <div class="hero">
+            <img class="mainImg" src="images/large/bountiful_temple_lds.jpeg" alt="Helping Hand">
+            <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
+        </div>
+
+        <div class="firstDiv">
+            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
+                alt="President Gordon b Hinckley">
+            <section class="intro">
+                <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
+                    peace, a
+                    place of love, where we deal with the things of eternity.” And certainly, his words cannot be
+                    denied. All people who have ever visited the Temple can testify of the sweet spirit and peace that
+                    they feel there. Yet, many have to travel great distances to come and partake in the spirit of this
+                    great work.</p>
+
+                <p> The <strong> SERUNI </strong>Temple Inn and Suites is to make your stay as comfortable and stress
+                    free as
+                    possible--whether you come for a few days to participate in a family members' wedding, or many
+                    months and even years as you serve as a Temple Worker. We are conveniently located just outside
+                    Temple grounds in select locations to make your commute as short as possible. Please visit our guest
+                    portal to learn more about accomodations and services at a Temple Inn near you.</p>
+
+                <a class="mainBtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Book Now!</a>
+
+            </section>
+        </div>
+      
+        <div class="buttons">
+            <button id="grid" class="fa-solid fa-grip active"><span>Grid</span></button>
+            <button id="list" class="fa-solid fa-list"><span>List</span></button>
+        </div>
+
+        <div class="cards">
+
+        </div>
+
+        <div class="tableCards">
+            <table class="tableList">
+                <thead class="head">
+                    <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>History</th>
+                </tr>
+                </thead>
+                <tbody class="body">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p class="dateuk">
+            <span id="year" class="date"></span>
+        </p>
+
+        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <nav class="footerNav">
+            <ul>
+                <li><a href="contact.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templePage.html">Temples</a></li>
+                <li><a href="directory.html">Reservation</a></li>
+                <li><a href="join.html">Services</a></li>
+
+            </ul>
+        </nav>
+        <div class="footeraddButton">
+            <p><a class="map" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Location</a></p>
+            <p class="footAdd"><strong>Address:</strong> Missionary Training Center Corner Avenue Green Meadows
+                Subdivision 1110,, 13 Temple Dr, Lungsod Quezon, 1110 Kalakhang Maynila</p>
+        </div>
+        <h3 class="followUs">Follow us on our Social Media Sites</h3>
+        <div class="btnfollowUs">
+            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+
+        </div>
+        <p id="lastmod"></p>
+
+    </footer>
+    <script defer src="js/dataview.js"></script>
+    <script defer src="js/data.js"></script>
+    <script defer src="js/weatherapi.js"></script>
+    <script defer src="js/slides.js"></script>
+    <script defer src="js/featured.js"></script>
+    <script defer src="js/toggle.js"></script>
+    <script defer src="js/lazy.js"></script>
+    <script defer src="js/lastmod.js"></script>
+</body>
+
+</html>

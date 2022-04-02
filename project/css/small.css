@@ -1,11 +1,13 @@
 /* ========================== header ===============================*/
 body {
-    min-width: 540px;
+    min-width: 300px;
     -webkit-appearance: auto;
     -moz-appearance: auto;
     appearance: auto;
     transition: 2s;
+    justify-content: center;
 }
+
 header {
     display: grid;
     grid: 1fr / 2.5fr 1fr;
@@ -28,7 +30,7 @@ header {
 
 .headlogo {
     display: block;
-    margin: 0 auto;
+    margin-left: 50px;
     width: 100px;
     cursor: pointer;
     min-width: 100px;
@@ -98,13 +100,13 @@ header {
     background-color: #FDF6F0;
     border-radius: 5px;
     transition: 0.3s;
-    
+    cursor: pointer;
 }
 
 .menu {
     background-color: #1572A1;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
 }
 
 #togglemenu {
@@ -144,14 +146,19 @@ header {
 
 /* ========================== Main and Text ===============================*/
 
+* {
+    box-sizing: border-box;
+}
+
 .grid {
-    grid: repeat(3, 1fr)/ 1fr;
+    grid: repeat(2, 1fr);
     display: grid;
     grid-column-gap: 10px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: auto 1rem;
     padding: 0.5em;
+    
 }
 
 h1 {
@@ -180,6 +187,17 @@ p {
     margin-inline-end: 0px;
 }
 
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+ img {
+    max-width: 100%;
+    filter: blur(0em);
+    transition: filter 0.8s;
+    border-radius: 5px;
+} 
+
 /* ============================= Home ============================= */
 
 .hero {
@@ -188,6 +206,20 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.firstDiv {
+    margin: 20px 10px 90px 10px;
+    margin-top: 80px;
+        margin-bottom: 50px;
+}
+
+.firstDiv .portrait {
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+    shape-outside: ellipse(50% 50%);
+    margin-right: 1rem;
 }
 
 .mainImg {
@@ -202,7 +234,7 @@ p {
 }
 
 
-.hero .wel {
+.hero > .wel {
     position: absolute;
     text-align: center;
     top: 42%;
@@ -217,6 +249,50 @@ p {
     border-radius: 10px;
     max-width: 80%;
     margin: 0 auto;
+}
+
+.mainleftBtn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    margin: 10px;
+    width: 150px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: #DFF6FF;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.mainleftBtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.mainleftBtn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #1572A1;
+    border-radius: 5px;
+}
+
+.mainleftBtn:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .mainBtn {
@@ -263,12 +339,389 @@ p {
     z-index: -1;
 }
 
-.line {
-    border-style: double;
-    border-color: #1572A1;
+.slides {
     border-radius: 10px;
     padding: 10px;
+    background-color: #DFF6FF;
 }
+
+
+
+.spotlight section {
+    border-radius: 5px;
+    padding: 40px;
+    background-color: #DFF6FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+section .featuredImg {
+    width: 100%;
+}
+
+.featured {
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* section img {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 0.75em;
+} */
+
+.spotlight {
+    display: flex;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1em;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.dotbox {
+    grid-column: 1/4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active1, .dot:hover {
+    background-color: #717171;
+}
+
+.slidebtn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: #1572A1;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.slidebtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.slidebtn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: white;
+    border-radius: 5px;
+}
+
+.slidebtn:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+
+.slides {
+    display: grid;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.grid .line {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.next {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    text-align: end;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.next:hover {
+    background-color: #1572A1;
+    transition: 0.5s;
+}
+
+
+.prev {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+    text-align: start;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #DFF6FF;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.prev:hover {
+    background-color: #1572A1;
+    transition: 0.5s;
+}
+
+.spotlight-head {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.transi {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slidesImg {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 100;
+    transition: width 2s, height 4s;
+}
+
+.weather {
+    display: block;
+    width: 0 auto;
+    background-color: #DFF6FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 20px;
+}
+
+.weatherapi {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.reviews {
+    display: grid;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1em;
+    background-color: #DFF6FF;
+    grid-gap: 1rem;
+    margin-bottom: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.news {
+    display: none;
+}
+
+.reviews section {
+    border-radius: 5px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+}
+
+.rev, .rev1, .rev2 {
+    align-items: center;
+}
+
+.rev {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.rev1 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.rev2 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+.revImg {
+    border-radius: 60% 0%;
+}
+/* ========================== Temples ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.cards section {
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #DFF6FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+section img {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 0.75em;
+}
+.tableCards {
+    display: none;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    max-width: 100%;
+    filter: blur(0em);
+    transition: filter 0.8s;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.buttons button {
+    margin: 0 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #1572A1;
+    color: black;
+    transition: 0.3s;
+}
+
+button span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover,
+button.active {
+    color: white;
+    background-color: #1572A1;
+    transition: 0.3s;
+}
+
+main .tableCards {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 10px #e2e1df;
+    max-width: 80em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+th,
+tr,
+td {
+    border-radius: 5px;
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+}
+
+th {
+    color: white;
+    background-color: #1572A1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #DFF6FF;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FDF6F0;
+}
+
+tbody tr:hover {
+    background-color: #fddac7;
+    transition: 0.3s;
+}
+
+
+
+.cards {
+    display: grid;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1em;
+    background-color: white;
+    grid-gap: 1rem;
+    margin-bottom: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+
+
 /* =========================== Join HTML ========================== */
 
 .form {
@@ -441,129 +894,9 @@ form .price {
 
 /* ========================== Directory Page ======================= */
 
-* {
-    box-sizing: border-box;
-}
 
-.cards section {
-    border-radius: 5px;
-    padding: 0.5rem;
-    background-color: #FEF1E6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
 
-/* section img {
-    width: 300px;
-    height: auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    margin-top: 0.75em;
-} */
 
-.cards {
-    display: grid;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-top: 1em;
-    background-color: white;
-    grid-gap: 1rem;
-    margin-bottom: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.tableCards {
-    display: none;
-}
-
- img[data-src] {
-    filter: blur(0.2em);
-}
-
- img {
-    max-width: 100%;
-    filter: blur(0em);
-    transition: filter 0.8s;
-    border-radius: 5px;
-} 
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    background: white;
-    padding: 30px;
-    border-radius: 3px;
-}
-
-.buttons button {
-    margin: 0 15px;
-    letter-spacing: 3px;
-    font-size: 20px;
-    cursor: pointer;
-    letter-spacing: 3px;
-    padding: 15px;
-    border: none;
-    border-radius: 3px;
-    background-color: #E5B299;
-    color: black;
-    transition: 0.3s;
-}
-
-button span {
-    font-family: 'Montserrat', sans-serif;
-}
-
-button:hover,
-button.active {
-    color: white;
-    background-color: #E5B299;
-    transition: 0.3s;
-}
-
-main .tableCards {
-    background-color: white;
-}
-
-table {
-    width: 100%;
-    background-color: white;
-    box-shadow: 3px 3px 10px #e2e1df;
-    max-width: 80em;
-    margin: 0 auto;
-    margin-bottom: 2em;
-}
-
-th,
-tr,
-td {
-    border-radius: 5px;
-    border-collapse: collapse;
-    font-family: 'Quicksand', sans-serif;
-    padding: 18px;
-    text-align: center;
-}
-
-th {
-    color: black;
-    background-color: #E5B299;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #FEF1E6;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #FDF6F0;
-}
-
-tbody tr:hover {
-    background-color: #fddac7;
-    transition: 0.3s;
-}
 
 
 /* ========================== Contact ============================= */
@@ -626,6 +959,7 @@ div iframe {
 /* ========================== Footer ===============================*/
 
 footer {
+    margin-top: 50px;
     display: grid;
     align-items: center;
     background-color: #1572A1;

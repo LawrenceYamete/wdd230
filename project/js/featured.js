@@ -1,26 +1,30 @@
 const requestURL = "https://lawrenceyamete.github.io/wdd230/project/json/data.json";
 
 
-// =======================================================================
-
 fetch(requestURL)
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(jsonObject) {
+    .then(function (jsonObject) {
         console.table(jsonObject);
         const temples = jsonObject["temples"];
-        temples.forEach(displayTemples);
-        temples.forEach(displayTableTemples);
+
+        let random1 = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
+            displayTemples(temples[random1]);
+
+
     });
 
 function displayTemples(temples) {
-    let card = document.createElement("section");
+    let spot = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
+    let h1 = document.createElement("h1");
 
-    image.setAttribute("class", "templeImgs");
+    h1.innerHTML = `Featured Temple`;
+    h1.setAttribute("class", "featured")
+    image.setAttribute("class", "featuredImg")
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
     image.setAttribute("data-src", temples.imageurl);
     image.setAttribute(
@@ -54,11 +58,12 @@ function displayTemples(temples) {
             `${temples.name}. The ${temples.order}th Temple`);
     }
 
-    card.appendChild(image);
-    card.appendChild(h2);
-    card.appendChild(p);
+    spot.appendChild(h1);
+    spot.appendChild(image);
+    spot.appendChild(h2);
+    spot.appendChild(p);
 
-    document.querySelector("div.cards").appendChild(card);
+    document.querySelector("div.spotlight").appendChild(spot);
 
     const imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -88,7 +93,7 @@ function displayTemples(temples) {
     }
 }
 
-function displayTableTemples(temples) {
+function displayTablePartners(temples) {
 
     let body = document.querySelector("tbody")
     let row = document.createElement("tr");
@@ -97,11 +102,11 @@ function displayTableTemples(temples) {
     let number = document.createElement("td");
     let history = document.createElement("td");
 
-    body.setAttribute("class", "body")
+    body.setAttribute("class", "section")
     name.innerHTML = `${temples.name}`;
     address.innerHTML = `${temples.address}`
     number.innerHTML = `${temples.contactNumber}`
-    history.innerHTML = `${temples.history}`
+    history.innerHTML = `<p>${temples.history}</p>`
 
     body.appendChild(row);
     row.appendChild(name);
@@ -109,5 +114,6 @@ function displayTableTemples(temples) {
     row.appendChild(number);
     row.appendChild(history);
 
-    document.querySelector("table.tableList").appendChild(body);
+    document.querySelector("div.tableList").appendChild(body);
 }
+
