@@ -19,6 +19,8 @@ function displayTemples(temples) {
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
+    let btn = document.createElement("a");
+    
 
     image.setAttribute("class", "templeImgs");
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
@@ -27,7 +29,13 @@ function displayTemples(temples) {
         "alt",
         `${temples.name}`
     );
-    image.setAttribute("loading", "lazyload");
+    image.setAttribute("loading", "lazy");
+    // load
+    
+    btn.setAttribute("class", `moreInfo${temples.order}`);
+
+
+    btn.innerHTML = (`More Info`);
 
     h2.textContent = `${temples.name}`;
     p.innerHTML = `<strong>Address:</strong> ${temples.address} <br/>  
@@ -36,27 +44,19 @@ function displayTemples(temples) {
 
 
     if (temples.order == 1) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}st Temple`
-        );
+        btn.setAttribute("class", `moreInfo${temples.order}`);
     } else if (temples.order == 2) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}nd Temple`);
+        btn.setAttribute("class", `moreInfo${temples.order}`);
     } else if (temples.order == 3) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}rd Temple`);
+        btn.setAttribute("class", `moreInfo${temples.order}`);
     } else {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}th Temple`);
+        btn.setAttribute("class", `moreInfo${temples.order}`);
     }
 
     card.appendChild(image);
     card.appendChild(h2);
     card.appendChild(p);
+    card.appendChild(btn);
 
     document.querySelector("div.cards").appendChild(card);
 
