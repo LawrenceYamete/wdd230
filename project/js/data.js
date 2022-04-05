@@ -35,12 +35,12 @@ function displayTemples(temples) {
     modalB.setAttribute("class", "modal-body");
     over.setAttribute("id", "overlay");
 
-    modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-    modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-    Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-    Public and Open House: ${temples.publicOpenHouse}<br/>
-    Dedication: ${temples.dedication} <br/>
-    Temple Locale: ${temples.history}</p>`;
+    // modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+    // modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+    // Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+    // Public and Open House: ${temples.publicOpenHouse}<br/>
+    // Dedication: ${temples.dedication} <br/>
+    // Temple Locale: ${temples.history}</p>`;
     
     
     image.setAttribute("class", "templeImgs");
@@ -67,23 +67,30 @@ function displayTemples(temples) {
     if (temples.order == 1) {
         a.setAttribute("class", `moreInfo${temples.order}`);
         modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement1}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication1} <br/>
-        Public and Open House: ${temples.publicOpenHouse1}<br/>
-        Dedication: ${temples.dedication1} <br/>
-        Temple Locale: ${temples.history1}</p>`;
+        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+        Public and Open House: ${temples.publicOpenHouse}<br/>
+        Dedication: ${temples.dedication} <br/>
+        // Temple Locale: ${temples.history}</p>`;
     } else if (temples.order == 2) {
         a.setAttribute("class", `moreInfo${temples.order}`);
-        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement2}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication2} <br/>
-        Public and Open House: ${temples.publicOpenHouse2}<br/>
-        Dedication: ${temples.dedication2} <br/>
-        Temple Locale: ${temples.history2}</p>`;
+
     } else if (temples.order == 3) {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        // modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        // modalB.innerHTML = `<p>Announcement: ${temples.announcement2}<br/>
+        // Groundbreaking and Site Dedication: ${temples.groundAndDedication2} <br/>
+        // Public and Open House: ${temples.publicOpenHouse2}<br/>
+        // Dedication: ${temples.dedication2} <br/>
+        // // Temple Locale: ${temples.histor2y}</p>`;
     } else {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        // modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        // modalB.innerHTML = `<p>Announcement: ${temples.announcement2}<br/>
+        // Groundbreaking and Site Dedication: ${temples.groundAndDedication2} <br/>
+        // Public and Open House: ${temples.publicOpenHouse2}<br/>
+        // Dedication: ${temples.dedication2} <br/>
+        // // Temple Locale: ${temples.history}</p>`;
     }
 
     card.appendChild(image);
