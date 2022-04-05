@@ -7,10 +7,10 @@
             "history": "Like a blossom in the desert, the beautiful Albuquerque New Mexico Temple adorns the arid landscape of northeastern Albuquerque in the residential neighborhood of North Albuquerque Acres. The temple grounds are a lush oasis of green grass and vibrantly colored flora including many native plant species. At the main entrance, a magnificent spraying water feature delights patrons as they enter and leave the sacred structure. The exterior is prominently ornamented with heavenly symbols including moons, stars, and suns.",
             "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/albuquerque_temple_lds.jpeg",
             "order": 1,
-            "announcement": "4 April 1997",
-            "groundAndDedication": "20 June 1998 by Lynn A. Mickelsen",
-            "publicOpenHouse": "17–26 February 2000",
-            "dedication": "5 March 2000 by Gordon B. Hinckley"
+            "announcement1": "4 April 1997",
+            "groundAndDedication1": "20 June 1998 by Lynn A. Mickelsen",
+            "publicOpenHouse1": "17–26 February 2000",
+            "dedication1": "5 March 2000 by Gordon B. Hinckley"
         },
         {
             "name": "Bountiful Utah Temple",
@@ -19,10 +19,10 @@
             "history": "Sitting high above the city among the foothills of Bountiful's east bench, the Bountiful Utah Temple offers a captivating valley view extending to the Great Salt Lake. The temple features a breathtaking circular columned atrium that reaches from the lower parking level to the main parking level and an elegant portico at the entrance with graceful columns and arches. A cascading water feature flows on the east side of the temple underneath the Holiness to the Lord plaque.",
             "imageurl": "https://raw.githubusercontent.com/LawrenceYamete/wdd230/main/project/images/medium/bountiful_temple_lds.jpeg",
             "order": 2,
-            "announcement": "2 February 1990",
-            "groundAndDedication": "2 May 1992 by Ezra Taft Benson",
-            "publicOpenHouse": "4 November–17 December 1994",
-            "dedication": "8–14 January 1995 by Howard W. Hunter"
+            "announcement2": "2 February 1990",
+            "groundAndDedication2": "2 May 1992 by Ezra Taft Benson",
+            "publicOpenHouse2": "4 November–17 December 1994",
+            "dedication2": "8–14 January 1995 by Howard W. Hunter"
         },
         {
             "name": "Fukuoka Japan Temple",
