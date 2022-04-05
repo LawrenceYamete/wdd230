@@ -35,8 +35,11 @@ function displayTemples(temples) {
     modalB.setAttribute("class", "modal-body");
     over.setAttribute("id", "overlay");
 
-    modalT.innerHTML = `overlay`;
-    modalB.innerHTML = `Loremasdasdasdasdjhasgjhldas dahjsdkj ahsdkj haksjdh`
+    modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+    modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+    Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+    Public and Open House: ${temples.publicOpenHouse}<br/>
+    Dedication: ${temples.dedication}</p>`
     
     
     image.setAttribute("class", "templeImgs");
@@ -51,7 +54,7 @@ function displayTemples(temples) {
     h2.textContent = `${temples.name}`;
     p.innerHTML = `<strong>Address:</strong> ${temples.address} <br/>  
   <strong>Contact Number:</strong> ${temples.contactNumber} <br/>
-  <strong>History:</strong> ${temples.history} `;
+  <strong>Temple Locale:</strong> ${temples.history} `;
 
 
     a.setAttribute("data-modal-target", "#modal");

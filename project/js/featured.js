@@ -36,7 +36,7 @@ function displayTemples(temples) {
     h2.textContent = `${temples.name}`;
     p.innerHTML = `<strong>Address:</strong> ${temples.address} <br/>  
   <strong>Contact Number:</strong> ${temples.contactNumber} <br/>
-  <strong>History:</strong> ${temples.history} `;
+  <strong>Temple Locale:</strong> ${temples.history} `;
 
 
     if (temples.order == 1) {
