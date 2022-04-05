@@ -19,7 +19,26 @@ function displayTemples(temples) {
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
+    let a = document.createElement("a");
 
+    // ===========================
+    let modal = document.createElement("div");
+    let modalH = document.createElement("div");
+    let modalT = document.createElement("div");
+    let modalB = document.createElement("div");
+    let over = document.createElement("div");
+
+    modal.setAttribute("class", "modal");
+    modal.setAttribute("id", "modal");
+    modalH.setAttribute("class", "modal-header");
+    modalT.setAttribute("class", "title");
+    modalB.setAttribute("class", "modal-body");
+    over.setAttribute("id", "overlay");
+
+    modalT.innerHTML = `overlay`;
+    modalB.innerHTML = `Loremasdasdasdasdjhasgjhldas dahjsdkj ahsdkj haksjdh`
+    
+    
     image.setAttribute("class", "templeImgs");
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
     image.setAttribute("data-src", temples.imageurl);
@@ -35,30 +54,37 @@ function displayTemples(temples) {
   <strong>History:</strong> ${temples.history} `;
 
 
+    a.setAttribute("data-modal-target", "#modal");
+    a.setAttribute("class", `moreInfo${temples.order}`);
+    
+    a.innerHTML = `More Info`;
+
+
     if (temples.order == 1) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}st Temple`
-        );
+        a.setAttribute("class", `moreInfo${temples.order}`);
     } else if (temples.order == 2) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}nd Temple`);
+        a.setAttribute("class", `moreInfo${temples.order}`);
     } else if (temples.order == 3) {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}rd Temple`);
+        a.setAttribute("class", `moreInfo${temples.order}`);
     } else {
-        image.setAttribute(
-            "alt",
-            `${temples.name}. The ${temples.order}th Temple`);
+        a.setAttribute("class", `moreInfo${temples.order}`);
     }
 
     card.appendChild(image);
     card.appendChild(h2);
     card.appendChild(p);
+    card.appendChild(a);
+
+    // =========================
+    card.appendChild(modal);
+    modal.appendChild(modalH);
+    modalH.appendChild(modalT);
+    modal.appendChild(modalB);
+    card.appendChild(over);
+    
 
     document.querySelector("div.cards").appendChild(card);
+
 
     const imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -86,6 +112,41 @@ function displayTemples(temples) {
             loadImages(img);
         });
     }
+
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const overlay = document.getElementById('overlay')
+    openModalButtons.forEach(a => {
+        a.addEventListener('click', () => {
+            const modal = document.querySelector(a.dataset.modalTarget)
+            openModal(modal)
+        })
+        })
+    
+        overlay.addEventListener('click', () => {
+        const modals = document.querySelectorAll('.modal.active')
+        modals.forEach(modal => {
+            closeModal(modal)
+        })
+        })
+    
+        closeModalButtons.forEach(a => {
+        a.addEventListener('click', () => {
+            const modal = a.closest('.modal')
+            closeModal(modal)
+        })
+        })
+    
+        function openModal(modal) {
+        if (modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+        }
+    
+        function closeModal(modal) {
+        if (modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+        }
 }
 
 function displayTableTemples(temples) {
