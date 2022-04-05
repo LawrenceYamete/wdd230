@@ -870,7 +870,9 @@ tbody tr:hover {
   }
   
   .modal-body {
-    padding: 10px 15px;
+    padding: 10px 15px;  
+
+    
   }
   
  #overlay.active{
