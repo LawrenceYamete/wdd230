@@ -35,12 +35,7 @@ function displayTemples(temples) {
     modalB.setAttribute("class", "modal-body");
     over.setAttribute("id", "overlay");
 
-    modalT.innerHTML = `<h1> ${temples.name2}</h1>`;
-    modalB.innerHTML = `<p>Announcement: ${temples.announcement2}<br/>
-    Groundbreaking and Site Dedication: ${temples.groundAndDedication2} <br/>
-    Public and Open House: ${temples.publicOpenHouse2}<br/>
-    Dedication: ${temples.dedication2} <br/>
-    Temple Locale: ${temples.history2}</p>`;
+
     
     
     image.setAttribute("class", "templeImgs");
@@ -60,17 +55,48 @@ function displayTemples(temples) {
 
     a.setAttribute("data-modal-target", "#modal");
     a.setAttribute("class", `moreInfo${temples.order}`);
+
+    modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+    modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+    Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+    Public and Open House: ${temples.publicOpenHouse}<br/>
+    Dedication: ${temples.dedication} <br/>
+    Temple Locale: ${temples.history}</p>`;
     
     a.innerHTML = `More Info`;
 
     if (temples.order == 1) {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+        Public and Open House: ${temples.publicOpenHouse}<br/>
+        Dedication: ${temples.dedication} <br/>
+        Temple Locale: ${temples.history}</p>`;
     } else if (temples.order == 2) {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+        Public and Open House: ${temples.publicOpenHouse}<br/>
+        Dedication: ${temples.dedication} <br/>
+        Temple Locale: ${temples.history}</p>`;
     } else if (temples.order == 3) {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+        Public and Open House: ${temples.publicOpenHouse}<br/>
+        Dedication: ${temples.dedication} <br/>
+        Temple Locale: ${temples.history}</p>`;
     } else {
         a.setAttribute("class", `moreInfo${temples.order}`);
+        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
+        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
+        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
+        Public and Open House: ${temples.publicOpenHouse}<br/>
+        Dedication: ${temples.dedication} <br/>
+        Temple Locale: ${temples.history}</p>`;
     }
 
     card.appendChild(image);
