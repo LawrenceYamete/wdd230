@@ -19,8 +19,16 @@ function displayTemples(temples) {
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
+
+// ======
     let btn = document.createElement("a");
-    
+    let modal = document.createElement("div");
+    let i = document.createElement("i");
+    let h23 = document.createElement("h2");
+    let p1 =document.createElement("p");
+    let ac = document.createElement("a");
+    let ov = document.createElement("div");
+// ======
 
     image.setAttribute("class", "templeImgs");
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
@@ -31,11 +39,58 @@ function displayTemples(temples) {
     );
     image.setAttribute("loading", "lazy");
     // load
-    
+
+// ======
+    ov.setAttribute("id", "overlay")
+    ac.setAttribute("data-close-button class", "closebtn");
+    ac.setAttribute("id", "cbtn");
+    p1.innerHTML = `lrerasdasdasdasdasdasdasdasdasdasdasd`;
+    h23.innerHTML = `pop up`;
+    i.setAttribute("class", "fas fa-times close-btn");
+    modal.setAttribute("class", "popup-box");
+    modal.setAttribute("id", "box");
     btn.setAttribute("class", `moreInfo${temples.order}`);
-
-
+    btn.setAttribute("data-modal-target", `#modal`);
     btn.innerHTML = (`More Info`);
+
+// ======
+
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const closeModalButtons = document.querySelectorAll('[data-close-button]')
+    const overlay = document.getElementById('overlay');
+
+    openModalButtons.forEach(a => {
+        a.addEventListener('click', () => {
+          const modal = document.querySelector(a.dataset.modalTarget)
+          openModal(modal)
+        })
+      })
+      
+      overlay.addEventListener('click', () => {
+        const modals = document.querySelectorAll('.modal.active')
+        modals.forEach(modal => {
+          closeModal(modal)
+        })
+      })
+      
+      closeModalButtons.forEach(a => {
+        a.addEventListener('click', () => {
+          const modal = a.closest('.modal')
+          closeModal(modal)
+        })
+      })
+      
+      function openModal(modal) {
+        if (modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+      }
+      
+      function closeModal(modal) {
+        if (modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+
 
     h2.textContent = `${temples.name}`;
     p.innerHTML = `<strong>Address:</strong> ${temples.address} <br/>  
@@ -57,6 +112,11 @@ function displayTemples(temples) {
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(btn);
+    card.appendChild(modal);
+    modal.appendChild(i);
+    modal.appendChild(h23);
+    modal.appendChild(p1);
+    modal.appendChild(ac);
 
     document.querySelector("div.cards").appendChild(card);
 

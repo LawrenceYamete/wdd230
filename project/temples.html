@@ -23,12 +23,12 @@
 
 <body>
 
-    <!-- <div class="popup-screen">
-        <div class="popup-box">
+    <!-- <div class="popup-screen" id="screen">
+        <div class="popup-box" id="box">
             <i class="fas fa-times close-btn"></i>
             <h2>pop up</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos exercitationem ex amet pariatur enim asperiores repellendus earum, voluptatum sit natus deserunt possimus ipsa cum necessitatibus eveniet quasi, maxime dolores!</p>
-            <a href="" class="closebtn"></a>
+            <a href="" class="closebtn" id="cbtn"></a>
         </div>
     </div> -->
 
@@ -121,6 +121,17 @@
                 </tbody>
             </table>
         </div>
+        <button data-modal-target="#modal">Open Modal</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+          </div>
+        </div>
+        <div id="overlay"></div>
     </main>
     <footer>
         <p class="dateuk">
@@ -154,6 +165,7 @@
         <p id="lastmod"></p>
 
     </footer>
+    
     <script defer src="js/dataview.js"></script>
     <script defer src="js/data.js"></script>
     <script defer src="js/weatherapi.js"></script>
@@ -162,6 +174,7 @@
     <script defer src="js/toggle.js"></script>
     <script defer src="js/lazy.js"></script>
     <script defer src="js/lastmod.js"></script>
+    <script defer src="js/closepopup.js"></script>
 </body>
 
 </html>

@@ -764,7 +764,7 @@ tbody tr:hover {
 }
 
 
-.moreInfo {
+.moreInfo1, .moreInfo2, .moreInfo3, .moreInfo4 , .moreInfo5, .moreInfo6, .moreInfo7, .moreInfo8, .moreInfo9, .moreInfo10 {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -782,12 +782,12 @@ tbody tr:hover {
     padding: 10px;
 }
 
-.moreInfo:hover {
+.moreInfo1:hover, .moreInfo2:hover, .moreInfo3:hover, .moreInfo4:hover, .moreInfo5:hover, .moreInfo6:hover, .moreInfo7:hover, .moreInfo8:hover, .moreInfo9:hover, .moreInfo10:hover {
     color: black;
     cursor: pointer;
 }
 
-.moreInfo:before {
+.moreInfo1:before, .moreInfo2:before, .moreInfo3:before, .moreInfo4:before, .moreInfo5:before, .moreInfo6:before, .moreInfo7:before, .moreInfo8:before, .moreInfo9:before, .moreInfo10:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -800,13 +800,80 @@ tbody tr:hover {
     border-radius: 5px;
 }
 
-.moreInfo:hover:before {
+.moreInfo1:hover:before, .moreInfo2:hover:before, .moreInfo3:hover:before, .moreInfo4:hover:before, .moreInfo5:hover:before, .moreInfo6:hover:before, .moreInfo7:hover:before, .moreInfo8:hover:before, .moreInfo9:hover:before, .moreInfo10:hover:before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
     opacity: 1;
     z-index: -1;
 }
+
+/* ======================== */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
 /* =========================== Join HTML ========================== */
 
