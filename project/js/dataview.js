@@ -1,6 +1,7 @@
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
+
 gridButton.addEventListener("click", function() {
     document.querySelector(".cards").style.display = "grid";
     document.querySelector(".tableCards").style.display = "none";

@@ -15,11 +15,15 @@ fetch(requestURL)
     });
 
 function displayTemples(temples) {
+
+
+    
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
     let a = document.createElement("a");
+    
 
     // ===========================
     let modal = document.createElement("div");
@@ -27,6 +31,9 @@ function displayTemples(temples) {
     let modalT = document.createElement("div");
     let modalB = document.createElement("div");
     let over = document.createElement("div");
+    let likeBtn = document.createElement("a");
+    let numh2 = document.createElement("h2")
+    let numLike = document.createElement("span")
 
     modal.setAttribute("class", "modal");
     modal.setAttribute("id", "modal");
@@ -34,9 +41,9 @@ function displayTemples(temples) {
     modalT.setAttribute("class", "title");
     modalB.setAttribute("class", "modal-body");
     over.setAttribute("id", "overlay");
-
-
-    
+    likeBtn.setAttribute("class", "likeBtn")
+    likeBtn.setAttribute("onclick", `incrementButton()`)
+    numLike.setAttribute("class", "visits")
     
     image.setAttribute("class", "templeImgs");
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
@@ -52,9 +59,11 @@ function displayTemples(temples) {
   <strong>Contact Number:</strong> ${temples.contactNumber} <br/>
   <strong>Temple Locale:</strong> ${temples.history} `;
 
-
-    a.setAttribute("data-modal-target", "#modal");
+    modal.setAttribute("class", `modal`);
+    a.setAttribute("data-modal-target", `#modal`);
     a.setAttribute("class", `moreInfo${temples.order}`);
+    over.setAttribute("class", `overlay${temples.order}`);
+
 
     modalT.innerHTML = `<h1> ${temples.name}</h1>`;
     modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
@@ -62,42 +71,12 @@ function displayTemples(temples) {
     Public and Open House: ${temples.publicOpenHouse}<br/>
     Dedication: ${temples.dedication} <br/>
     Temple Locale: ${temples.history}</p>`;
+
+    likeBtn.innerHTML = `Like`
     
     a.innerHTML = `More Info`;
 
-    if (temples.order == 1) {
-        a.setAttribute("class", `moreInfo${temples.order}`);
-        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-        Public and Open House: ${temples.publicOpenHouse}<br/>
-        Dedication: ${temples.dedication} <br/>
-        Temple Locale: ${temples.history}</p>`;
-    } else if (temples.order == 2) {
-        a.setAttribute("class", `moreInfo${temples.order}`);
-        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-        Public and Open House: ${temples.publicOpenHouse}<br/>
-        Dedication: ${temples.dedication} <br/>
-        Temple Locale: ${temples.history}</p>`;
-    } else if (temples.order == 3) {
-        a.setAttribute("class", `moreInfo${temples.order}`);
-        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-        Public and Open House: ${temples.publicOpenHouse}<br/>
-        Dedication: ${temples.dedication} <br/>
-        Temple Locale: ${temples.history}</p>`;
-    } else {
-        a.setAttribute("class", `moreInfo${temples.order}`);
-        modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-        modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-        Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-        Public and Open House: ${temples.publicOpenHouse}<br/>
-        Dedication: ${temples.dedication} <br/>
-        Temple Locale: ${temples.history}</p>`;
-    }
+
 
     card.appendChild(image);
     card.appendChild(h2);
@@ -111,9 +90,24 @@ function displayTemples(temples) {
     modal.appendChild(modalB);
     card.appendChild(over);
     
+    card.appendChild(likeBtn);
+    card.appendChild(numh2);
+    numh2.appendChild(numLike);
 
     document.querySelector("div.cards").appendChild(card);
 
+    let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
+    function incrementButton() {
+        var visitsDisplay = document.querySelector(".visits");
+        var btn = document.querySelector(".likeBtn");
+
+        
+        visitsDisplay.textContent = numVisits;
+        numVisits++;
+
+        localStorage.setItem("likeBtn-ls", numVisits);
+        visitsDisplay.textContent = numVisits;
+    }
 
     const imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -201,3 +195,5 @@ function displayTableTemples(temples) {
 
     document.querySelector("table.tableList").appendChild(body);
 }
+
+
