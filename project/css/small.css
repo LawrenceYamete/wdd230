@@ -938,7 +938,7 @@ form fieldset {
 
 .fieldset1 {
     display: grid;
-    grid: 1fr 1fr/ 1fr 1fr;
+    grid: 1fr / 1fr;
     grid-column: 1/2;
     grid-row: 1/2;
     align-items: center;
