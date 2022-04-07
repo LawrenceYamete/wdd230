@@ -90,9 +90,9 @@ function displayTemples(temples) {
     modal.appendChild(modalB);
     card.appendChild(over);
     
-    card.appendChild(likeBtn);
-    card.appendChild(numh2);
-    numh2.appendChild(numLike);
+    // card.appendChild(likeBtn);
+    // card.appendChild(numh2);
+    // numh2.appendChild(numLike);
 
     document.querySelector("div.cards").appendChild(card);
 
@@ -136,33 +136,33 @@ function displayTemples(temples) {
         });
     }
 
-    const openModalButtons = document.querySelectorAll('[data-modal-target]')
-    const overlay = document.getElementById('overlay')
-    openModalButtons.forEach(a => {
-        a.addEventListener('click', () => {
-            const modal = document.querySelector(a.dataset.modalTarget)
-            openModal(modal)
-        })
-        })
+    // const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    // const overlay = document.getElementById('overlay')
+    // openModalButtons.forEach(a => {
+    //     a.addEventListener('click', () => {
+    //         const modal = document.querySelector(a.dataset.modalTarget)
+    //         openModal(modal)
+    //     })
+    //     })
     
-        overlay.addEventListener('click', () => {
-        const modals = document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModal(modal)
-        })
-        })
+    //     overlay.addEventListener('click', () => {
+    //     const modals = document.querySelectorAll('.modal.active')
+    //     modals.forEach(modal => {
+    //         closeModal(modal)
+    //     })
+    //     })
     
-        function openModal(modal) {
-        if (modal == null) return
-        modal.classList.add('active')
-        overlay.classList.add('active')
-        }
+    //     function openModal(modal) {
+    //     if (modal == null) return
+    //     modal.classList.add('active')
+    //     overlay.classList.add('active')
+    //     }
     
-        function closeModal(modal) {
-        if (modal == null) return
-        modal.classList.remove('active')
-        overlay.classList.remove('active')
-        }
+    //     function closeModal(modal) {
+    //     if (modal == null) return
+    //     modal.classList.remove('active')
+    //     overlay.classList.remove('active')
+    //     }
 }
 
 function displayTableTemples(temples) {
