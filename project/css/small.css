@@ -151,7 +151,7 @@ header {
 }
 
 .grid {
-    grid: repeat(2, 1fr);
+    grid: 1fr 1fr; 
     display: grid;
     grid-column-gap: 10px;
     grid-column-gap: 10px;
@@ -218,7 +218,7 @@ img[data-src] {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse(50% 50%);
+    shape-outside: ellipse(50%);
     margin-right: 1rem;
 }
 
