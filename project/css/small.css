@@ -1066,12 +1066,16 @@ legend,
     grid-row: 4/5;
 }
 
-form .price {
-    background-color: #E5B299;
+form label.infor textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #AAAAAA;
     border-radius: 5px;
-    padding: 5px;
-    margin-left: 10px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 100%;
 }
+
 
 .intro {
     text-align: left;
@@ -1083,7 +1087,7 @@ form .price {
 }
 
 
-/* ========================== Servics Page ===============================*/
+/* ========================== Services Page ===============================*/
 
 .secondDiv fieldset {
     display: grid;
@@ -1131,71 +1135,135 @@ form .price {
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
 
-.tS {
-    margin-top: 20px;
-}
-
-/* ========================== Directory Page ======================= */
-
-
-
-
-
-
-/* ========================== Contact ============================= */
-
-form label.infoCon {
+.goMenu {
     display: block;
-    padding: 1rem;
-    font-size: .8rem;
-}
-
-.fieldsetCon {
-    width: 90%;
-}
-
-textarea {
-    width: 95%;
-    height: 130px;
-}
-
-form label.infoCon input,
-form label.infoCon textarea {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #AAAAAA;
-    border-radius: 5px;
-    padding: .75rem;
-    width: 100%;
-    max-width: 95%;
-}
-
-form input.sendmessage {
-    margin: 20px;
-    width: 100%;
-    padding: .75rem;
-    max-width: 80%;
-    border: none;
-    background-color: #E5B299;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 150px;
     color: black;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    margin-left: 2rem;
-}
-
-.h1frame {
-    margin-bottom: 0%;
-    margin-left: 50px;
-}
-
-div iframe {
-    padding: 2.5em;
-    width: 100%;
-    height: 100%;
     border-radius: 5px;
-    padding-top: 20px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: #DFF6FF;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.goMenu:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.goMenu:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #1572A1;
+    border-radius: 5px;
+}
+
+.goMenu:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* ========================== Booked Page ======================= */
+
+.ty {
+    margin-top: 65px;
+}
+
+.flower {
+
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.ps{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.firstDivbn {
+    margin: 0px 20px 90px 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.firstDivbn .portrait {
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+    shape-outside: ellipse(50% 50%);
+    margin-right: 1rem;
+}
+
+
+/* ========================== Reception Page ============================= */
+
+.receptionInfo, .recep1, .recep2 {
+    display: grid;
+    margin: 10px, ;
+    font-family: 'Quicksand', light-sans-serif;
+    font-size: medium;
+}
+
+
+.receptionInfo section {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    flex-direction: column;
+    background-color: #DFF6FF;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.recepimg1 {
+    width: 100%;
+    border-radius: 50% 0%;
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.receptext1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 10px;
+}
+
+.recepimg2 {
+    width: 100%;
+    border-radius: 50% 0%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.receptext2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.receptext2 li {
+    text-align: left;
 }
 
 
@@ -1379,4 +1447,96 @@ z
     color: white;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.contact:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.contact:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #1572A1;
+    border-radius: 5px;
+}
+
+.contact:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.contact1 {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    background-color: #DFF6FF;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.contact1:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.contact1:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #1572A1;
+    border-radius: 5px;
+}
+
+.contact1:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.ptalk {
+    text-align: center;
 }
