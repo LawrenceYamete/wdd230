@@ -96,18 +96,18 @@ function displayTemples(temples) {
 
     document.querySelector("div.cards").appendChild(card);
 
-    let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
-    function incrementButton() {
-        var visitsDisplay = document.querySelector(".visits");
-        var btn = document.querySelector(".likeBtn");
+    // let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
+    // function incrementButton() {
+    //     var visitsDisplay = document.querySelector(".visits");
+    //     var btn = document.querySelector(".likeBtn");
 
         
-        visitsDisplay.textContent = numVisits;
-        numVisits++;
+    //     visitsDisplay.textContent = numVisits;
+    //     numVisits++;
 
-        localStorage.setItem("likeBtn-ls", numVisits);
-        visitsDisplay.textContent = numVisits;
-    }
+    //     localStorage.setItem("likeBtn-ls", numVisits);
+    //     visitsDisplay.textContent = numVisits;
+    // }
 
     const imagesToLoad = document.querySelectorAll('img[data-src]');
 
