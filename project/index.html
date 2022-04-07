@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/small/favicon.ico">
 
     <title>Lawrence Navarro's Home WDD 230</title>
 
@@ -24,7 +24,7 @@
 
         <div class="heading">
             <a href="index.html">
-                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+                <img class="headlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo" loading="lazy"></a>
             <section class="brandname">
                 <h1 class="logoname">SERUNI</h1>
                 <p class="servicename">Temple Inn and Suites</p>
@@ -44,24 +44,26 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+           
             </ul>
         </nav>
-
-
 
     </header>
 
 
     <main class="main">
         <div class="hero">
-            <img class="mainImg" src="images/large/bountiful_temple_lds.jpeg" alt="Helping Hand">
+            <source media="(min-width: 1000px)" srcset="images/large/bountiful_temple_lds.jpeg">
+            <source media="(min-width: 540px)" srcset="images/medium/bountiful_temple_lds.jpeg">
+            <source media="(min-width: 200px)" srcset="images/small/bountiful_temple_lds.jpeg">
+            <img class="mainImg" src="images/large/bountiful_temple_lds.jpeg" alt="bountiful_temple_lds" loading="lazy">
             <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
         </div>
 
         <div class="firstDiv">
-            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
-                alt="President Gordon b Hinckley">
+
+            <img class="portrait" src="images/small/lds_president_gordon_b_hinckley.jpeg" data-src="images/small/lds_president_gordon_b_hinckley.jpeg"
+                alt="President Gordon b Hinckley" loading="lazy">
             <section class="intro">
                 <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
                     peace, a
@@ -94,7 +96,10 @@
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/What-are-amenities-destacada.jpg" alt="hotel facilities">
+                    <source media="(min-width: 1000px)" srcset="images/large/What-are-amenities-destacada.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/What-are-amenities-destacada.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/What-are-amenities-destacada.webp">
+                    <img class="slidesImg" src="images/large/What-are-amenities-destacada.webp" data-src="images/large/What-are-amenities-destacada.webp" alt="hotel facilities" loading="lazy">
 
                     <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled
                         far
@@ -104,15 +109,21 @@
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/bolivia_families_playing_childhood_children.jpeg"
-                        alt="babysitting">
+                    <source media="(min-width: 1000px)" srcset="images/large/bolivia_families_playing_childhood_children.jpeg">
+                    <source media="(min-width: 540px)" srcset="images/medium/bolivia_families_playing_childhood_children.jpeg">
+                    <source media="(min-width: 200px)" srcset="images/small/bolivia_families_playing_childhood_children.jpeg">
+                    <img class="slidesImg" src="images/large/bolivia_families_playing_childhood_children.jpeg" data-src="images/large/bolivia_families_playing_childhood_children.jpeg"
+                        alt="babysitting" loading="lazy">
                     <p>A playroom and low-cost, short-term babysitting services for the children of patrons</p>
                     <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
                     </p>
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/Provo-MTC-Missionaries.jpg" alt="missionaries">
+                    <source media="(min-width: 1000px)" srcset="images/large/Provo-MTC-Missionaries.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/Provo-MTC-Missionaries.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/Provo-MTC-Missionaries.webp">
+                    <img class="slidesImg" src="images/large/Provo-MTC-Missionaries.webp" data-src="images/large/Provo-MTC-Missionaries.webp" alt="missionaries" loading="lazy">
 
                     <p>Long-term stay accommodations in SERUNI suites for full-time temple missionaries</p>
                     <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
@@ -120,7 +131,10 @@
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/iStock-995624510-3000x1500.jpg" alt="reception">
+                    <source media="(min-width: 1000px)" srcset="images/large/iStock-995624510-3000x1500.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/iStock-995624510-3000x1500.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/iStock-995624510-3000x1500.webp">
+                    <img class="slidesImg" src="images/large/iStock-995624510-3000x1500.webp" data-src="images/large/iStock-995624510-3000x1500.webp" alt="reception" loading="lazy">
 
                     <p>Temple history themed reception and sitting area</p>
                     <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
@@ -128,7 +142,10 @@
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/Red-Rock-Wedding-Set-up.jpg" alt="wedding reception hall">
+                    <source media="(min-width: 1000px)" srcset="images/large/Red-Rock-Wedding-Set-up.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/Red-Rock-Wedding-Set-up.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/Red-Rock-Wedding-Set-up.webp">
+                    <img class="slidesImg" src="images/large/Red-Rock-Wedding-Set-up.webp" data-src="images/large/Red-Rock-Wedding-Set-up.webp" alt="wedding reception hall" loading="lazy">
 
                     <p>A wedding reception hall that can be easily customized with a simple catering menu and
                         kitchen
@@ -138,7 +155,10 @@
                 </div>
 
                 <div class="mySlides transi">
-                    <img class="slidesImg" src="images/medium/family_portrait.jpeg" alt="family portrait">
+                    <source media="(min-width: 1000px)" srcset="images/large/family_portrait.jpeg">
+                    <source media="(min-width: 540px)" srcset="images/medium/family_portrait.jpeg">
+                    <source media="(min-width: 200px)" srcset="images/small/family_portrait.jpeg">
+                    <img class="slidesImg" src="images/large/family_portrait.jpeg" data-src="images/large/family_portrait.jpeg" alt="family portrait" loading="lazy">
 
                     <p> A family search center that supports family search and ordinance work</p>
                     <p><a class="slidebtn" href="https://goo.gl/maps/SnDxsCyRbHCWWJee9" target="_blank">Reserve</a>
@@ -160,7 +180,7 @@
                 </div>
 
                 <div class="weatherapi">
-                    <img src="images/medium/iStock-995624510-3000x1500.jpg" alt="Weather" id="weathericon" />
+                    <img src="images/medium/iStock-995624510-3000x1500.jpg" alt="Weather" id="weathericon"/>
                     <figure>
                         <figcaption></figcaption>
                     </figure>
@@ -197,8 +217,10 @@
                 <h1>Reviews</h1>
             </div>
             <section class="rev">
-
-                <img class="revImg" src="images/medium/Family+Portrait+-+Newmarket+Studio.jpg" alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/familyportrait.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/familyportrait.webp">
+                <source media="(min-width: 200px)" srcset="images/small/familyportrait.webp">
+                <img class="revImg" src="images/large/familyportrait.webp" data-src="images/large/familyportrait.webp" alt="family portrait" loading="lazy">
                 <h3>Family Dizon</h3>
                 <p> Comfortable bed, decent aircon and able to sleep well after a long flight. Room is fairly
                     big and everything was clean. The free one way shuttle was also really helpful. Wifi worked
@@ -206,16 +228,20 @@
 
             </section>
             <section class="rev1">
-
-                <img class="revImg" src="images/medium/SF-24.webp" alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/SF-24.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/SF-24.webp">
+                <source media="(min-width: 200px)" srcset="images/small/SF-24.webp">
+                <img class="revImg" src="images/large/SF-24.webp" data-src="images/large/SF-24.webp" alt="family portrait" loading="lazy">
                 <h3>Family Garcia</h3>
                 <p> Excellent staff service. All of them are synchronized and always ready to assist. Hydro pool
                     epxerience and free breakfast are worth the price.</p>
 
             </section>
             <section class="rev2">
-
-                <img class="revImg" src="images/medium/48e1decb94c09e45e76387b39715c2aa.jpg" alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/48e1decb94c09e45e76387b39715c2aa.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/48e1decb94c09e45e76387b39715c2aa.webp">
+                <source media="(min-width: 200px)" srcset="images/small/48e1decb94c09e45e76387b39715c2aa.webp">
+                <img class="revImg" src="images/large/48e1decb94c09e45e76387b39715c2aa.webp" data-src="images/large/48e1decb94c09e45e76387b39715c2aa.webp" alt="family portrait" loading="lazy">
                 <h3>Family Ramos</h3>
                 <p>It was like home away from home. Cosy and secure place to stay. Everyone was nice, helpful
                     and kind.</p>
@@ -231,7 +257,7 @@
             <span id="year" class="date"></span>
         </p>
 
-        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <img class="footlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo" loading="lazy"></a>
         <nav class="footerNav">
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -249,13 +275,13 @@
         </div>
         <h3 class="followUs">Follow us on our Social Media Sites</h3>
         <div class="btnfollowUs">
-            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href=""><img src="images/small/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/small/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/small/Youtube_Icon.webp" alt="Youtube_Icon"></a>
 
         </div>
         <p id="lastmod"></p>
-        <!-- <p> Weather Provided by OpenWeatherMap</p> -->
+        <p class="provider"> Weather Provided by OpenWeatherMap</p>
 
     </footer>
     <script defer src="js/weatherapi.js"></script>

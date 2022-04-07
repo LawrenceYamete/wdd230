@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/small/favicon.ico">
 
     <title>Lawrence Navarro's Home WDD 230</title>
-
 
 </head>
 
@@ -24,8 +23,8 @@
 
         <div class="heading">
             <a href="index.html">
-                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
-            <section class="brandname">
+                <img class="headlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo" loading="lazy"></a>
+                <section class="brandname">
                 <h1 class="logoname">SERUNI</h1>
                 <p class="servicename">Temple Inn and Suites</p>
             </section>
@@ -44,7 +43,6 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
 
@@ -52,16 +50,18 @@
 
     </header>
 
-
     <main class="main">
         <div class="hero">
-            <img class="mainImg" src="images/medium/albuquerque_temple_lds.jpeg" alt="Helping Hand">
+            <source media="(min-width: 1000px)" srcset="images/large/albuquerque_temple_lds.jpeg">
+            <source media="(min-width: 540px)" srcset="images/medium/albuquerque_temple_lds.jpeg">
+            <source media="(min-width: 200px)" srcset="images/small/albuquerque_temple_lds.jpeg">
+            <img class="mainImg" src="images/large/albuquerque_temple_lds.jpeg" data-src="images/large/albuquerque_temple_lds.jpeg" alt="albuquerque_temple_lds" loading="lazy">
             <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
         </div>
 
         <div class="firstDiv">
-            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
-                alt="President Gordon b Hinckley">
+            <img class="portrait" src="images/small/lds_president_gordon_b_hinckley.jpeg" data-src="images/small/lds_president_gordon_b_hinckley.jpeg" loading="lazy"
+                alt="President Gordon B Hinckley" loading="lazy">
             <section class="intro">
                 <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
                     peace, a
@@ -81,27 +81,27 @@
         </div>
 
         <main class="form">
-            <form method="get" action="thankyoucontact.html">
-                <fieldset class="fieldset1">
+            <form class="formcontact" method="get" action="thankyoucontact.html">
+                <fieldset class="fieldcontact">
                     <legend>Contact Us</legend>
                     <div class="fs2div1">
-                     
-                            <label class="infor">First Name*<input type="text" name="fname" required></label>
-                            <label class="infor">Middle Name<input type="text" name="mname"></label>
-                            <label class="infor">Last Name*<input type="text" name="lname" required></label>
+
+                        <label class="infor">First Name*<input type="text" name="fname" required></label>
+                        <label class="infor">Middle Name<input type="text" name="mname"></label>
+                        <label class="infor">Last Name*<input type="text" name="lname" required></label>
                         <label class="infor">Email<input type="email" name="email" placeholder="email@gmail.com"
                                 required></label>
-                            <label class="infor">Questions or Comments <textarea></textarea></label>
-
+                        <label class="infor">Questions or Comments <textarea></textarea></label>
+                        <a class="sendmessage" href="reservarion.html">Send</a>
                     </div>
                 </fieldset>
 
-
-                <div>
+                <div class="divMap">
                     <h1 class="h1frame">Meet me here!</h1>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.6081157402364!2d121.05086462893618!3d14.549396675410176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8eef441243d%3A0x4b1c29972e8861c9!2sBGC%20High%20Street!5e0!3m2!1sen!2sph!4v1647381188249!5m2!1sen!2sph"
-                        style="border:0;" loading="lazy"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4164752512916!2d-77.09981228464707!3d38.982990279557534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c8fab2e17%3A0xbea78ca1d749fa3a!2s4840%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sph!4v1649344783219!5m2!1sen!2sph"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </form>
         </main>
@@ -112,7 +112,7 @@
             <span id="year" class="date"></span>
         </p>
 
-        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <img class="footlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI logo" loading="lazy">
         <nav class="footerNav">
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -130,13 +130,13 @@
         </div>
         <h3 class="followUs">Follow us on our Social Media Sites</h3>
         <div class="btnfollowUs">
-            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href=""><img src="images/small/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/small/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/small/Youtube_Icon.webp" alt="Youtube_Icon"></a>
 
         </div>
         <p id="lastmod"></p>
-
+        <p class="provider"> Weather Provided by OpenWeatherMap</p>
     </footer>
     <script defer src="js/weatherapi.js"></script>
     <script defer src="js/slides.js"></script>

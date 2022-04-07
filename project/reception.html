@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/small/favicon.ico">
 
     <title>Lawrence Navarro's Home WDD 230</title>
 
@@ -24,7 +24,7 @@
 
         <div class="heading">
             <a href="index.html">
-                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+                <img class="headlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo"></a>
             <section class="brandname">
                 <h1 class="logoname">SERUNI</h1>
                 <p class="servicename">Temple Inn and Suites</p>
@@ -44,7 +44,7 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+    
             </ul>
         </nav>
 
@@ -55,7 +55,10 @@
 
     <main class="main">
         <div class="hero">
-            <img class="mainImg" src="images/medium/fukuoka_japan_temple_lds.jpeg" alt="Helping Hand">
+            <source media="(min-width: 1000px)" srcset="images/large/fukuoka_japan_temple_lds.jpeg">
+            <source media="(min-width: 540px)" srcset="images/medium/fukuoka_japan_temple_lds.jpeg">
+            <source media="(min-width: 200px)" srcset="images/small/fukuoka_japan_temple_lds.jpeg">
+            <img class="mainImg" src="images/large/fukuoka_japan_temple_lds.jpeg" data-src="images/large/fukuoka_japan_temple_lds.jpeg" alt="fukuoka_japan_temple_lds" loading="lazy">
             <h1 class="wel">Welcome to Reception Page</h1>
         </div>
 
@@ -73,7 +76,10 @@
                 </div>
             </section>
             <section class="recep2">
-                <img class="recepimg2" src="images/medium/Red-Rock-Wedding-Set-up.jpg" alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/Red-Rock-Wedding-Set-up.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/Red-Rock-Wedding-Set-up.webp">
+                <source media="(min-width: 200px)" srcset="images/small/Red-Rock-Wedding-Set-up.webp">
+                <img class="recepimg2" src="images/large/Red-Rock-Wedding-Set-up.webp" data-src="images/large/Red-Rock-Wedding-Set-up.webp" alt="violet reception" loading="lazy">
                 <div class="receptext2">
                     <h2>Catering Services</h2>
                     <p>A wedding catering package serves one of the most important needs for soon to wed couples. Our
@@ -84,7 +90,10 @@
             </section>
 
             <section class="recep1">
-                <img class="recepimg1" src="images/medium/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288-.jpg" alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288.webp">
+                <source media="(min-width: 200px)" srcset="images/small/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288.webp">
+                <img class="recepimg1" src="images/large/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288.webp" data-src="images/large/bride-s-hands-hold-beautiful-bridal-bouquet-of-peony--fine-art-photography--700862288.webp" alt="Bouquet" loading="lazy">
                 <div class="receptext1">
                     <h2>Bouquets and Floral Arrangements</h2>
                     <p>We specializes in the customization of fresh flower arrangement for all occasions according to
@@ -100,8 +109,11 @@
 
 
             <section class="recep2">
-                <img class="recepimg2" src="images/medium/wedding-cakes-ideas-for-2021-wedding.jpg"
-                    alt="family portrait">
+                <source media="(min-width: 1000px)" srcset="images/large/wedding-cakes-ideas-for-2021-wedding.webp">
+                <source media="(min-width: 540px)" srcset="images/medium/wedding-cakes-ideas-for-2021-wedding.webp">
+                <source media="(min-width: 200px)" srcset="images/small/wedding-cakes-ideas-for-2021-wedding.webp">
+                <img class="recepimg2" src="images/large/wedding-cakes-ideas-for-2021-wedding.webp" data-src="images/large/wedding-cakes-ideas-for-2021-wedding.webp"
+                    alt="wedding-cakes-ideas-for-2021-wedding" loading="lazy">
                 <div class="receptext2">
                     <h2>Wedding Cake</h2>
                     <p>SERUNI offers a full line of quality Italian French and American baked goods and pastries
@@ -124,7 +136,7 @@
             <span id="year" class="date"></span>
         </p>
 
-        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <img class="footlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo"></a>
         <nav class="footerNav">
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -142,13 +154,13 @@
         </div>
         <h3 class="followUs">Follow us on our Social Media Sites</h3>
         <div class="btnfollowUs">
-            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href=""><img src="images/small/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/small/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/small/Youtube_Icon.webp" alt="Youtube_Icon"></a>
 
         </div>
         <p id="lastmod"></p>
-
+        <p class="provider"> Weather Provided by OpenWeatherMap</p>
     </footer>
     <script defer src="js/weatherapi.js"></script>
     <script defer src="js/slides.js"></script>

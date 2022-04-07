@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/small/favicon.ico">
     <script src="https://kit.fontawesome.com/930c2b2397.js" crossorigin="anonymous"></script>
 
 
@@ -26,8 +26,8 @@
 
         <div class="heading">
             <a href="index.html">
-                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
-            <section class="brandname">
+                <img class="headlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo" loading="lazy"></a>
+                <section class="brandname">
                 <h1 class="logoname">SERUNI</h1>
                 <p class="servicename">Temple Inn and Suites</p>
             </section>
@@ -46,11 +46,9 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+         
             </ul>
         </nav>
-
-
 
     </header>
 
@@ -58,7 +56,10 @@
     <main class="main">
         
         <div class="ty">
-            <img class="flower" src="images/medium/flower.png" alt="Flower">
+            <source media="(min-width: 1000px)" srcset="images/large/flower.webp">
+            <source media="(min-width: 540px)" srcset="images/medium/flower.webp">
+            <source media="(min-width: 200px)" srcset="images/small/flower.webp">
+            <img class="flower" src="images/large/flower.webp" data-src="images/large/flower.webp" alt="Flower" loading="lazy">
             <p class="ps">We will contact you through email for confirmation of your booking.</p>
             <a class="goMenu" href="index.html">Go Back to Menu</a>
 
@@ -66,8 +67,8 @@
 
 
         <div class="firstDivbn">
-            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
-                alt="President Gordon b Hinckley">
+            <img class="portrait" src="images/small/lds_president_gordon_b_hinckley.jpeg" data-src="images/small/lds_president_gordon_b_hinckley.jpeg"
+                alt="President Gordon B Hinckley" loading="lazy">
             <section class="intro">
                 <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
                     peace, a
@@ -93,7 +94,7 @@
             <span id="year" class="date"></span>
         </p>
 
-        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <img class="footlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI logo" loading="lazy">
         <nav class="footerNav">
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -111,13 +112,14 @@
         </div>
         <h3 class="followUs">Follow us on our Social Media Sites</h3>
         <div class="btnfollowUs">
-            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href=""><img src="images/small/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/small/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/small/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+
 
         </div>
         <p id="lastmod"></p>
-
+        <p class="provider"> Weather Provided by OpenWeatherMap</p>
     </footer>
 
     <script defer src="js/modal.js"></script>

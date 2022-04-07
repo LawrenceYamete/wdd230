@@ -293,4 +293,8 @@
         margin-right: 50px;
     }
     
+    .divMap {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }

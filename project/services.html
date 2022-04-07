@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/small/favicon.ico">
 
     <title>Lawrence Navarro's Home WDD 230</title>
 
@@ -24,7 +24,7 @@
 
         <div class="heading">
             <a href="index.html">
-                <img class="headlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+                <img class="headlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo"></a>
             <section class="brandname">
                 <h1 class="logoname">SERUNI</h1>
                 <p class="servicename">Temple Inn and Suites</p>
@@ -44,7 +44,6 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li class="active"><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
 
@@ -55,12 +54,16 @@
 
     <main class="main">
         <div class="hero">
-            <img class="mainImg" src="images/medium/mesa_temple.jpeg" alt="Helping Hand">
+            <source media="(min-width: 1000px)" srcset="images/large/mesa_temple.jpeg">
+            <source media="(min-width: 540px)" srcset="images/medium/mesa_temple.jpeg">
+            <source media="(min-width: 200px)" srcset="images/small/mesa_temple.jpeg">
+            <img class="mainImg" src="images/large/mesa_temple.jpeg" data-src="images/large/mesa_temple.jpeg" alt="mesa_temple" loading="lazy">
             <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
         </div>
 
         <div class="firstDiv">
-            <img class="portrait" src="images/medium/lds_president_gordon_b_hinckley.jpeg"
+            
+            <img class="portrait" src="images/small/lds_president_gordon_b_hinckley.jpeg" data-src="images/small/lds_president_gordon_b_hinckley.jpeg"
                 alt="President Gordon b Hinckley">
             <section class="intro">
                 <p><strong> President Gordon B Hinkley</strong> said of Temples, “This is a place of light, a place of
@@ -77,7 +80,7 @@
                     Temple grounds in select locations to make your commute as short as possible. Please visit our guest
                     portal to learn more about accomodations and services at a Temple Inn near you.</p>
 
-                <a class="mainBtn" href="reservarion.html" target="_blank">Book Now!</a>
+                <a class="mainBtn" href="reservarion.html">Book Now!</a>
 
             </section>
 
@@ -123,12 +126,15 @@
                 <div class="mis">
                     <h1>Full-Time Missionary Temple</h1>
                     <h3>SERUNI has the best Rooms and Services for all Full-Time Missionaries</h3>
-                    <img class="misImg" src="images/medium/Germany_MIP2_2015.jpg" alt="family portrait">
+                    <source media="(min-width: 1000px)" srcset="images/large/Germany_MIP2_2015.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/Germany_MIP2_2015.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/Germany_MIP2_2015.webp">
+                    <img class="misImg" src="images/large/Germany_MIP2_2015.webp" data-src="images/large/Germany_MIP2_2015.webp" alt="Germany_MIP2_2015" loading="lazy">
                     <p>SERUNI features 30 beautifully appointed guest rooms and suites, which are among the most
                         spacious in the city. Comfortable elegance defines the accommodations, featuring colourful local
                         touches and terrific views of the metropolis.
                     </p>
-                    <a class="tS" href="reservarion.html" target="_blank">Book Now!</a>
+                    <a class="tS" href="reservarion.html">Book Now!</a>
                 </div>
 
             </div>
@@ -136,14 +142,17 @@
                 <div class="rec">
                     <h1>Reception</h1>
                     <h3>SERUNI has the best reception</h3>
-                    <img class="misImg" src="images/medium/venues_1465265612_6414_3107.jpg" alt="family portrait">
+                    <source media="(min-width: 1000px)" srcset="images/large/Germany_MIP2_2015.webp">
+                    <source media="(min-width: 540px)" srcset="images/medium/Germany_MIP2_2015.webp">
+                    <source media="(min-width: 200px)" srcset="images/small/Germany_MIP2_2015.webp">
+                    <img class="misImg" src="images/large/venues_1465265612_6414_3107.webp" data-src="images/large/venues_1465265612_6414_3107.webp" alt="venues_1465265612_6414_3107" loading="lazy">
                     <p>SERUNI offers the perfect canvas for any occasion, whether for a grand event
                         or intimate affair. With a luxury ballroom seating up to 400 guests, exquisite themed menus, and
                         impeccable service, delivering a unique experience may be expected. SERUNI holds a total of 1,500 square meters of function space with unique venues including
                         an executive boardroom, kitchen studio, and an outdoor roof deck. All packages are tailor fit to
                         suit any occasion.
                     </p>
-                    <a class="tS" href="reception.html" target="_blank">Book Now!</a>
+                    <a class="tS" href="reception.html">Book Now!</a>
                 </div>
             </div>
         </div>
@@ -155,7 +164,7 @@
             <span id="year" class="date"></span>
         </p>
 
-        <img class="footlogo" src="images/logo.png" data-src="images/logo.png" alt="Manila Lights Logo"></a>
+        <img class="footlogo" src="images/small/logo.png" data-src="images/small/logo.png" alt="SERUNI Logo"></a>
         <nav class="footerNav">
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -173,13 +182,13 @@
         </div>
         <h3 class="followUs">Follow us on our Social Media Sites</h3>
         <div class="btnfollowUs">
-            <a href=""><img src="images/Facebook_Icon.webp" alt="Facebook_Icon"></a>
-            <a href=""><img src="images/Instagram_Icon.webp" alt="Instagram_Icon"></a>
-            <a href=""><img src="images/Youtube_Icon.webp" alt="Youtube_Icon"></a>
+            <a href=""><img src="images/small/Facebook_Icon.webp" alt="Facebook_Icon"></a>
+            <a href=""><img src="images/small/Instagram_Icon.webp" alt="Instagram_Icon"></a>
+            <a href=""><img src="images/small/Youtube_Icon.webp" alt="Youtube_Icon"></a>
 
         </div>
         <p id="lastmod"></p>
-
+        <p class="provider"> Weather Provided by OpenWeatherMap</p>
     </footer>
     <script defer src="js/weatherapi.js"></script>
     <script defer src="js/slides.js"></script>
