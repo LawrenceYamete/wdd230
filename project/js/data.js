@@ -152,13 +152,6 @@ function displayTemples(temples) {
         })
         })
     
-        // closeModalButtons.forEach(a => {
-        // a.addEventListener('click', () => {
-        //     const modal = a.closest('.modal')
-        //     closeModal(modal)
-        // })
-        // })
-    
         function openModal(modal) {
         if (modal == null) return
         modal.classList.add('active')
