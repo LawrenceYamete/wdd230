@@ -217,7 +217,7 @@ img[data-src] {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse;
+    shape-outside: ellipse(50% 50%);
     margin-right: 1rem;
 }
 
@@ -527,7 +527,7 @@ section .featuredImg {
 
 .weather {
     display: block;
-    width: 0 auto;
+    margin: 0 auto;
     background-color: #DFF6FF;
     padding: 20px;
     border-radius: 10px;
@@ -1203,7 +1203,7 @@ form label.infor textarea {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse;
+    shape-outside: ellipse(50% 50%);
     margin-right: 1rem;
 }
 
