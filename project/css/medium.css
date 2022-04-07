@@ -204,7 +204,7 @@
 
     .fieldset2 {
         display: grid;
-        grid: repeat(2, 1fr);
+        grid: 1fr 1fr;
         grid-column: 1/2;
         grid-row: 2/3;
     }

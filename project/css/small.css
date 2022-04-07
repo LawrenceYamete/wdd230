@@ -230,7 +230,7 @@ img[data-src] {
     /* background-attachment: fixed; */
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 50% 100;
+    background-size: 50% 100%;
 }
 
 
@@ -522,7 +522,7 @@ section .featuredImg {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 50% 100;
+    background-size: 50% 100%;
     transition: width 2s, height 4s;
 }
 
@@ -865,7 +865,6 @@ tbody tr:hover {
     bottom: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    pointer-events: none;
   }
   
   /* .modal1, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9, .modal10 */
@@ -919,7 +918,6 @@ tbody tr:hover {
  /* .overlay1.active, .overlay2.active, .overlay3.active, .overlay4.active, .overlay5.active, .overlay6.active, .overlay7.active, .overlay8.active, .overlay9.active, .overlay10.active */
   #overlay.active{
     opacity: 1;
-    pointer-events: all;
 }
 
 /* =========================== Reservation HTML ========================== */
@@ -941,7 +939,7 @@ form fieldset {
 
 .fieldset1 {
     display: grid;
-    grid: repeat(2, 1fr / 1fr 1fr);
+    grid: 1fr 1fr/ 1fr 1fr;
     grid-column: 1/2;
     grid-row: 1/2;
     align-items: center;
@@ -972,7 +970,7 @@ form fieldset {
 
 .fieldset2 {
     display: grid;
-    grid: repeat(2, 1fr);
+    grid: 1fr 1fr;
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -1207,7 +1205,7 @@ form label.infor textarea {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse(50% 50%);
+    shape-outside: ellipse(50%);
     margin-right: 1rem;
 }
 
@@ -1216,7 +1214,7 @@ form label.infor textarea {
 
 .receptionInfo, .recep1, .recep2 {
     display: grid;
-    margin: 10px, ;
+    margin: 10px;
     font-family: 'Quicksand', light-sans-serif;
     font-size: medium;
 }
