@@ -151,7 +151,6 @@ header {
 }
 
 .grid {
-    grid: 1fr 1fr; 
     display: grid;
     grid-column-gap: 10px;
     grid-column-gap: 10px;
@@ -218,7 +217,7 @@ img[data-src] {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse(50%);
+    shape-outside: ellipse;
     margin-right: 1rem;
 }
 
@@ -970,7 +969,6 @@ form fieldset {
 
 .fieldset2 {
     display: grid;
-    grid: 1fr 1fr;
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -1205,7 +1203,7 @@ form label.infor textarea {
     border-radius: 50%;
     width: 200px;
     float: left;
-    shape-outside: ellipse(50%);
+    shape-outside: ellipse;
     margin-right: 1rem;
 }
 
