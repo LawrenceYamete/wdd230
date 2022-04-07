@@ -46,7 +46,7 @@
                 <li><a href="reservarion.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-    
+
             </ul>
         </nav>
 
@@ -57,10 +57,13 @@
 
     <main class="main">
         <div class="hero">
-            <source media="(min-width: 1000px)" srcset="images/large/seoul_korea_temple_lds.jpeg">
-            <source media="(min-width: 540px)" srcset="images/medium/seoul_korea_temple_lds.jpeg">
-            <source media="(min-width: 200px)" srcset="images/small/seoul_korea_temple_lds.jpeg">
-            <img class="mainImg" src="images/large/seoul_korea_temple_lds.jpeg" data-src="images/large/seoul_korea_temple_lds.jpeg" alt="seoul_korea_temple_lds" loading="lazy"> 
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/large/seoul_korea_temple_lds.jpeg">
+                <source media="(min-width: 540px)" srcset="images/medium/seoul_korea_temple_lds.jpeg">
+                <source media="(min-width: 200px)" srcset="images/small/seoul_korea_temple_lds.jpeg">
+                <img class="mainImg" src="images/large/seoul_korea_temple_lds.jpeg"
+                    data-src="images/large/seoul_korea_temple_lds.jpeg" alt="seoul_korea_temple_lds" loading="lazy">
+            </picture>
             <h1 class="wel">Welcome to SERUNI Temple Inn and Suites</h1>
         </div>
 
@@ -83,30 +86,30 @@
                     portal to learn more about accomodations and services at a Temple Inn near you.</p>
 
                 <a class="mainBtn" href="reservarion.html" target="_blank">Book Now!</a>
-                
+
             </section>
         </div>
-      
+
         <div class="buttons">
             <button id="grid" class="fa-solid fa-grip active"><span>Grid</span></button>
             <button id="list" class="fa-solid fa-list"><span>List</span></button>
-            
+
         </div>
 
         <div class="cards">
-            
-            
+
+
         </div>
 
         <div class="tableCards">
             <table class="tableList">
                 <thead class="head">
                     <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>Contact Number</th>
-                    <th>History</th>
-                </tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Contact Number</th>
+                        <th>History</th>
+                    </tr>
                 </thead>
                 <tbody class="body">
 
@@ -145,7 +148,7 @@
         <p id="lastmod"></p>
         <p class="provider"> Weather Provided by OpenWeatherMap</p>
     </footer>
-    
+
     <script defer src="js/modal.js"></script>
     <script defer src="js/dataview.js"></script>
     <script defer src="js/data.js"></script>
