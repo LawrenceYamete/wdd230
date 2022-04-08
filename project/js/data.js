@@ -14,17 +14,32 @@ fetch(requestURL)
         temples.forEach(displayTableTemples);
     });
 
+
 function displayTemples(temples) {
 
-
+    let likeBtn = document.createElement("a");
     
+    
+    likeBtn.setAttribute("onclick", "incrementButton()");
+    likeBtn.innerHTML = `Like`;
+
+
+
+    // let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
+    // var visitsDisplay = document.querySelector(".visits");
+    // var btn = document.querySelector(".likeBtn");
+    // visitsDisplay.textContent = numVisits;
+    // numVisits++;
+    // localStorage.setItem("likeBtn-ls", numVisits);
+    // visitsDisplay.textContent = numVisits;
+    // =================================
+
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let image = document.createElement("img");
     let a = document.createElement("a");
     
-
 
     
     image.setAttribute("class", "templeImgs");
@@ -35,6 +50,15 @@ function displayTemples(temples) {
         `${temples.name}`
     );
     image.setAttribute("loading", "lazyload");
+    
+    card.setAttribute("class", `cardtemple`);
+    
+    // if (temples.order == 1) {
+    //     card.setAttribute("class", `cardtemple${temples.order}`);
+    // } else {
+    //     card.setAttribute("class", `cardtemple${temples.order}`);
+    // }
+
 
     h2.textContent = `${temples.name}`;
     p.innerHTML = `<strong>Address:</strong> ${temples.address} <br/>  
@@ -43,16 +67,19 @@ function displayTemples(temples) {
 
     a.setAttribute("data-modal-target", `#modal`);
     a.setAttribute("class", `moreInfo${temples.order}`);
-    // a.setAttribute("href", `${temples.website}`)
-    a.innerHTML = `${temples.website}`;
+    a.setAttribute("href", `${temples.website}`)
+    a.setAttribute("target", `_blank`)
+    a.innerHTML = `More Info`;
 
     card.appendChild(image);
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(a);
+    card.appendChild(likeBtn);
 
-
+    
     document.querySelector("div.cards").appendChild(card);
+
 
     // let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
     // function incrementButton() {
@@ -122,6 +149,24 @@ function displayTemples(temples) {
     //     overlay.classList.remove('active')
     //     }
 }
+
+function incrementButton() {
+
+    let likeDisplay = document.createElement("p");
+    likeDisplay.setAttribute("class", "display");
+    let like = Number(window.localStorage.getItem("button-ls"));
+
+    like++;
+
+    localStorage.setItem("button-ls", like);
+
+    likeDisplay.innerHTML = `${like}`;
+
+    document.querySelector("section.cardtemple").appendChild(likeDisplay);
+
+}
+
+
 
 function displayTableTemples(temples) {
 
