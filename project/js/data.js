@@ -25,25 +25,7 @@ function displayTemples(temples) {
     let a = document.createElement("a");
     
 
-    // ===========================
-    let modal = document.createElement("div");
-    let modalH = document.createElement("div");
-    let modalT = document.createElement("div");
-    let modalB = document.createElement("div");
-    let over = document.createElement("div");
-    let likeBtn = document.createElement("a");
-    let numh2 = document.createElement("h2")
-    let numLike = document.createElement("span")
 
-    modal.setAttribute("class", "modal");
-    modal.setAttribute("id", "modal");
-    modalH.setAttribute("class", "modal-header");
-    modalT.setAttribute("class", "title");
-    modalB.setAttribute("class", "modal-body");
-    over.setAttribute("id", "overlay");
-    likeBtn.setAttribute("class", "likeBtn")
-    likeBtn.setAttribute("onclick", `incrementButton()`)
-    numLike.setAttribute("class", "visits")
     
     image.setAttribute("class", "templeImgs");
     image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
@@ -59,40 +41,17 @@ function displayTemples(temples) {
   <strong>Contact Number:</strong> ${temples.contactNumber} <br/>
   <strong>Temple Locale:</strong> ${temples.history} `;
 
-    modal.setAttribute("class", `modal`);
     a.setAttribute("data-modal-target", `#modal`);
     a.setAttribute("class", `moreInfo${temples.order}`);
-    over.setAttribute("class", `overlay${temples.order}`);
-
-
-    modalT.innerHTML = `<h1> ${temples.name}</h1>`;
-    modalB.innerHTML = `<p>Announcement: ${temples.announcement}<br/>
-    Groundbreaking and Site Dedication: ${temples.groundAndDedication} <br/>
-    Public and Open House: ${temples.publicOpenHouse}<br/>
-    Dedication: ${temples.dedication} <br/>
-    Temple Locale: ${temples.history}</p>`;
-
-    likeBtn.innerHTML = `Like`
+    a.setAttribute("href", `${temples.website}`)
     
     a.innerHTML = `More Info`;
-
-
 
     card.appendChild(image);
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(a);
 
-    // =========================
-    card.appendChild(modal);
-    modal.appendChild(modalH);
-    modalH.appendChild(modalT);
-    modal.appendChild(modalB);
-    card.appendChild(over);
-    
-    // card.appendChild(likeBtn);
-    // card.appendChild(numh2);
-    // numh2.appendChild(numLike);
 
     document.querySelector("div.cards").appendChild(card);
 

@@ -10,7 +10,8 @@
             "announcement": "4 April 1997",
             "groundAndDedication": "20 June 1998 by Lynn A. Mickelsen",
             "publicOpenHouse": "17–26 February 2000",
-            "dedication": "5 March 2000 by Gordon B. Hinckley"
+            "dedication": "5 March 2000 by Gordon B. Hinckley",
+            "website": "https://churchofjesuschristtemples.org/albuquerque-new-mexico-temple/"
         },
         {
             "name": "Bountiful Utah Temple",
@@ -22,7 +23,9 @@
             "announcement": "2 February 1990",
             "groundAndDedication": "2 May 1992 by Ezra Taft Benson",
             "publicOpenHouse": "4 November–17 December 1994",
-            "dedication": "8–14 January 1995 by Howard W. Hunter"
+            "dedication": "8–14 January 1995 by Howard W. Hunter",
+            "website": "https://churchofjesuschristtemples.org/bountiful-utah-temple/"
+            
         },
         {
             "name": "Fukuoka Japan Temple",
@@ -34,7 +37,8 @@
             "announcement": "7 May 1998",
             "groundAndDedication": "20 March 1999 by L. Lionel Kendrick",
             "publicOpenHouse": "1–3 June 2000",
-            "dedication": "11 June 2000 by Gordon B. Hinckley"
+            "dedication": "11 June 2000 by Gordon B. Hinckley",
+            "website": "https://churchofjesuschristtemples.org/fukuoka-japan-temple/"
         },
         {
             "name": "Houston Texas Temple",
@@ -46,7 +50,8 @@
             "announcement": "30 September 1997",
             "groundAndDedication": "13 June 1998 by Lynn A. Mickelsen",
             "publicOpenHouse": "5–22 August 2000",
-            "dedication": "26–27 August 2000 by Gordon B. Hinckley, /n Rededication:  22 April 2018 by M. Russell Ballard"
+            "dedication": "26–27 August 2000 by Gordon B. Hinckley, /n Rededication:  22 April 2018 by M. Russell Ballard",
+            "website": "https://churchofjesuschristtemples.org/houston-texas-temple/"
         },
         {
             "name": "Logan Utah Temple",
@@ -58,7 +63,8 @@
             "announcement": "6 October 1876",
             "groundAndDedication": "18 May 1877 by John W. Young",
             "publicOpenHouse": "5 February–3 March 1979",
-            "dedication": "17–19 May 1884 by John Taylor /n 13–15 March 1979 by Spencer W. Kimball"
+            "dedication": "17–19 May 1884 by John Taylor /n 13–15 March 1979 by Spencer W. Kimball",
+            "website": "https://churchofjesuschristtemples.org/logan-utah-temple/"
         },
         {
             "name": "Manila Philippines Temple",
@@ -70,7 +76,8 @@
             "announcement": "1 April 1981",
             "groundAndDedication": "25 August 1982 by Gordon B. Hinckley",
             "publicOpenHouse": "3–15 September 1984",
-            "dedication": "25–27 September 1984 by Gordon B. Hinckley"
+            "dedication": "25–27 September 1984 by Gordon B. Hinckley",
+            "website": "https://churchofjesuschristtemples.org/manila-philippines-temple/"
         },
         {
             "name": "Meridian Idaho Temple",
@@ -82,7 +89,8 @@
             "announcement": "2 April 2011",
             "groundAndDedication": "23 August 2014 by David A. Bednar",
             "publicOpenHouse": "21 October–11 November 2017",
-            "dedication": "19 November 2017 by Dieter F. Uchtdorf"
+            "dedication": "19 November 2017 by Dieter F. Uchtdorf",
+            "website": "https://churchofjesuschristtemples.org/meridian-idaho-temple/"
         },
         {
             "name": "Mesa Arizona Temple",
@@ -94,7 +102,8 @@
             "announcement": "3 October 1919",
             "groundAndDedication": "25 April 1922 by Heber J. Grant",
             "publicOpenHouse": "Tours offered during the last two years of construction",
-            "dedication": "23–26 October 1927 by Heber J. Grant Rededication:  15–16 April 1975 by Spencer W. Kimball Rededication:  12 December 2021 by Dallin H. Oaks"
+            "dedication": "23–26 October 1927 by Heber J. Grant Rededication:  15–16 April 1975 by Spencer W. Kimball Rededication:  12 December 2021 by Dallin H. Oaks",
+            "website": "https://churchofjesuschristtemples.org/mesa-arizona-temple/"
         },
         {
             "name": "Cebu City Philippines Temple",
@@ -106,7 +115,8 @@
             "announcement": "18 April 2006",
             "groundAndDedication": "14 November 2007 by Dallin H. Oaks",
             "publicOpenHouse": "21 May–5 June 2010",
-            "dedication": "13 June 2010 by Thomas S. Monson"
+            "dedication": "13 June 2010 by Thomas S. Monson",
+            "website": "https://churchofjesuschristtemples.org/cebu-city-philippines-temple/"
         },
         {
             "name": "Seoul Korea Temple",
@@ -118,7 +128,8 @@
             "announcement": "1 April 1981",
             "groundAndDedication": "9 May 1983 by Marvin J. Ashton",
             "publicOpenHouse": "26 November–7 December 1985",
-            "dedication": "14–15 December 1985 by Gordon B. Hinckley"
+            "dedication": "14–15 December 1985 by Gordon B. Hinckley",
+            "website": "https://churchofjesuschristtemples.org/seoul-korea-temple/"
         }
     ]
 }
