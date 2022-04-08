@@ -43,9 +43,8 @@ function displayTemples(temples) {
 
     a.setAttribute("data-modal-target", `#modal`);
     a.setAttribute("class", `moreInfo${temples.order}`);
-    a.setAttribute("href", `${temples.website}`)
-    
-    a.innerHTML = `More Info`;
+    // a.setAttribute("href", `${temples.website}`)
+    a.innerHTML = `${temples.website}`;
 
     card.appendChild(image);
     card.appendChild(h2);
