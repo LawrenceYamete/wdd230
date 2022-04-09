@@ -850,11 +850,13 @@ tbody tr:hover {
     margin: 20px;
     color: #1572A1;
     transition: 1s;
+    cursor: pointer;
 }
 
 #like .active {
     color: red;
     transition: 1s;
+    cursor: pointer;
 }
 
 /* ======================== */

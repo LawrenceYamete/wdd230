@@ -84,11 +84,10 @@ fetch(apiURL)
         var tempF = currentTemp.textContent;
         var speed = currentSpeed.textContent;
         var results = windChill(tempF, speed);
-
-        let windchill = "";
+        
+        let windchill = `${windchill}°F`;
         if (tempF <= 50 && speed > 3) {
-            windchill = windChill(tempF, speed);
-            windchill = `${windchill}°F`;
+            
 
             if (windchill <= 74 && windchill >= -20) {
                 alert("Sorry, The SERUNI Temple Inn and Suite is not available for today because of the current weather. Thank you for understanding.");
