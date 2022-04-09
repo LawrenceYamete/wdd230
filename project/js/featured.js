@@ -25,7 +25,7 @@ function displayTemples(temples) {
     h1.innerHTML = `Featured Temple`;
     h1.setAttribute("class", "featured")
     image.setAttribute("class", "featuredImg")
-    image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
+    image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.webp");
     image.setAttribute("data-src", temples.imageurl);
     image.setAttribute(
         "alt",

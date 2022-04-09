@@ -49,17 +49,6 @@ function displayTemples(temples) {
     });
     
 
-
-
-    // let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
-    // var visitsDisplay = document.querySelector(".visits");
-    // var btn = document.querySelector(".likeBtn");
-    // visitsDisplay.textContent = numVisits;
-    // numVisits++;
-    // localStorage.setItem("likeBtn-ls", numVisits);
-    // visitsDisplay.textContent = numVisits;
-    // =================================
-
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
@@ -69,7 +58,7 @@ function displayTemples(temples) {
 
     
     image.setAttribute("class", "templeImgs");
-    image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.jpg");
+    image.setAttribute("src", "images/medium/iStock-995624510-3000x1500.webp");
     image.setAttribute("data-src", temples.imageurl);
     image.setAttribute(
         "alt",
@@ -106,20 +95,6 @@ function displayTemples(temples) {
     
     document.querySelector("div.cards").appendChild(card);
 
-
-    // let numVisits = Number(window.localStorage.getItem("likeBtn-ls"));
-    // function incrementButton() {
-    //     var visitsDisplay = document.querySelector(".visits");
-    //     var btn = document.querySelector(".likeBtn");
-
-        
-    //     visitsDisplay.textContent = numVisits;
-    //     numVisits++;
-
-    //     localStorage.setItem("likeBtn-ls", numVisits);
-    //     visitsDisplay.textContent = numVisits;
-    // }
-
     const imagesToLoad = document.querySelectorAll('img[data-src]');
 
     const loadImages = (image) => {
@@ -147,50 +122,8 @@ function displayTemples(temples) {
         });
     }
 
-    // const openModalButtons = document.querySelectorAll('[data-modal-target]')
-    // const overlay = document.getElementById('overlay')
-    // openModalButtons.forEach(a => {
-    //     a.addEventListener('click', () => {
-    //         const modal = document.querySelector(a.dataset.modalTarget)
-    //         openModal(modal)
-    //     })
-    //     })
-    
-    //     overlay.addEventListener('click', () => {
-    //     const modals = document.querySelectorAll('.modal.active')
-    //     modals.forEach(modal => {
-    //         closeModal(modal)
-    //     })
-    //     })
-    
-    //     function openModal(modal) {
-    //     if (modal == null) return
-    //     modal.classList.add('active')
-    //     overlay.classList.add('active')
-    //     }
-    
-    //     function closeModal(modal) {
-    //     if (modal == null) return
-    //     modal.classList.remove('active')
-    //     overlay.classList.remove('active')
-    //     }
 }
 
-// function incrementButton() {
-
-//     let likeDisplay = document.createElement("p");
-//     likeDisplay.setAttribute("class", "display");
-//     let like = Number(window.localStorage.getItem("button-ls"));
-
-//     like++;
-
-//     localStorage.setItem("button-ls", like);
-
-//     likeDisplay.innerHTML = `${like}`;
-
-//     document.querySelector("section.cardtemple").appendChild(likeDisplay);
-
-// }
 
 
 

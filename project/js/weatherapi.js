@@ -85,7 +85,6 @@ fetch(apiURL)
         var speed = currentSpeed.textContent;
         var results = windChill(tempF, speed);
         
-        let windchill = `${windchill}°F`;
         if (tempF <= 50 && speed > 3) {
             
 
