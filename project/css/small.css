@@ -846,6 +846,17 @@ tbody tr:hover {
     transition-property: opacity;
 }
 
+#like {
+    margin: 20px;
+    color: #1572A1;
+    transition: 1s;
+}
+
+#like .active {
+    color: red;
+    transition: 1s;
+}
+
 /* ======================== */
 
 *, *::after, *::before {

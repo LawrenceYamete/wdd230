@@ -21,14 +21,16 @@ function displayTemples(temples) {
     
 
     let likedBtn = document.createElement('i');
-  
+    
     likeBtn.appendChild(likedBtn);
 
     if(localStorage.getItem(temples.name) == "true") {
-      likedBtn.setAttribute("class", "fa-solid fa-thumbs-up")
+      likedBtn.setAttribute("class", "fa-solid fa-thumbs-up fa-xl");
+      
       }
       else {
-        likedBtn.setAttribute("class", "fa-solid fa-heart")
+        likedBtn.setAttribute("class", "fa-solid fa-heart fa-xl");
+        likedBtn.classList.add('active');
       }
   
     likeBtn.setAttribute('id', 'like');
@@ -36,11 +38,13 @@ function displayTemples(temples) {
     likeBtn.addEventListener("click", () => {
           if(localStorage.getItem(temples.name) == "true") {
             localStorage.setItem(temples.name, "false");
-            likedBtn.setAttribute("class", "fa-solid fa-thumbs-up")
+            likedBtn.setAttribute("class", "fa-solid fa-thumbs-up fa-xl");
+            
         }
         else {
             localStorage.setItem(temples.name, "true");
-            likedBtn.setAttribute("class", "fa-solid fa-heart")
+            likedBtn.setAttribute("class", "fa-solid fa-heart fa-xl");
+            likedBtn.classList.add('active');
         }
     });
     
