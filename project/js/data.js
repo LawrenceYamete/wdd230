@@ -17,11 +17,33 @@ fetch(requestURL)
 
 function displayTemples(temples) {
 
-    let likeBtn = document.createElement("a");
+    let likeBtn = document.createElement("i");
     
+
+    let likedBtn = document.createElement('i');
+  
+    likeBtn.appendChild(likedBtn);
+
+    if(localStorage.getItem(temples.name) == "true") {
+      likedBtn.setAttribute("class", "fa-solid fa-thumbs-up")
+      }
+      else {
+        likedBtn.setAttribute("class", "fa-solid fa-heart")
+      }
+  
+    likeBtn.setAttribute('id', 'like');
+    likeBtn.setAttribute('value', "like-btn");
+    likeBtn.addEventListener("click", () => {
+          if(localStorage.getItem(temples.name) == "true") {
+            localStorage.setItem(temples.name, "false");
+            likedBtn.setAttribute("class", "fa-solid fa-thumbs-up")
+        }
+        else {
+            localStorage.setItem(temples.name, "true");
+            likedBtn.setAttribute("class", "fa-solid fa-heart")
+        }
+    });
     
-    likeBtn.setAttribute("onclick", "incrementButton()");
-    likeBtn.innerHTML = `Like`;
 
 
 
@@ -53,11 +75,11 @@ function displayTemples(temples) {
     
     card.setAttribute("class", `cardtemple`);
     
-    // if (temples.order == 1) {
-    //     card.setAttribute("class", `cardtemple${temples.order}`);
-    // } else {
-    //     card.setAttribute("class", `cardtemple${temples.order}`);
-    // }
+    if (temples.order == 1) {
+        card.setAttribute("class", `cardtemple${temples.order}`);
+    } else {
+        card.setAttribute("class", `cardtemple${temples.order}`);
+    }
 
 
     h2.textContent = `${temples.name}`;
@@ -74,9 +96,9 @@ function displayTemples(temples) {
     card.appendChild(image);
     card.appendChild(h2);
     card.appendChild(p);
-    card.appendChild(a);
     card.appendChild(likeBtn);
-
+    card.appendChild(a);
+    
     
     document.querySelector("div.cards").appendChild(card);
 
@@ -150,21 +172,21 @@ function displayTemples(temples) {
     //     }
 }
 
-function incrementButton() {
+// function incrementButton() {
 
-    let likeDisplay = document.createElement("p");
-    likeDisplay.setAttribute("class", "display");
-    let like = Number(window.localStorage.getItem("button-ls"));
+//     let likeDisplay = document.createElement("p");
+//     likeDisplay.setAttribute("class", "display");
+//     let like = Number(window.localStorage.getItem("button-ls"));
 
-    like++;
+//     like++;
 
-    localStorage.setItem("button-ls", like);
+//     localStorage.setItem("button-ls", like);
 
-    likeDisplay.innerHTML = `${like}`;
+//     likeDisplay.innerHTML = `${like}`;
 
-    document.querySelector("section.cardtemple").appendChild(likeDisplay);
+//     document.querySelector("section.cardtemple").appendChild(likeDisplay);
 
-}
+// }
 
 
 
